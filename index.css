@@ -1,3 +1,4 @@
+/* Shared: Theme and Base Styles */
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 
 :root {
@@ -44,12 +45,9 @@
   border: 0;
 }
 
+/* Shared: Layout and Navigation */
 .primary-background {
   background-color: var(--primary-color);
-}
-
-#home-body {
-  background-color: var(--trinary-color);
 }
 
 nav {
@@ -175,106 +173,7 @@ header {
   }
 }
 
-#home-carousels {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-
-#home-carousels .home-carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
-}
-
-#home-carousels .home-carousel-track .home-corousel-item {
-  min-width: 100%;
-  height: 300px;
-  display: grid;
-}
-.home-carousel-item-content {
-  background-color: #00000046;
-  height: 300px;
-  color: white;
-  grid-area: 1/1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 60px;
-  padding-top: 40px;
-}
-.home-carousel-item-content .btn-carousel {
-  border: none;
-  padding: 8px 20px;
-  display: flex;
-  align-items: center;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 50px;
-}
-.home-carousel-item-content h3 {
-  font-size: 24px;
-}
-.home-carousel-item-content p {
-  margin-top: 12px;
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-.home-carousel-item-content .btn-carousel img {
-  margin-right: 6px;
-}
-
-.home-carousel-item-content .btn-carousel {
-  width: fit-content;
-  text-decoration: none;
-}
-
-#home-carousels .home-corousel-item > img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  grid-area: 1/1;
-}
-
-@media screen and (max-width: 1024px) {
-  .home-carousel-item-content {
-    padding-top: 0px;
-  }
-}
-
-#home-banner {
-  text-align: center;
-  padding: 18px;
-  color: white;
-  background-color: var(--primary-color);
-  background-image: url(assests/imgs/background_cups.svg);
-}
-
-#home-banner p {
-  font-size: 14px;
-}
-
-#home-banner h3 {
-  font-size: 24px;
-  padding: 10px 0px;
-}
-
-.home-section {
-  margin: 0 50px;
-  margin-top: 32px;
-}
-.home-section h2 {
-  margin-bottom: 14px;
-}
-
-.home-section-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
-}
-
-/* Home Page's Coffe Bean Section */
+/* Shared Component: Coffee Bean Card */
 .coffee-bean-item {
   width: 327px;
   flex-grow: 1;
@@ -389,8 +288,7 @@ header {
   }
 }
 
-/* Home Page's Equipment Section */
-
+/* Shared Component: Equipment Card */
 .equipment-item {
   width: 327px;
   flex-grow: 1;
@@ -486,8 +384,7 @@ header {
   font-weight: 600;
 }
 
-/* Deal Item */
-
+/* Shared Component: Deal Card */
 .deal-item {
   width: 40%;
   height: 200px;
@@ -566,8 +463,7 @@ header {
   }
 }
 
-/* Event Item */
-
+/* Shared Component: Event Card */
 .event-item {
   width: 40%;
   height: 280px;
@@ -623,8 +519,7 @@ header {
   }
 }
 
-/* Footer */
-
+/* Shared Component: Footer */
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -704,7 +599,248 @@ footer #reference-body {
   align-items: center;
 }
 
-/* Event Page */
+/* Shared Component: Event Registration Form */
+.regstration-form {
+  /* width: 100%; */
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: var(--trinary-color);
+}
+
+.regstration-form h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+dialog {
+  width: min(50%, 720px);
+  /* max-height: 90vh; */
+  overflow: auto;
+  border: none;
+  background-color: transparent;
+  margin: auto;
+  scrollbar-width: none;
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.65);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch;
+  margin: 0 auto;
+}
+
+.form .form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.form .form-item > label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.form .form-item .text-field {
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.form-error {
+  /* min-height: 1.25em; */
+  color: #9f1d1d;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn-close {
+  position: absolute;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.event-item #btn-event-register {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .regstration-form {
+    padding: 20px;
+  }
+  .regstration-form h1 {
+    font-size: 20px;
+  }
+  dialog {
+    width: min(90%, 720px);
+  }
+}
+
+/* Shared Component: Status Dialog */
+.alert-dialog {
+  background-color: var(--trinary-color);
+  padding: 40px;
+  text-align: center;
+  color: var(--primary-color);
+  border-radius: 20px;
+}
+
+.alert-dialog p {
+  margin: 20px auto;
+}
+
+.alert-dialog button {
+  width: 100%;
+}
+
+.payment-item {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  accent-color: var(--primary-color);
+}
+.payment-item label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* Shared Component: Card */
+.card {
+  background-color: var(--trinary-color);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+/* Home Screen */
+#home-body {
+  background-color: var(--trinary-color);
+}
+
+#home-carousels {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#home-carousels .home-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+#home-carousels .home-carousel-track .home-corousel-item {
+  min-width: 100%;
+  height: 300px;
+  display: grid;
+}
+.home-carousel-item-content {
+  background-color: #00000046;
+  height: 300px;
+  color: white;
+  grid-area: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+  padding-top: 40px;
+}
+.home-carousel-item-content .btn-carousel {
+  border: none;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50px;
+}
+.home-carousel-item-content h3 {
+  font-size: 24px;
+}
+.home-carousel-item-content p {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.home-carousel-item-content .btn-carousel img {
+  margin-right: 6px;
+}
+
+.home-carousel-item-content .btn-carousel {
+  width: fit-content;
+  text-decoration: none;
+}
+
+#home-carousels .home-corousel-item > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  grid-area: 1/1;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-carousel-item-content {
+    padding-top: 0px;
+  }
+}
+
+#home-banner {
+  text-align: center;
+  padding: 18px;
+  color: white;
+  background-color: var(--primary-color);
+  background-image: url(assests/imgs/background_cups.svg);
+}
+
+#home-banner p {
+  font-size: 14px;
+}
+
+#home-banner h3 {
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+.home-section {
+  margin: 0 50px;
+  margin-top: 32px;
+}
+.home-section h2 {
+  margin-bottom: 14px;
+}
+
+.home-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Events Screen */
 #event-page-content {
   padding: 20px 60px;
   display: grid;
@@ -780,7 +916,7 @@ footer #reference-body {
   }
 }
 
-/* Coffee Detail Screen */
+/* Product Detail Screens: Coffee and Equipment */
 #coffee-detail-content,
 #equipment-detail-content {
   padding: 20px 40px;
@@ -931,8 +1067,7 @@ footer #reference-body {
   background-color: var(--trinary-color);
 }
 
-/* Coffee Selection Screen */
-
+/* Product Selection Screens: Coffee and Equipment */
 #coffee-selection-title,
 #equipment-selection-title {
   color: var(--secondary-color);
@@ -1084,7 +1219,7 @@ footer #reference-body {
   }
 }
 
-/* Special Offers & Subscriptions Page */
+/* Offers and Subscriptions Screen */
 #offer_sub_content {
   padding: 0 60px 60px 60px;
 }
@@ -1099,12 +1234,6 @@ footer #reference-body {
   height: 100%;
   overflow: hidden;
 } */
-
-.card {
-  background-color: var(--trinary-color);
-  border-radius: 20px;
-  padding: 40px;
-}
 
 .list-content .card > h3 {
   margin-bottom: 20px;
@@ -1175,136 +1304,7 @@ footer #reference-body {
   }
 }
 
-/* Event Form */
-.regstration-form {
-  /* width: 100%; */
-  position: relative;
-  padding: 40px;
-  border-radius: 20px;
-  background-color: var(--trinary-color);
-}
-
-.regstration-form h1 {
-  text-align: center;
-  color: var(--primary-color);
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-
-dialog {
-  width: min(50%, 720px);
-  /* max-height: 90vh; */
-  overflow: auto;
-  border: none;
-  background-color: transparent;
-  margin: auto;
-  scrollbar-width: none;
-}
-
-dialog::backdrop {
-  background: rgb(0 0 0 / 0.65);
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: stretch;
-  margin: 0 auto;
-}
-
-.form .form-item {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 6px;
-}
-
-.form .form-item > label {
-  display: block;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-.form .form-item .text-field {
-  border-radius: 20px;
-  border: none;
-  padding: 10px 20px;
-  box-sizing: border-box;
-}
-
-.form-error {
-  /* min-height: 1.25em; */
-  color: #9f1d1d;
-  font-size: 14px;
-}
-
-.btn-primary {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-.btn-close {
-  position: absolute;
-  right: 40px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50px;
-  padding-top: 4px;
-  cursor: pointer;
-}
-
-.event-item #btn-event-register {
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1024px) {
-  .regstration-form {
-    padding: 20px;
-  }
-  .regstration-form h1 {
-    font-size: 20px;
-  }
-  dialog {
-    width: min(90%, 720px);
-  }
-}
-/* Place order success */
-.alert-dialog {
-  background-color: var(--trinary-color);
-  padding: 40px;
-  text-align: center;
-  color: var(--primary-color);
-  border-radius: 20px;
-}
-
-.alert-dialog p {
-  margin: 20px auto;
-}
-
-.alert-dialog button {
-  width: 100%;
-}
-
-.payment-item {
-  display: flex;
-  gap: 10px;
-  margin-top: 5px;
-  accent-color: var(--primary-color);
-}
-.payment-item label {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--primary-color);
-}
-
-/* Checkout */
+/* Checkout Screen */
 #checkout-content {
   padding: 0 40px;
 }
@@ -1321,6 +1321,7 @@ dialog::backdrop {
 #checkout-content .card h2 {
   margin-bottom: 10px;
 }
+/* Checkout Screen: Validation and First-Visit Subscription */
 .checkbox-text {
   margin: 10px 0;
   accent-color: var(--primary-color);
