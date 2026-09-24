@@ -1,0 +1,1849 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brewing Equipments</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body class="primary-background">
+    <header>
+      <nav>
+        <h3>Bean Boutique</h3>
+        <ul>
+          <li><a href="../pages/coffee_selection.html">Coffee</a></li>
+          <li><a class="active-nav" href="../pages/equipment.html">Equipment</a></li>
+          <li>
+            <a href="../pages/offers_subscription.html"
+              >Special Deals & Subscription</a
+            >
+          </li>
+          <li><a href="../pages/events.html">Events & Workshops</a></li>
+        </ul>
+        <a class="home-cart" id="home-cart-txt" href=""
+          ><span id="cart-item-count-text"></span> Items In Your Cart</a
+        >
+        <a class="home-cart" href="" id="home-cart-icon">
+          <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
+          <span id="cart-item-count"></span>
+        </a>
+      </nav>
+    </header>
+    <main id="equipment-selection">
+      <h1 id="equipment-selection-title">
+        ONE EQUIPMENT CAN BE LIFETIME, CHOOSE SUITABLE ONE
+      </h1>
+
+      <div id="equipment-selection-main-content">
+        <aside id="equipment-selction-filter">
+          <h3 id="title">Filters</h3>
+          <div class="filter-items-section">
+            <div class="dropdown">
+              <span>Brands</span>
+              <img
+                id="ic-brand-dropdown"
+                src="../assests/imgs/icons/ic_arrow_down.svg"
+                alt=""
+              />
+            </div>
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-mr-coffee"
+                value="Mr. Coffee"
+              />
+              <label for="brand-mr-coffee">Mr. Coffee</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-breville"
+                value="Breville"
+              />
+              <label for="brand-breville">Breville</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-keurig"
+                value="Keurig"
+              />
+              <label for="brand-keurig">Keurig</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-delonghi"
+                value="De'Longhi"
+              />
+              <label for="brand-delonghi">De'Longhi</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-moccamaster"
+                value="Moccamaster"
+              />
+              <label for="brand-moccamaster">Moccamaster</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-aeropress"
+                value="AeroPress"
+              />
+              <label for="brand-aeropress">AeroPress</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-bodum"
+                value="Bodum"
+              />
+              <label for="brand-bodum">Bodum</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-bialetti"
+                value="Bialetti"
+              />
+              <label for="brand-bialetti">Bialetti</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-baratza"
+                value="Baratza"
+              />
+              <label for="brand-baratza">Baratza</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-nespresso"
+                value="Nespresso"
+              />
+              <label for="brand-nespresso">Nespresso</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-takeya"
+                value="Takeya"
+              />
+              <label for="brand-takeya">Takeya</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-chemex"
+                value="Chemex"
+              />
+              <label for="brand-chemex">Chemex</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-ninja"
+                value="Ninja"
+              />
+              <label for="brand-ninja">Ninja</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-gaggia"
+                value="Gaggia"
+              />
+              <label for="brand-gaggia">Gaggia</label>
+            </div>
+
+            <div class="filter-item">
+              <input type="checkbox" name="brand" id="brand-oxo" value="OXO" />
+              <label for="brand-oxo">OXO</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-fellow"
+                value="Fellow"
+              />
+              <label for="brand-fellow">Fellow</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-cuisinart"
+                value="Cuisinart"
+              />
+              <label for="brand-cuisinart">Cuisinart</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-rancilio"
+                value="Rancilio"
+              />
+              <label for="brand-rancilio">Rancilio</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="brand"
+                id="brand-hario"
+                value="Hario"
+              />
+              <label for="brand-hario">Hario</label>
+            </div>
+          </div>
+
+          <div class="filter-items-section">
+            <div class="dropdown">
+              <span>Warranty</span>
+              <img
+                id="ic-brand-dropdown"
+                src="../assests/imgs/icons/ic_arrow_down.svg"
+                alt=""
+              />
+            </div>
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="warranty"
+                id="warranty-1-year-limited"
+                value="1 Year Limited Warranty"
+              />
+              <label for="warranty-1-year-limited"
+                >1 Year Limited Warranty</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="warranty"
+                id="warranty-2-year-limited"
+                value="2 Year Limited Warranty"
+              />
+              <label for="warranty-2-year-limited"
+                >2 Year Limited Warranty</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="warranty"
+                id="warranty-5-year-limited"
+                value="5 Year Limited Warranty"
+              />
+              <label for="warranty-5-year-limited"
+                >5 Year Limited Warranty</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="warranty"
+                id="warranty-2-year"
+                value="2 Year Warranty"
+              />
+              <label for="warranty-2-year">2 Year Warranty</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="warranty"
+                id="warranty-1-year-manufacturer"
+                value="1 Year Manufacturer Warranty"
+              />
+              <label for="warranty-1-year-manufacturer"
+                >1 Year Manufacturer Warranty</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="warranty"
+                id="warranty-1-year"
+                value="1 Year Warranty"
+              />
+              <label for="warranty-1-year">1 Year Warranty</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="warranty"
+                id="warranty-2-year-better-guarantee"
+                value="2 Year Better Guarantee"
+              />
+              <label for="warranty-2-year-better-guarantee"
+                >2 Year Better Guarantee</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="warranty"
+                id="warranty-1-year-registration"
+                value="1 Year Warranty (2 Year upon registration)"
+              />
+              <label for="warranty-1-year-registration"
+                >1 Year Warranty (2 Year upon registration)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="warranty"
+                id="warranty-3-year-limited"
+                value="3 Year Limited Warranty"
+              />
+              <label for="warranty-3-year-limited"
+                >3 Year Limited Warranty</label
+              >
+            </div>
+          </div>
+
+          <div class="filter-items-section">
+            <div class="dropdown">
+              <span>Category</span>
+              <img
+                id="ic-brand-dropdown"
+                src="../assests/imgs/icons/ic_arrow_down.svg"
+                alt=""
+              />
+            </div>
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-drip-coffee-maker"
+                value="Drip Coffee Maker"
+              />
+              <label for="category-drip-coffee-maker">Drip Coffee Maker</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-espresso-machine"
+                value="Espresso Machine"
+              />
+              <label for="category-espresso-machine">Espresso Machine</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-single-serve-pod-brewer"
+                value="Single Serve Pod Brewer"
+              />
+              <label for="category-single-serve-pod-brewer"
+                >Single Serve Pod Brewer</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-super-automatic-espresso-machine"
+                value="Super-Automatic Espresso Machine"
+              />
+              <label for="category-super-automatic-espresso-machine"
+                >Super-Automatic Espresso Machine</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-manual-immersion-press"
+                value="Manual Immersion Press"
+              />
+              <label for="category-manual-immersion-press"
+                >Manual Immersion Press</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-french-press"
+                value="French Press"
+              />
+              <label for="category-french-press">French Press</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-stovetop-moka-pot"
+                value="Stovetop Moka Pot"
+              />
+              <label for="category-stovetop-moka-pot">Stovetop Moka Pot</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-coffee-grinder"
+                value="Coffee Grinder"
+              />
+              <label for="category-coffee-grinder">Coffee Grinder</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-pour-over-brewer"
+                value="Pour-Over Brewer"
+              />
+              <label for="category-pour-over-brewer">Pour-Over Brewer</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-specialty-drip-coffee-maker"
+                value="Specialty Drip Coffee Maker"
+              />
+              <label for="category-specialty-drip-coffee-maker"
+                >Specialty Drip Coffee Maker</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-semi-automatic-espresso-machine"
+                value="Semi-Automatic Espresso Machine"
+              />
+              <label for="category-semi-automatic-espresso-machine"
+                >Semi-Automatic Espresso Machine</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-cold-brew-maker"
+                value="Cold Brew Maker"
+              />
+              <label for="category-cold-brew-maker">Cold Brew Maker</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-electric-pour-over-kettle"
+                value="Electric Pour-Over Kettle"
+              />
+              <label for="category-electric-pour-over-kettle"
+                >Electric Pour-Over Kettle</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="category"
+                id="category-pour-over-dripper"
+                value="Pour-Over Dripper"
+              />
+              <label for="category-pour-over-dripper">Pour-Over Dripper</label>
+            </div>
+          </div>
+
+          <div class="filter-items-section">
+            <div class="dropdown">
+              <span>Variant</span>
+              <img
+                id="ic-brand-dropdown"
+                src="../assests/imgs/icons/ic_arrow_down.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-black"
+                value="Black"
+              />
+              <label for="variant-black">Black</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-white"
+                value="White"
+              />
+              <label for="variant-white">White</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-stainless-steel-trim"
+                value="Stainless Steel Trim"
+              />
+              <label for="variant-stainless-steel-trim"
+                >Stainless Steel Trim</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-brushed-stainless-steel"
+                value="Brushed Stainless Steel"
+              />
+              <label for="variant-brushed-stainless-steel"
+                >Brushed Stainless Steel</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-black-truffle"
+                value="Black Truffle"
+              />
+              <label for="variant-black-truffle">Black Truffle</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-damson-blue"
+                value="Damson Blue"
+              />
+              <label for="variant-damson-blue">Damson Blue</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-sea-salt-white"
+                value="Sea Salt White"
+              />
+              <label for="variant-sea-salt-white">Sea Salt White</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-rhubarb-red"
+                value="Rhubarb Red"
+              />
+              <label for="variant-rhubarb-red">Rhubarb Red</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-silver"
+                value="Silver"
+              />
+              <label for="variant-silver">Silver</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-matte-black"
+                value="Matte Black"
+              />
+              <label for="variant-matte-black">Matte Black</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-polished-silver"
+                value="Polished Silver"
+              />
+              <label for="variant-polished-silver">Polished Silver</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-off-white"
+                value="Off-White"
+              />
+              <label for="variant-off-white">Off-White</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-pistachio"
+                value="Pistachio"
+              />
+              <label for="variant-pistachio">Pistachio</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-standard-clear-gray"
+                value="Standard Clear Gray"
+              />
+              <label for="variant-standard-clear-gray"
+                >Standard Clear Gray</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-clear-red-edition"
+                value="Clear Red Edition"
+              />
+              <label for="variant-clear-red-edition">Clear Red Edition</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-clear-blue-edition"
+                value="Clear Blue Edition"
+              />
+              <label for="variant-clear-blue-edition">Clear Blue Edition</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-chrome-34-oz-8-cup"
+                value="Chrome - 34 oz (8 Cup)"
+              />
+              <label for="variant-chrome-34-oz-8-cup"
+                >Chrome - 34 oz (8 Cup)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-chrome-12-oz-3-cup"
+                value="Chrome - 12 oz (3 Cup)"
+              />
+              <label for="variant-chrome-12-oz-3-cup"
+                >Chrome - 12 oz (3 Cup)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-copper-34-oz-8-cup"
+                value="Copper - 34 oz (8 Cup)"
+              />
+              <label for="variant-copper-34-oz-8-cup"
+                >Copper - 34 oz (8 Cup)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-matte-black-34-oz-8-cup"
+                value="Matte Black - 34 oz (8 Cup)"
+              />
+              <label for="variant-matte-black-34-oz-8-cup"
+                >Matte Black - 34 oz (8 Cup)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-silver-aluminum-6-cup"
+                value="Silver Aluminum - 6 Cup"
+              />
+              <label for="variant-silver-aluminum-6-cup"
+                >Silver Aluminum - 6 Cup</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-silver-aluminum-3-cup"
+                value="Silver Aluminum - 3 Cup"
+              />
+              <label for="variant-silver-aluminum-3-cup"
+                >Silver Aluminum - 3 Cup</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-silver-aluminum-9-cup"
+                value="Silver Aluminum - 9 Cup"
+              />
+              <label for="variant-silver-aluminum-9-cup"
+                >Silver Aluminum - 9 Cup</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-black-italia-6-cup"
+                value="Black Italia - 6 Cup"
+              />
+              <label for="variant-black-italia-6-cup"
+                >Black Italia - 6 Cup</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-black-stainless"
+                value="Black / Stainless"
+              />
+              <label for="variant-black-stainless">Black / Stainless</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-all-black-special-edition"
+                value="All-Black Special Edition"
+              />
+              <label for="variant-all-black-special-edition"
+                >All-Black Special Edition</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-matte-grey"
+                value="Matte Grey"
+              />
+              <label for="variant-matte-grey">Matte Grey</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-piano-black"
+                value="Piano Black"
+              />
+              <label for="variant-piano-black">Piano Black</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-red-metallic"
+                value="Red Metallic"
+              />
+              <label for="variant-red-metallic">Red Metallic</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-brushed-stainless-steel-thermal-carafe"
+                value="Brushed Stainless Steel (Thermal Carafe)"
+              />
+              <label for="variant-brushed-stainless-steel-thermal-carafe"
+                >Brushed Stainless Steel (Thermal Carafe)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-brushed-stainless-steel-glass-carafe"
+                value="Brushed Stainless Steel (Glass Carafe)"
+              />
+              <label for="variant-brushed-stainless-steel-glass-carafe"
+                >Brushed Stainless Steel (Glass Carafe)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-black-stainless-glass-carafe"
+                value="Black / Stainless (Glass Carafe)"
+              />
+              <label for="variant-black-stainless-glass-carafe"
+                >Black / Stainless (Glass Carafe)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-black-stainless-thermal-carafe"
+                value="Black / Stainless (Thermal Carafe)"
+              />
+              <label for="variant-black-stainless-thermal-carafe"
+                >Black / Stainless (Thermal Carafe)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-classic-wood-collar-8-cup"
+                value="Classic Wood Collar - 8 Cup"
+              />
+              <label for="variant-classic-wood-collar-8-cup"
+                >Classic Wood Collar - 8 Cup</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-classic-wood-collar-6-cup"
+                value="Classic Wood Collar - 6 Cup"
+              />
+              <label for="variant-classic-wood-collar-6-cup"
+                >Classic Wood Collar - 6 Cup</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-glass-handle-series-8-cup"
+                value="Glass Handle Series - 8 Cup"
+              />
+              <label for="variant-glass-handle-series-8-cup"
+                >Glass Handle Series - 8 Cup</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-thunder-black"
+                value="Thunder Black"
+              />
+              <label for="variant-thunder-black">Thunder Black</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-cherry-red"
+                value="Cherry Red"
+              />
+              <label for="variant-cherry-red">Cherry Red</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-polar-white"
+                value="Polar White"
+              />
+              <label for="variant-polar-white">Polar White</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-standard-glass-carafe"
+                value="Standard Glass Carafe"
+              />
+              <label for="variant-standard-glass-carafe"
+                >Standard Glass Carafe</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-compact-32-oz-version"
+                value="Compact 32-oz Version"
+              />
+              <label for="variant-compact-32-oz-version"
+                >Compact 32-oz Version</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-matte-black-09-liter"
+                value="Matte Black (0.9 Liter)"
+              />
+              <label for="variant-matte-black-09-liter"
+                >Matte Black (0.9 Liter)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-matte-white-09-liter"
+                value="Matte White (0.9 Liter)"
+              />
+              <label for="variant-matte-white-09-liter"
+                >Matte White (0.9 Liter)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-polished-copper-09-liter"
+                value="Polished Copper (0.9 Liter)"
+              />
+              <label for="variant-polished-copper-09-liter"
+                >Polished Copper (0.9 Liter)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-warm-pink-09-liter"
+                value="Warm Pink (0.9 Liter)"
+              />
+              <label for="variant-warm-pink-09-liter"
+                >Warm Pink (0.9 Liter)</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-stainless-steel"
+                value="Stainless Steel"
+              />
+              <label for="variant-stainless-steel">Stainless Steel</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-copper-stainless"
+                value="Copper Stainless"
+              />
+              <label for="variant-copper-stainless">Copper Stainless</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-black-stainless-finish"
+                value="Black Stainless"
+              />
+              <label for="variant-black-stainless-finish"
+                >Black Stainless</label
+              >
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-brushed-stainless"
+                value="Brushed Stainless"
+              />
+              <label for="variant-brushed-stainless">Brushed Stainless</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-black-edition"
+                value="Black Edition"
+              />
+              <label for="variant-black-edition">Black Edition</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-white-ceramic"
+                value="White Ceramic"
+              />
+              <label for="variant-white-ceramic">White Ceramic</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-red-ceramic"
+                value="Red Ceramic"
+              />
+              <label for="variant-red-ceramic">Red Ceramic</label>
+            </div>
+
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                name="variant"
+                id="variant-matte-black-ceramic"
+                value="Matte Black Ceramic"
+              />
+              <label for="variant-matte-black-ceramic"
+                >Matte Black Ceramic</label
+              >
+            </div>
+          </div>
+          <button class="btn-secondary" id="btn-equipment-filter-apply">
+            Apply
+          </button>
+          <button class="btn-secondary" id="btn-equipment-filter-clear">
+            Clear Filters
+          </button>
+        </aside>
+        <div id="equipment-selection-content">
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="Search  equipment Beans"
+              id="equipment-search-bar"
+            />
+            <img id="icon" src="../assests/imgs/icons/ic_search.svg" />
+          </div>
+          <div id="equipment-selection-items">
+            <!-- Item 1: Mr. Coffee (No Discount) -->
+            <div class="equipment-item" id="brewing-equipment-item-1">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80"
+                alt="Classic Drip Coffee Maker 12-Cup"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Classic Drip Coffee Maker 12-Cup</p>
+                  <p id="brand">Mr. Coffee</p>
+                  <p id="desc">
+                    Simple and efficient 12-cup drip coffee maker featuring an
+                    auto-pause feature and an easy-view water window.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$34.99</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: Breville (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-2">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=800&q=80"
+                alt="Barista Touch Espresso Machine"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Barista Touch Espresso Machine</p>
+                  <p id="brand">Breville</p>
+                  <p id="desc">
+                    Automated touch screen espresso machine with integrated
+                    precision conical burr grinder and automatic milk texturing.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$899.95</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$100.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Keurig (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-3">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80"
+                alt="K-Classic Single Serve Coffee Maker"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">K-Classic Single Serve Coffee Maker</p>
+                  <p id="brand">Keurig</p>
+                  <p id="desc">
+                    Popular single-serve pod coffee maker brewing multiple cup
+                    sizes with simple button controls.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$79.99</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$30.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: De'Longhi (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-4">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+                alt="Magnifica Automatic Espresso Machine"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Magnifica Automatic Espresso Machine</p>
+                  <p id="brand">De'Longhi</p>
+                  <p id="desc">
+                    Compact bean-to-cup espresso machine with a manual
+                    cappuccino system for custom froth creation.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$549.95</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$150.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5: Moccamaster (No Discount) -->
+            <div class="equipment-item" id="brewing-equipment-item-5">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1520970014086-2208d157c9e2?auto=format&fit=crop&w=800&q=80"
+                alt="KBGV Select Coffee Maker"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">KBGV Select Coffee Maker</p>
+                  <p id="brand">Moccamaster</p>
+                  <p id="desc">
+                    Handmade Dutch drip coffee brewer certified by the SCA for
+                    precise temperature extraction and taste.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$359.00</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6: AeroPress (No Discount) -->
+            <div class="equipment-item" id="brewing-equipment-item-6">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=80"
+                alt="AeroPress Original Coffee Press"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">AeroPress Original Coffee Press</p>
+                  <p id="brand">AeroPress</p>
+                  <p id="desc">
+                    Portable immersion coffee maker using gentle pressure to
+                    create smooth, non-bitter full-bodied coffee.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$39.95</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 7: Bodum (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-7">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1572119865084-43c285814d63?auto=format&fit=crop&w=800&q=80"
+                alt="Chambord French Press Coffee Maker"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Chambord French Press Coffee Maker</p>
+                  <p id="brand">Bodum</p>
+                  <p id="desc">
+                    Iconic glass and stainless steel French press coffee maker
+                    designed to extract aromatic oils and flavor.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$24.99</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$10.01</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 8: Bialetti (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-8">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1521302080334-4bebac2763a6?auto=format&fit=crop&w=800&q=80"
+                alt="Classic Stovetop Espresso Maker 6-Cup"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Classic Stovetop Espresso Maker 6-Cup</p>
+                  <p id="brand">Bialetti</p>
+                  <p id="desc">
+                    Traditional octagonal aluminum Moka pot for brewing
+                    authentic, rich Italian espresso on the stovetop.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$37.99</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$7.01</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 9: Baratza (No Discount) -->
+            <div class="equipment-item" id="brewing-equipment-item-9">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=800&q=80"
+                alt="Virtuoso+ Conical Burr Coffee Grinder"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Virtuoso+ Conical Burr Coffee Grinder</p>
+                  <p id="brand">Baratza</p>
+                  <p id="desc">
+                    High-performance precision coffee grinder featuring a
+                    digital timer for consistent dosing.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$249.95</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10: Nespresso (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-10">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+                alt="VertuoPlus Coffee and Espresso Machine"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">VertuoPlus Coffee and Espresso Machine</p>
+                  <p id="brand">Nespresso</p>
+                  <p id="desc">
+                    Single-serve brewing system using Centrifusion technology to
+                    brew both coffee and authentic espresso.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$129.00</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$40.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 11: Breville Thermal (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-11">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+                alt="Precision Brewer Thermal Coffee Maker"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Precision Brewer Thermal Coffee Maker</p>
+                  <p id="brand">Breville</p>
+                  <p id="desc">
+                    60-oz drip coffee maker with precise temperature control and
+                    customizable brew modes.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$299.95</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$30.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 12: Takeya (No Discount) -->
+            <div class="equipment-item" id="brewing-equipment-item-12">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80"
+                alt="Cold Brew Coffee Maker 1-Quart"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Cold Brew Coffee Maker 1-Quart</p>
+                  <p id="brand">Takeya</p>
+                  <p id="desc">
+                    Airtight pitcher with a fine-mesh coffee filter designed to
+                    produce smooth, low-acid cold brew extract.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$27.99</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 13: Chemex (No Discount) -->
+            <div class="equipment-item" id="brewing-equipment-item-13">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=800&q=80"
+                alt="Pour-Over Glass Coffeemaker 8-Cup"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Pour-Over Glass Coffeemaker 8-Cup</p>
+                  <p id="brand">Chemex</p>
+                  <p id="desc">
+                    Non-porous Borosilicate glass brewer featuring an elegant
+                    hourglass shape and polished wood collar.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$49.50</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 14: Ninja (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-14">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=800&q=80"
+                alt="Specialty 10-Cup Coffee Maker"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Specialty 10-Cup Coffee Maker</p>
+                  <p id="brand">Ninja</p>
+                  <p id="desc">
+                    SCA-certified coffee maker capable of brewing iced coffee,
+                    specialty concentrates, and custom cup sizes.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$159.99</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$20.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 15: Gaggia (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-15">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=800&q=80"
+                alt="Gaggia Classic Pro Espresso Machine"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Gaggia Classic Pro Espresso Machine</p>
+                  <p id="brand">Gaggia</p>
+                  <p id="desc">
+                    Entry-level professional espresso machine featuring a
+                    commercial-style portafilter and three-way solenoid valve.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$449.00</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$50.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 16: OXO (No Discount) -->
+            <div class="equipment-item" id="brewing-equipment-item-16">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+                alt="8-Cup Cold Brew Maker"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">8-Cup Cold Brew Maker</p>
+                  <p id="brand">OXO</p>
+                  <p id="desc">
+                    Cold brew system featuring a rainmaker cap for even water
+                    distribution and a fine stainless-steel mesh filter.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$51.95</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 17: Fellow (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-17">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80"
+                alt="Stagg EKG Electric Gooseneck Kettle"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Stagg EKG Electric Gooseneck Kettle</p>
+                  <p id="brand">Fellow</p>
+                  <p id="desc">
+                    Precision pour-over electric kettle with variable
+                    temperature control and a minimalist aesthetic.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$165.00</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$30.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 18: Cuisinart (No Discount) -->
+            <div class="equipment-item" id="brewing-equipment-item-18">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80"
+                alt="Programmable 14-Cup Coffeemaker"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Programmable 14-Cup Coffeemaker</p>
+                  <p id="brand">Cuisinart</p>
+                  <p id="desc">
+                    Large capacity drip coffee machine equipped with fully
+                    automatic settings and brew strength control.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$99.95</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 19: Rancilio (No Discount) -->
+            <div class="equipment-item" id="brewing-equipment-item-19">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?auto=format&fit=crop&w=800&q=80"
+                alt="Silvia Espresso Machine"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">Silvia Espresso Machine</p>
+                  <p id="brand">Rancilio</p>
+                  <p id="desc">
+                    Semi-automatic commercial-grade espresso machine crafted
+                    with a heavy-duty brass boiler and steel housing.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$865.00</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 20: Hario (Discounted) -->
+            <div class="equipment-item" id="brewing-equipment-item-20">
+              <img
+                id="equipment-item-img"
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+                alt="V60 Ceramic Coffee Dripper Size 02"
+              />
+              <div class="equipment-item-body">
+                <div class="equipment-item-content">
+                  <p id="title">V60 Ceramic Coffee Dripper Size 02</p>
+                  <p id="brand">Hario</p>
+                  <p id="desc">
+                    Iconic Japanese pour-over cone dripper designed with spiral
+                    ribs for maximum coffee expansion.
+                  </p>
+                </div>
+                <hr class="divider" />
+                <div class="equipment-item-footer">
+                  <div class="equipment-item-price">
+                    <h4 id="price">$22.00</h4>
+                    <div class="save-price">
+                      <p id="title-save">Save</p>
+                      <p id="value-save">$3.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="body">
+        <div id="address">
+          <p id="title">Bean Boutique's Location</p>
+          <p id="detail">88 Friargate, Preston PR1 2ED, United Kingdom</p>
+          <iframe
+            id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147.40847274917917!2d-2.706184880422745!3d53.7621525226291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b7270eb2cb5db%3A0x6a32a0d74fb0f95c!2s88%20Friargate%2C%20Preston%20PR1%202ED%2C%20UK!5e0!3m2!1sen!2s!4v1789835519488!5m2!1sen!2s"
+            style="border: 0"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div id="references">
+          <h1>Bean Boutique</h1>
+          <div id="reference-body">
+            <div class="link-collection-form">
+              <h6>INFORMATION</h6>
+              <ul class="link-collection">
+                <li><a href="/pages/contact_us.html">Contact Us</a></li>
+                <li>
+                  <a href="/pages/terms_and_condition.html"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="/pages/privacy_policies.html">Privacy & Policies</a>
+                </li>
+                <li><a href="/pages/return_policies.html">Return Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="link-collection-form">
+              <h6>SOCIAL MEDIA</h6>
+              <ul class="link-collection">
+                <li>
+                  <a href="https://www.facebook.com/linhtetko101"
+                    ><img src="../assests/imgs/icons/ic_facebook.svg" alt="" />
+                    Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/linhtetko101"
+                    ><img src="../assests/imgs/icons/ic_instagram.svg" alt="" />
+                    Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://x.com/linhtetko101"
+                    ><img src="../assests/imgs/icons/ic_twitter_x.svg" alt="" />
+                    X</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="link-collection-form">
+              <h6>QUICK LINKS</h6>
+              <ul class="link-collection">
+                <li><a href="/pages/coffee_selection.html">Coffee Beans</a></li>
+                <li><a href="/pages/equipment.html">Brewing Equipments</a></li>
+                <li>
+                  <a href="/pages/offers_subscription.html"
+                    >Special Deals & Subscription</a
+                  >
+                </li>
+                <li><a href="pages/events.html">Events & Workshops</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="copyright">&copy; 2026 Bean Boutique | All Rights Reserved</p>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+    <script src="../index.js"></script>
+    <script src="../js/brewing_machine_selection.js"></script>
+  </body>
+</html>

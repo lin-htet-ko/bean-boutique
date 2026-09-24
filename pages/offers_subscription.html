@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Offers & Subscription</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body class="primary-background">
+
+    <dialog id="member_register_dialog">
+      <div class="regstration-form">
+        <button class="btn-close">
+          <img src="../assests/imgs/icons/ic_close.svg" alt="" />
+        </button>
+        <h1>Membership Registeration</h1>
+        <form action="" class="form">
+          <div class="form-item">
+            <label for="">Full Name*</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="text-field"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Email*</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="text-field"
+              placeholder="hi@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Phone Number*</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              class="text-field"
+              placeholder="XXXXXXXXX"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Payment Method</label>
+            <div class="payment-item">
+              <input type="radio" name="payment_method" id="paypal" value="PayPal" />
+              <label for="">PayPal</label>
+            </div>
+
+            <div class="payment-item">
+              <input type="radio" name="payment_method" id="banking" value="Banking" checked/>
+              <label for="">Banking</label>
+            </div>
+          </div>
+
+          <input type="submit" value="Register" class="btn-primary" id="btn-register-memeber" />
+        </form>
+      </div>
+    </dialog>
+
+    <dialog id="member_register_success_dialog">
+    <div class="alert-dialog">
+        <h2>Registered Successfully 🎉</h2>
+        <p>Your registration is now complete. We will send the event details to your email.</p>
+        <button class="btn-primary">Close</button>
+    </div>
+    </dialog>
+
+    <header>
+      <nav>
+        <h3>Bean Boutique</h3>
+        <ul>
+          <li><a href="../pages/coffee_selection.html">Coffee</a></li>
+          <li><a href="../pages/equipment.html">Equipment</a></li>
+          <li>
+            <a class="active-nav" href="../pages/offers_subscription.html"
+              >Special Deals & Subscription</a
+            >
+          </li>
+          <li><a href="../pages/events.html">Events & Workshops</a></li>
+        </ul>
+        <a class="home-cart" id="home-cart-txt" href=""
+          ><span id="cart-item-count-text"></span> Items In Your Cart</a
+        >
+        <a class="home-cart" href="" id="home-cart-icon">
+          <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
+          <span id="cart-item-count"></span>
+        </a>
+      </nav>
+    </header>
+    <main id="offer_sub_content">
+      <div
+        id="membership-info-card"
+        class="full-width-verticle-list-with-header"
+      >
+        <h2 class="list-header">SAVE YOUR ORDER WITH MEMBERSHIP</h2>
+        <div class="list-content">
+          <div class="card">
+            <h3>What will you cover in your Membership tier?</h3>
+            <div class="card-body">
+              <div class="benefit-item">
+                <img src="../assests/imgs/img_deli.jpg" alt="" srcset="" />
+                <div class="text-section">
+                  <h5 class="title">Free Shipping over $65</h5>
+                  <p class="desc">
+                    Get your favorite whole beans, cold brew cans, and gear delivered straight to your door at zero extra cost whenever your cart hits $65.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <img
+                  src="../assests/imgs/img_special_price.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="text-section">
+                  <h5 class="title">Save 10% on Coffee Bean Order</h5>
+                  <p class="desc">
+                    Keep your pantry stocked for less. Members enjoy an automatic 10% discount on every coffee bean purchase, from everyday single-origin picks to seasonal espresso blends.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <img
+                  src="../assests/imgs/img_special_price.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="text-section">
+                  <h5 class="title">Save 5% on Brewing Gear</h5>
+                  <p class="desc">
+                    Upgrade your home coffee setup. Take 5% off all manual brewers, grinders, filters, and accessories to pull shop-quality cups right in your kitchen.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <img src="../assests/imgs/img_sale.jpg" alt="" srcset="" />
+                <div class="text-section">
+                  <h5 class="title">Member-Only Events & Workshops</h5>
+                  <p class="desc">
+                    Go behind the scenes with early access and exclusive tickets to intimate cupping sessions, latte art masterclasses, and hands-on brewing workshops hosted by our lead baristas.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <img
+                  src="../assests/imgs/img_coffee_workshop.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="text-section">
+                  <h5 class="title">Member-Only Offer Coupons</h5>
+                  <p class="desc">
+                    Unlock exclusive perks throughout the year—enjoy surprise digital discount codes, seasonal drink vouchers, and special promotional deals saved just for our community.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button href="" id="member-register">Not Member Yet? Register Here</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-width-verticle-list-with-header">
+        <h2 class="list-header">SPECIAL OFFERS</h2>
+        <div class="list-content">
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+              alt="Welcome Gold Member Free Hand-Drip"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">GOLDWELCOME24</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Welcome Gold Member Free Hand-Drip</h4>
+                <p>
+                  Exclusive welcome reward for upgrading to Gold tier. Enjoy any
+                  single-origin pour-over coffee on the house.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd"
+              alt="Double Points Morning Espresso Run"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">EARLYBIRD2X</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Double Points Morning Espresso Run</h4>
+                <p>
+                  Earn double loyalty points on any espresso-based drink ordered
+                  between 7:00 AM and 10:00 AM.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+              alt="Buy One Get One Free Latte"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">BOGOLATTE2024</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Buy One Get One Free Latte</h4>
+                <p>
+                  Bring a friend! Buy any size signature flavored latte and get
+                  a second one of equal or lesser value for free.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1517701604599-bb29b565090c"
+              alt="Complimentary Birthday Artisan Pastry"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">HBDPASTRY</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Complimentary Birthday Artisan Pastry</h4>
+                <p>
+                  Happy Birthday! Claim a free butter croissant or pastry of
+                  your choice with any beverage purchase.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38"
+              alt="$5 Off Whole Bean Coffee Bag"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">BEAN5OFF</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>$5 Off Whole Bean Coffee Bag</h4>
+                <p>
+                  Take the café experience home. Get $5 off any 250g bag of
+                  house-roasted whole bean coffee.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+              alt="Free Cold Brew Upgrade"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">COLDBREWMAX</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Free Cold Brew Upgrade</h4>
+                <p>
+                  Upgrade your medium nitrogen or signature cold brew to a large
+                  size at no extra cost.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1541167760496-1628856ab772"
+              alt="Plant-Based Milk Switch on the House"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">OATPOWER</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Plant-Based Milk Switch on the House</h4>
+                <p>
+                  Member perk: Zero extra charge for oat, almond, or coconut
+                  milk alternatives on any coffee order.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1579992357154-faf4bde95b3d"
+              alt="Matcha Latte Member Special"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">MATCHA20</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Matcha Latte Member Special</h4>
+                <p>
+                  Enjoy 20% off our ceremonial grade Japanese iced or hot matcha
+                  latte menu.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e"
+              alt="Breakfast Combo Discount"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">MORNINGFUEL</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Breakfast Combo Discount</h4>
+                <p>
+                  Save $3 when pairing any warm breakfast sandwich with a hot
+                  Americano or Cappuccino.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1551024709-8f23befc6f87"
+              alt="Free Extra Espresso Shot"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">BOOSTSHOT</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Free Extra Espresso Shot</h4>
+                <p>
+                  Need a boost? Add an extra shot of our signature espresso
+                  blend to your drink for free.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+              alt="Afternoon Tea & Mocha Hour"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">AFTERNOON25</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Afternoon Tea & Mocha Hour</h4>
+                <p>
+                  Get 25% off all mochas and hot chocolates between 2:00 PM and
+                  5:00 PM on weekdays.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 12 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907"
+              alt="Reusable Cup Discount Booster"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">ECOWARRIOR</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Reusable Cup Discount Booster</h4>
+                <p>
+                  Bring your personal coffee tumbler and receive double your
+                  usual eco-discount plus 10 bonus points.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 13 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3"
+              alt="Iced Frappé Summer Treat"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">CHILLOUT2</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Iced Frappé Summer Treat</h4>
+                <p>
+                  Enjoy $2 off any blended frozen frappé or iced specialty drink
+                  on hot afternoons.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 14 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1582293041079-7814c2f12063"
+              alt="Weekend Family & Friends Pass"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">WEEKENDPACK</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Weekend Family & Friends Pass</h4>
+                <p>
+                  15% off total bill when purchasing 4 or more beverages during
+                  weekend store hours.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 15 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+              alt="Platinum Tier Reserve Tasting"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">RESERVEFREE</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Platinum Tier Reserve Tasting</h4>
+                <p>
+                  Complimentary cup of our limited reserve single-origin bean
+                  for Platinum members.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 16 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2"
+              alt="Flat White Friday"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">FLATFRI250</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Flat White Friday</h4>
+                <p>
+                  Kick off the weekend with a flat white coffee for just $2.50
+                  for all tier members.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 17 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13"
+              alt="Free Flavor Syrup Add-On"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">SWEETSHOT</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Free Flavor Syrup Add-On</h4>
+                <p>
+                  Customize your coffee with a free pump of vanilla, caramel, or
+                  hazelnut syrup.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 18 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1518057111178-44a106bad636"
+              alt="Chemex Manual Brew Pass"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">CHEMEX30</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Chemex Manual Brew Pass</h4>
+                <p>
+                  Try our manual pour-over Chemex brew selection with a 30%
+                  discount voucher.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 19 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1572442388796-11668a67e53d"
+              alt="Student & Worker Study Boost"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">STUDYREFILL</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Student & Worker Study Boost</h4>
+                <p>
+                  Show your valid member ID for unlimited $1 refills on drip
+                  coffee after 6:00 PM.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 20 -->
+          <div class="deal-item">
+            <img
+              id="deal-img"
+              src="https://images.unsplash.com/photo-1507133750040-4a8f57021571"
+              alt="Member Anniversary Free Specialty Drink"
+            />
+            <div class="deal-item-content">
+              <div class="deal-item-coupon-code-wrapper">
+                <div class="deal-item-coupon-code-content">
+                  <strong class="deal-item-coupon-code">HAPPYMEMBER1YR</strong>
+                  <button>
+                    <img
+                      src="../assests/imgs/icons/ic_copy.svg"
+                      alt="Copy Icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="deal-item-body">
+                <h4>Member Anniversary Free Specialty Drink</h4>
+                <p>
+                  Celebrating your membership milestone! Claim any drink of any
+                  size completely free.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="body">
+        <div id="address">
+          <p id="title">Bean Boutique's Location</p>
+          <p id="detail">88 Friargate, Preston PR1 2ED, United Kingdom</p>
+          <iframe
+            id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147.40847274917917!2d-2.706184880422745!3d53.7621525226291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b7270eb2cb5db%3A0x6a32a0d74fb0f95c!2s88%20Friargate%2C%20Preston%20PR1%202ED%2C%20UK!5e0!3m2!1sen!2s!4v1789835519488!5m2!1sen!2s"
+            style="border: 0"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div id="references">
+          <h1>Bean Boutique</h1>
+          <div id="reference-body">
+            <div class="link-collection-form">
+              <h6>INFORMATION</h6>
+              <ul class="link-collection">
+                <li><a href="/pages/contact_us.html">Contact Us</a></li>
+                <li>
+                  <a href="/pages/terms_and_condition.html"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="/pages/privacy_policies.html">Privacy & Policies</a>
+                </li>
+                <li><a href="/pages/return_policies.html">Return Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="link-collection-form">
+              <h6>SOCIAL MEDIA</h6>
+              <ul class="link-collection">
+                <li>
+                  <a href="https://www.facebook.com/linhtetko101"
+                    ><img src="assests/imgs/icons/ic_facebook.svg" alt="" />
+                    Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/linhtetko101"
+                    ><img src="assests/imgs/icons/ic_instagram.svg" alt="" />
+                    Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://x.com/linhtetko101"
+                    ><img src="assests/imgs/icons/ic_twitter_x.svg" alt="" />
+                    X</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="link-collection-form">
+              <h6>QUICK LINKS</h6>
+              <ul class="link-collection">
+                <li><a href="/pages/coffee_selection.html">Coffee Beans</a></li>
+                <li><a href="/pages/equipment.html">Brewing Equipments</a></li>
+                <li>
+                  <a href="/pages/offers_subscription.html"
+                    >Special Deals & Subscription</a
+                  >
+                </li>
+                <li><a href="pages/events.html">Events & Workshops</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="copyright">&copy; 2026 Bean Boutique | All Rights Reserved</p>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+    <script src="../index.js"></script>
+    <script src="../js/deal_subscription.js"></script>
+  </body>
+</html>

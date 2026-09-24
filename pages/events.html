@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & Workshops</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body class="primary-background">
+
+    <dialog id="event_register_dialog">
+      <div class="regstration-form">
+        <button class="btn-close">
+          <img src="../assests/imgs/icons/ic_close.svg" alt="" />
+        </button>
+        <h1>Event Registeration</h1>
+        <h4 id="event_name">Acoustic Sunday Sessions: Live Folk & Specialty Brews</h4>
+              <p id="event_desc">
+                Relaxing Sunday afternoon featuring local acoustic
+                singer-songwriters alongside single-origin batch brews and
+                pastries.<br /><br />
+              </p>
+              <br><br>
+        <form action="" class="form">
+          <div class="form-item">
+            <label for="">Full Name*</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="text-field"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Email*</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="text-field"
+              placeholder="hi@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Phone Number*</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              class="text-field"
+              placeholder="XXXXXXXXX"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Membership Number (if member)</label>
+            <input
+              type="text"
+              name="membership_number"
+              id="membership_number"
+              class="text-field"
+              placeholder="0FJX7OPA99"
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Any suggestion or message (optional)</label>
+            <textarea
+              name="message"
+              id="message"
+              class="text-field"
+              placeholder="Suggestion"
+            ></textarea>
+          </div>
+
+          <input id="btn-register-event" type="submit" value="Register" class="btn-primary" />
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Event Registeration Success Dialog -->
+     <dialog id="event_register_success_dialog">
+    <div class="alert-dialog">
+        <h2>Registered Successfully 🎉</h2>
+        <p>Your registration is now complete. We will send the event details to your email.</p>
+        <button class="btn-primary" id="btn-close-success-dialog">Close</button>
+    </div>
+    </dialog>
+
+    <header>
+      <nav>
+        <h3>Bean Boutique</h3>
+        <ul>
+          <li><a href="../pages/coffee_selection.html">Coffee</a></li>
+          <li><a href="../pages/equipment.html">Equipment</a></li>
+          <li>
+            <a href="../pages/offers_subscription.html"
+              >Special Deals & Subscription</a
+            >
+          </li>
+          <li><a class="active-nav" href="../pages/events.html">Events & Workshops</a></li>
+        </ul>
+        <a class="home-cart" id="home-cart-txt" href=""
+          ><span id="cart-item-count-text"></span> Items In Your Cart</a
+        >
+        <a class="home-cart" href="" id="home-cart-icon">
+          <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
+          <span id="cart-item-count"></span>
+        </a>
+      </nav>
+    </header>
+    <main id="event-page-content">
+
+      <div class="full-width-verticle-list-with-header">
+        <h2 class="list-header">SPECIAL EVENTS AND WORKSHOPS</h2>
+        <div class="warning-message message">
+          <img src="../assests/imgs/icons/ic_info.svg" />
+          <p>
+            Special Offer is only for those who can access
+            <b>PREMIUM</b> subscription.
+          </p>
+        </div>
+        <div class="list-content">
+          <!-- Member Event 1 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+              alt="VIP Rare Micro-Lot Tasting & Cupping Session"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">VIP Rare Micro-Lot Tasting & Cupping Session</h4>
+              <p class="event-item-desc">
+                An exclusive private tasting of ultra-rare, high-altitude
+                Panamanian Geisha coffees before public release, including a
+                complimentary 250g bag.<br /><br />
+                <strong>Time:</strong> 2026-12-02 06:30 PM<br />
+                <strong>Location:</strong> The Vault Roastery, 18 Colston
+                Street, Bristol, BS1 5AP, UK<br />
+                <strong>Fee:</strong> Free (Members Only)
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Member Event 2 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38"
+              alt="Advanced Espresso Profiling Masterclass"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Advanced Espresso Profiling Masterclass</h4>
+              <p class="event-item-desc">
+                Private, hands-on workshop focusing on pressure profiling, flow
+                rate manipulation, and water temperature variables on commercial
+                machines.<br /><br />
+                <strong>Time:</strong> 2026-12-05 07:00 PM<br />
+                <strong>Location:</strong> Grind & Co. Lab, 22 Commercial
+                Street, London, E1 6LP, UK<br />
+                <strong>Fee:</strong> $25
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Member Event 3 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+              alt="Private Q-Grader Sensorial Calibration Workshop"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Private Q-Grader Sensorial Calibration Workshop</h4>
+              <p class="event-item-desc">
+                Develop your palate alongside certified head roasters using
+                official SCA sensory kits to identify complex acidity, body, and
+                taint flaws.<br /><br />
+                <strong>Time:</strong> 2026-12-09 05:30 PM<br />
+                <strong>Location:</strong> Origin Brew Bar, 36 King Street,
+                Edinburgh, EH3 6RJ, UK<br />
+                <strong>Fee:</strong> $20
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-width-verticle-list-with-header">
+        <h2 class="list-header">EVENTS & WORKSHOPS</h2>
+        <div class="list-content">
+          <!-- Event 1 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+              alt="Artisan Espresso Extraction & Dialling-In Masterclass"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">
+                Artisan Espresso Extraction & Dialling-In Masterclass
+              </h4>
+              <p class="event-item-desc">
+                Hands-on workshop covering grind adjustments, dose weights, and
+                yield ratios to dial in the perfect double espresso.<br /><br />
+                <strong>Time:</strong>
+                <span class="event-item-date">2026-10-10 10:00 AM</span><br />
+                <strong>Location:</strong>
+                <span class="event-item-location">spa</span><br />
+                <strong>Fee:</strong> <span class="event-item-fee">$45</span>
+              </p>
+              <button class="btn-secondary" id="btn-event-register">
+                Register
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd"
+              alt="Acoustic Sunday Sessions: Live Folk & Specialty Brews"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">
+                Acoustic Sunday Sessions: Live Folk & Specialty Brews
+              </h4>
+              <p class="event-item-desc">
+                Relaxing Sunday afternoon featuring local acoustic
+                singer-songwriters alongside single-origin batch brews and
+                pastries.<br /><br />
+                <strong>Time:</strong> 2026-10-11 02:00 PM<br />
+                <strong>Location:</strong> Bean & Bloom Cafe, 82 High Street,
+                Manchester, M4 1HQ, UK<br />
+                <strong>Fee:</strong> Free
+              </p>
+              <button class="btn-secondary" id="btn-event-register">
+                Register
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38"
+              alt="Latte Art Throwdown & Barista Competition"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">
+                Latte Art Throwdown & Barista Competition
+              </h4>
+              <p class="event-item-desc">
+                Local baristas head-to-head in a fast-paced pour competition.
+                Spectators receive a free drink token with entry.<br /><br />
+                <strong>Time:</strong> 2026-10-15 06:30 PM<br />
+                <strong>Location:</strong> Grind & Co., 22 Commercial Street,
+                London, E1 6LP, UK<br />
+                <strong>Fee:</strong> $5
+              </p>
+              <button class="btn-secondary" id="btn-event-register">
+                Register
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 4 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1541167760496-1628856ab772"
+              alt="Specialty Coffee Cupping & Origins Tasting"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">
+                Specialty Coffee Cupping & Origins Tasting
+              </h4>
+              <p class="event-item-desc">
+                Guided blind tasting session exploring distinct flavor profiles
+                across Ethiopian, Colombian, and Kenyan coffee beans.<br /><br />
+                <strong>Time:</strong> 2026-10-17 11:00 AM<br />
+                <strong>Location:</strong> Pavement Coffee Roasters, 12 Northern
+                Quarter, Leeds, LS1 2ED, UK<br />
+                <strong>Fee:</strong> $12
+              </p>
+              <button class="btn-secondary" id="btn-event-register">
+                Register
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 5 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1521017432531-fbd92d768814"
+              alt="Coffee & Canvas: Open Evening Art Exhibition"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Coffee & Canvas: Open Evening Art Exhibition</h4>
+              <p class="event-item-desc">
+                Evening showcase of contemporary oil paintings by local
+                neighborhood artists with seasonal filter coffees and craft
+                treats.<br /><br />
+                <strong>Time:</strong> 2026-10-22 07:00 PM<br />
+                <strong>Location:</strong> The Canvas Espresso Bar, 5 Pink Lane,
+                Newcastle upon Tyne, NE1 5DW, UK<br />
+                <strong>Fee:</strong> Free
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 6 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+              alt="V60 & Chemex Manual Pour-Over Workshop"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">V60 & Chemex Manual Pour-Over Workshop</h4>
+              <p class="event-item-desc">
+                Learn technique fundamentals for pour-over coffee, including
+                water chemistry, bloom times, and pouring patterns.<br /><br />
+                <strong>Time:</strong> 2026-10-24 10:30 AM<br />
+                <strong>Location:</strong> Origin Brew Bar, 36 King Street,
+                Edinburgh, EH3 6RJ, UK<br />
+                <strong>Fee:</strong> $30
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 7 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1529892485617-25f63cd7b1e9"
+              alt="Monthly Book Club: Contemporary Fiction & Cappuccinos"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Monthly Book Club: Contemporary Fiction & Cappuccinos</h4>
+              <p class="event-item-desc">
+                Friendly group discussion on this month's featured novel over
+                house-roasted coffees and baked goods.<br /><br />
+                <strong>Time:</strong> 2026-10-27 06:00 PM<br />
+                <strong>Location:</strong> Page & Pour Cafe, 45 Bold Street,
+                Liverpool, L1 4DN, UK<br />
+                <strong>Fee:</strong> Free
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 8 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+              alt="Home Roasting Basics: Green Beans to Brew"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Home Roasting Basics: Green Beans to Brew</h4>
+              <p class="event-item-desc">
+                Introductory session on roasting coffee beans at home using
+                simple equipment, covering roast profiles and bean selection.<br /><br />
+                <strong>Time:</strong> 2026-10-30 01:00 PM<br />
+                <strong>Location:</strong> Roastworks Workshop, 3 St Mary's
+                Street, Cardiff, CF10 1AT, UK<br />
+                <strong>Fee:</strong> $25
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 9 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+              alt="Spiced Pumpkin & Autumn Flavors Tasting Event"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Spiced Pumpkin & Autumn Flavors Tasting Event</h4>
+              <p class="event-item-desc">
+                Seasonal menu preview tasting house-made autumn syrups, spiced
+                lattes, and artisanal baked pies.<br /><br />
+                <strong>Time:</strong> 2026-10-31 03:00 PM<br />
+                <strong>Location:</strong> The Harvest Roastery, 19 Guildhall
+                Street, Cambridge, CB2 3NH, UK<br />
+                <strong>Fee:</strong> $8
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 10 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2"
+              alt="Morning Board Games & Brews Social"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Morning Board Games & Brews Social</h4>
+              <p class="event-item-desc">
+                Casual social gathering with strategy board games, card games,
+                and unlimited drip coffee refills.<br /><br />
+                <strong>Time:</strong> 2026-11-01 10:00 AM<br />
+                <strong>Location:</strong> Dice & Drip Lounge, 11 Broad Street,
+                Oxford, OX1 3AS, UK<br />
+                <strong>Fee:</strong> $4
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 11 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1518832553480-cd0e625ed3e6"
+              alt="Sustainable Coffee Farming Talk & Q&A"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Sustainable Coffee Farming Talk & Q&A</h4>
+              <p class="event-item-desc">
+                Presentation by visiting direct-trade coffee importers
+                discussing ethical sourcing and environmental sustainability.<br /><br />
+                <strong>Time:</strong> 2026-11-04 06:30 PM<br />
+                <strong>Location:</strong> Eco Grind, 6 St John's Square,
+                London, EC1M 44A, UK<br />
+                <strong>Fee:</strong> Free
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 12 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1507133750040-4a8f57021571"
+              alt="Cold Brew & Nitro Coffee Mixology Workshop"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Cold Brew & Nitro Coffee Mixology Workshop</h4>
+              <p class="event-item-desc">
+                Interactive session teaching how to craft non-alcoholic
+                mocktails and specialty cold drinks using infused cold brew.<br /><br />
+                <strong>Time:</strong> 2026-11-07 04:00 PM<br />
+                <strong>Location:</strong> Chilled Bean Co., 88 Church Street,
+                Brighton, BN1 1US, UK<br />
+                <strong>Fee:</strong> $20
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 13 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31"
+              alt="Poetry Open Mic Night"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Poetry Open Mic Night</h4>
+              <p class="event-item-desc">
+                Community evening welcoming poets, spoken-word performers, and
+                storytellers. Microphones open to all skill levels.<br /><br />
+                <strong>Time:</strong> 2026-11-10 07:30 PM<br />
+                <strong>Location:</strong> The Daily Grind, 15 St Giles Street,
+                Norwich, NR2 1JR, UK<br />
+                <strong>Fee:</strong> Free
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 14 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1497636577773-f1231844b336"
+              alt="Mid-Week Remote Workers Meetup"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Mid-Week Remote Workers Meetup</h4>
+              <p class="event-item-desc">
+                Networking coffee hour for freelancers, digital nomads, and
+                remote workers with dedicated quiet spaces and fast Wi-Fi.<br /><br />
+                <strong>Time:</strong> 2026-11-11 09:00 AM<br />
+                <strong>Location:</strong> Hub & Spoke Coffee, 29 Park Row,
+                Nottingham, NG1 6EE, UK<br />
+                <strong>Fee:</strong> Free
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 15 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13"
+              alt="Italian Espresso Traditions & Pastry Pairing"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Italian Espresso Traditions & Pastry Pairing</h4>
+              <p class="event-item-desc">
+                A guided journey through traditional dark roast espressos paired
+                with authentic homemade cannoli and biscotti.<br /><br />
+                <strong>Time:</strong> 2026-11-14 11:30 AM<br />
+                <strong>Location:</strong> Caffè Bella, 54 Regent Street,
+                Sheffield, S1 4DA, UK<br />
+                <strong>Fee:</strong> $15
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 16 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b"
+              alt="Beginner Matcha & Green Tea Ceremonial Brews"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Beginner Matcha & Green Tea Ceremonial Brews</h4>
+              <p class="event-item-desc">
+                Educational class exploring green tea grades, whisking
+                techniques, and crafting matcha lattes at home.<br /><br />
+                <strong>Time:</strong> 2026-11-18 02:00 PM<br />
+                <strong>Location:</strong> Zen Brews, 7 Bath Street, Bath, BA1
+                1SA, UK<br />
+                <strong>Fee:</strong> $22
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 17 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1498804103079-a6351b050096"
+              alt="Coffee & Live Jazz Jam Evening"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Coffee & Live Jazz Jam Evening</h4>
+              <p class="event-item-desc">
+                Enjoy smooth live jazz quartet performances while sipping
+                signature pour-overs and iced mocktails.<br /><br />
+                <strong>Time:</strong> 2026-11-20 08:00 PM<br />
+                <strong>Location:</strong> The Velvet Bean, 10 Cathedral
+                Quarter, Belfast, BT1 2JA, UK<br />
+                <strong>Fee:</strong> $10
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 18 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735"
+              alt="Aeropress & French Press Brewing Deep Dive"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Aeropress & French Press Brewing Deep Dive</h4>
+              <p class="event-item-desc">
+                Master full-immersion brewing methods. Covers grind sizes,
+                water-to-coffee ratios, and steep times.<br /><br />
+                <strong>Time:</strong> 2026-11-21 10:00 AM<br />
+                <strong>Location:</strong> Press & Grind, 18 High Street,
+                Exeter, EX4 3LN, UK<br />
+                <strong>Fee:</strong> $18
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 19 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1447933601403-0c6688de566e"
+              alt="Micro-Lot Coffee Release & Farmer Presentation"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Micro-Lot Coffee Release & Farmer Presentation</h4>
+              <p class="event-item-desc">
+                Exclusive tasting of rare, single-farm micro-lot beans imported
+                directly from Panama.<br /><br />
+                <strong>Time:</strong> 2026-11-25 05:00 PM<br />
+                <strong>Location:</strong> Peak Roasters, 33 Market Place,
+                Derby, DE1 3AE, UK<br />
+                <strong>Fee:</strong> $15
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+
+          <!-- Event 20 -->
+          <div class="event-item event-item-full">
+            <img
+              class="event-img"
+              src="https://images.unsplash.com/photo-1507226983735-a838615193b0"
+              alt="Festive Coffee & Gingerbread Cookie Decorating"
+            />
+            <div class="event-item-content">
+              <h4 class="event-item-name">Festive Coffee & Gingerbread Cookie Decorating</h4>
+              <p class="event-item-desc">
+                Family-friendly workshop decorating gingerbread biscuits with
+                hot cocoa and spiced coffee available for parents.<br /><br />
+                <strong>Time:</strong> 2026-11-28 11:00 AM<br />
+                <strong>Location:</strong> Winter Wonder Cafe, 12 Castle Street,
+                York, YO1 9RN, UK<br />
+                <strong>Fee:</strong> $10
+              </p>
+              <button class="btn-secondary" id="btn-event-register">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div id="body">
+        <div id="address">
+          <p id="title">Bean Boutique's Location</p>
+          <p id="detail">88 Friargate, Preston PR1 2ED, United Kingdom</p>
+          <iframe
+            id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147.40847274917917!2d-2.706184880422745!3d53.7621525226291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b7270eb2cb5db%3A0x6a32a0d74fb0f95c!2s88%20Friargate%2C%20Preston%20PR1%202ED%2C%20UK!5e0!3m2!1sen!2s!4v1789835519488!5m2!1sen!2s"
+            style="border: 0"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div id="references">
+          <h1>Bean Boutique</h1>
+          <div id="reference-body">
+            <div class="link-collection-form">
+              <h6>INFORMATION</h6>
+              <ul class="link-collection">
+                <li><a href="/pages/contact_us.html">Contact Us</a></li>
+                <li>
+                  <a href="/pages/terms_and_condition.html"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="/pages/privacy_policies.html">Privacy & Policies</a>
+                </li>
+                <li><a href="/pages/return_policies.html">Return Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="link-collection-form">
+              <h6>SOCIAL MEDIA</h6>
+              <ul class="link-collection">
+                <li>
+                  <a href="https://www.facebook.com/linhtetko101"
+                    ><img src="assests/imgs/icons/ic_facebook.svg" alt="" />
+                    Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/linhtetko101"
+                    ><img src="assests/imgs/icons/ic_instagram.svg" alt="" />
+                    Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://x.com/linhtetko101"
+                    ><img src="assests/imgs/icons/ic_twitter_x.svg" alt="" />
+                    X</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="link-collection-form">
+              <h6>QUICK LINKS</h6>
+              <ul class="link-collection">
+                <li><a href="/pages/coffee_selection.html">Coffee Beans</a></li>
+                <li><a href="/pages/equipment.html">Brewing Equipments</a></li>
+                <li>
+                  <a href="/pages/offers_subscription.html"
+                    >Special Deals & Subscription</a
+                  >
+                </li>
+                <li><a href="pages/events.html">Events & Workshops</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="copyright">&copy; 2026 Bean Boutique | All Rights Reserved</p>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+    <script src="../index.js"></script>
+    <script src="../js/events.js"></script>
+  </body>
+</html>

@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brewing Equipment Detail</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body class="primary-background">
+    <header>
+      <nav>
+        <h3>Bean Boutique</h3>
+        <ul>
+          <li><a href="../pages/coffee_selection.html">Coffee</a></li>
+          <li><a href="../pages/equipment.html">Equipment</a></li>
+          <li>
+            <a href="../pages/offers_subscription.html"
+              >Special Deals & Subscription</a
+            >
+          </li>
+          <li><a href="../pages/events.html">Events & Workshops</a></li>
+        </ul>
+        <a class="home-cart" id="home-cart-txt" href=""
+          ><span id="cart-item-count-text"></span> Items In Your Cart</a
+        >
+        <a class="home-cart" href="" id="home-cart-icon">
+          <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
+          <span id="cart-item-count"></span>
+        </a>
+      </nav>
+    </header>
+    <img
+      id="equipment_detail_image"
+      src="../assests/imgs/placeholder_coffee_bean_1.png"
+      alt=""
+      srcset=""
+    />
+    <main id="equipment-detail-content">
+      <div id="title-add-to-cart-section">
+        <div>
+            <h4 id="equipment-name">Title Title Title</h4>
+        <p id="equipment-detail-brand-name">Brand Name</p>
+        </div>
+        <div class="btn-secondary btn-add-to-cart-container">
+          <button id="btn-reduce-from-cart" class="">-</button>
+          <span id="cart-quantity">0</span>
+          <button id="btn-add-to-cart" class="">+</button>
+        </div>
+      </div>
+
+      
+      <div class="equipment-detail-price">
+        <h4 id="price">$30</h4>
+        <div class="save-price">
+          <p id="title-save">Save</p>
+          <p id="value-save">$60</p>
+        </div>
+      </div>
+
+      <div class="equipment-detail-item-section">
+        <h5>Variant</h5>
+        <div id="variant-items">
+            <a href="">Red</a>
+            <a href="">White</a>
+        </div>
+      </div>
+
+      <div class="equipment-detail-item-section">
+        <h5>Description</h5>
+        <p id="description-value">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate architecto nostrum eligendi nesciunt. Praesentium facere iste molestias hic, repudiandae eum, magni aspernatur deserunt voluptatem expedita tempore veritatis possimus et autem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam corrupti tempore quam, aspernatur dolorum sapiente explicabo quisquam eos, pariatur, earum nam deleniti placeat ex ad! Voluptatibus dolore eum ullam cum.</p>
+      </div>
+
+      <div class="equipment-detail-item-section">
+        <h5>Warranty</h5>
+        <p class="equipment-option" id="warranty">1 years</p>
+      </div>
+
+      <div class="equipment-detail-item-section">
+        <h5>Category</h5>
+        <p class="equipment-option" id="category">Pour-Over Dripper</p>
+      </div>
+
+      <div class="equipment-detail-item-section">
+        <h5>Material</h5>
+        <p class="equipment-option" id="material">Arita-yaki Ceramic</p>
+      </div>
+
+      <div class="equipment-detail-item-section">
+        <h5>Dimensions (cm)</h5>
+        <p class="equipment-option" id="dimensions">width - 14cm, depth - 12cm, height - 10cm</p>
+      </div>
+
+      <div class="equipment-detail-item-section">
+        <h5>Filter Type</h5>
+        <p class="equipment-option" id="filter-type">V60 Size 02 Paper Filters</p>
+      </div>
+
+      <div class="equipment-detail-item-section">
+        <h5>Model No.</h5>
+        <p class="equipment-option" id="model-no">STG-EKG-120V</p>
+      </div>
+
+      <div class="equipment-detail-item-section">
+        <h5>What will include in the box?</h5>
+        <div class="chips" id="whtIncludes">
+          <span class="chip equipment-detail-fact">Electric Kettle Body</span>
+          <span class="chip equipment-detail-fact">Power Base</span>
+          <span class="chip equipment-detail-fact">Instruction Manual</span>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="equipment-detail-check-more-section">
+        <div class="check-more-header">
+          <h4>Equipment You May Interested</h4>
+          <a class="btn-see-more" href="../pages/equipment.html">SEE MORE</a>
+        </div>
+
+        <div class="check-more-content">
+          <!-- Item 1: Mr. Coffee (No Discount) -->
+          <div class="equipment-item" id="brewing-equipment-item-1">
+            <img
+              id="equipment-item-img"
+              src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80"
+              alt="Classic Drip Coffee Maker 12-Cup"
+            />
+            <div class="equipment-item-body">
+              <div class="equipment-item-content">
+                <p id="title">Classic Drip Coffee Maker 12-Cup</p>
+                <p id="brand">Mr. Coffee</p>
+                <p id="desc">
+                  Simple and efficient 12-cup drip coffee maker featuring an
+                  auto-pause feature and an easy-view water window.
+                </p>
+              </div>
+              <hr class="divider" />
+              <div class="equipment-item-footer">
+                <div class="equipment-item-price">
+                  <h4 id="price">$34.99</h4>
+                </div>
+                <div class="btn-secondary btn-add-to-cart-container">
+                  <button id="btn-reduce-from-cart" class="">-</button>
+                  <span id="cart-quantity">0</span>
+                  <button id="btn-add-to-cart" class="">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Breville (Discounted) -->
+          <div class="equipment-item" id="brewing-equipment-item-2">
+            <img
+              id="equipment-item-img"
+              src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=800&q=80"
+              alt="Barista Touch Espresso Machine"
+            />
+            <div class="equipment-item-body">
+              <div class="equipment-item-content">
+                <p id="title">Barista Touch Espresso Machine</p>
+                <p id="brand">Breville</p>
+                <p id="desc">
+                  Automated touch screen espresso machine with integrated
+                  precision conical burr grinder and automatic milk texturing.
+                </p>
+              </div>
+              <hr class="divider" />
+              <div class="equipment-item-footer">
+                <div class="equipment-item-price">
+                  <h4 id="price">$899.95</h4>
+                  <div class="save-price">
+                    <p id="title-save">Save</p>
+                    <p id="value-save">$100.00</p>
+                  </div>
+                </div>
+                <div class="btn-secondary btn-add-to-cart-container">
+                  <button id="btn-reduce-from-cart" class="">-</button>
+                  <span id="cart-quantity">0</span>
+                  <button id="btn-add-to-cart" class="">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Keurig (Discounted) -->
+          <div class="equipment-item" id="brewing-equipment-item-3">
+            <img
+              id="equipment-item-img"
+              src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80"
+              alt="K-Classic Single Serve Coffee Maker"
+            />
+            <div class="equipment-item-body">
+              <div class="equipment-item-content">
+                <p id="title">K-Classic Single Serve Coffee Maker</p>
+                <p id="brand">Keurig</p>
+                <p id="desc">
+                  Popular single-serve pod coffee maker brewing multiple cup
+                  sizes with simple button controls.
+                </p>
+              </div>
+              <hr class="divider" />
+              <div class="equipment-item-footer">
+                <div class="equipment-item-price">
+                  <h4 id="price">$79.99</h4>
+                  <div class="save-price">
+                    <p id="title-save">Save</p>
+                    <p id="value-save">$30.00</p>
+                  </div>
+                </div>
+                <div class="btn-secondary btn-add-to-cart-container">
+                  <button id="btn-reduce-from-cart" class="">-</button>
+                  <span id="cart-quantity">0</span>
+                  <button id="btn-add-to-cart" class="">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: De'Longhi (Discounted) -->
+          <div class="equipment-item" id="brewing-equipment-item-4">
+            <img
+              id="equipment-item-img"
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+              alt="Magnifica Automatic Espresso Machine"
+            />
+            <div class="equipment-item-body">
+              <div class="equipment-item-content">
+                <p id="title">Magnifica Automatic Espresso Machine</p>
+                <p id="brand">De'Longhi</p>
+                <p id="desc">
+                  Compact bean-to-cup espresso machine with a manual cappuccino
+                  system for custom froth creation.
+                </p>
+              </div>
+              <hr class="divider" />
+              <div class="equipment-item-footer">
+                <div class="equipment-item-price">
+                  <h4 id="price">$549.95</h4>
+                  <div class="save-price">
+                    <p id="title-save">Save</p>
+                    <p id="value-save">$150.00</p>
+                  </div>
+                </div>
+                <div class="btn-secondary btn-add-to-cart-container">
+                  <button id="btn-reduce-from-cart" class="">-</button>
+                  <span id="cart-quantity">0</span>
+                  <button id="btn-add-to-cart" class="">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="equipment-detail-check-more-section">
+        <div class="check-more-header">
+          <h4>Coffee You May Interested</h4>
+          <a class="btn-see-more" href="../pages/coffee_selection.html">SEE MORE</a>
+        </div>
+
+        <div class="check-more-content">
+          <!-- Item 1 -->
+          <div id="coffee-bean-item-1" class="coffee-bean-item">
+            <img
+              id="coffee-bean-item-img"
+              src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e"
+              alt="Ethiopia Yirgacheffe Aricha"
+            />
+            <div id="body">
+              <h5>Ethiopia Yirgacheffe Aricha</h5>
+              <p id="desc">
+                A delicate and complex heirloom coffee processed using the
+                traditional washed method, highlighting bright floral and sweet
+                citrus characteristics.
+              </p>
+              <div id="origin">
+                <img src="../assests/imgs/icons/ic_world.svg" alt="Origin icon" />
+                <p>Ethiopia</p>
+              </div>
+              <div class="coffee-bean-item-footer">
+                <div class="coffee-bean-item-facts">
+                  <div id="coffee-bean-item-fact">
+                    <h6>Tasting Notes</h6>
+                    <span>Jasmine</span>
+                    <span>Lemon Bergamot</span>
+                    <span>Peach Tea</span>
+                  </div>
+                  <div id="coffee-bean-item-fact">
+                    <h6>Brewing Methods</h6>
+                    <span>Pour Over</span>
+                    <span>Chemex</span>
+                    <span>Aeropress</span>
+                  </div>
+                </div>
+
+                <div class="coffee-bean-item-prprice-action">
+                  <div class="coffee-bean-item-price">
+                    <h4 id="price">$18.50</h4>
+                    <div class="save-price">
+                      <p id="title-save">Was</p>
+                      <p id="value-save">$22.00</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div id="coffee-bean-item-2" class="coffee-bean-item">
+            <img
+              id="coffee-bean-item-img"
+              src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9"
+              alt="Colombia Huila Supremo"
+            />
+            <div id="body">
+              <h5>Colombia Huila Supremo</h5>
+              <p id="desc">
+                Classic Colombian single-origin coffee grown high in the Andes
+                mountains, offering a beautifully balanced cup with medium body
+                and rich sweetness.
+              </p>
+              <div id="origin">
+                <img src="../assests/imgs/icons/ic_world.svg" alt="Origin icon" />
+                <p>Colombia</p>
+              </div>
+              <div class="coffee-bean-item-footer">
+                <div class="coffee-bean-item-facts">
+                  <div id="coffee-bean-item-fact">
+                    <h6>Tasting Notes</h6>
+                    <span>Milk Chocolate</span>
+                    <span>Red Apple</span>
+                    <span>Caramel</span>
+                  </div>
+                  <div id="coffee-bean-item-fact">
+                    <h6>Brewing Methods</h6>
+                    <span>Drip Machine</span>
+                    <span>Pour Over</span>
+                    <span>French Press</span>
+                  </div>
+                </div>
+
+                <div class="coffee-bean-item-prprice-action">
+                  <div class="coffee-bean-item-price">
+                    <h4 id="price">$16.00</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div id="coffee-bean-item-3" class="coffee-bean-item">
+            <img
+              id="coffee-bean-item-img"
+              src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe"
+              alt="Kenya AA Nyeri Hill"
+            />
+            <div id="body">
+              <h5>Kenya AA Nyeri Hill</h5>
+              <p id="desc">
+                Famous for its vibrant acidity and intense berry-forward
+                profile, cultivated in nutrient-rich volcanic soil around Mt.
+                Kenya.
+              </p>
+              <div id="origin">
+                <img src="../assests/imgs/icons/ic_world.svg" alt="Origin icon" />
+                <p>Kenya</p>
+              </div>
+              <div class="coffee-bean-item-footer">
+                <div class="coffee-bean-item-facts">
+                  <div id="coffee-bean-item-fact">
+                    <h6>Tasting Notes</h6>
+                    <span>Blackcurrant</span>
+                    <span>Grapefruit</span>
+                    <span>Brown Sugar</span>
+                  </div>
+                  <div id="coffee-bean-item-fact">
+                    <h6>Brewing Methods</h6>
+                    <span>Pour Over</span>
+                    <span>V60</span>
+                    <span>Cold Brew</span>
+                  </div>
+                </div>
+
+                <div class="coffee-bean-item-prprice-action">
+                  <div class="coffee-bean-item-price">
+                    <h4 id="price">$21.00</h4>
+                    <div class="save-price">
+                      <p id="title-save">Was</p>
+                      <p id="value-save">$24.50</p>
+                    </div>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div id="coffee-bean-item-4" class="coffee-bean-item">
+            <img
+              id="coffee-bean-item-img"
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd"
+              alt="Guatemala Antigua Volcán"
+            />
+            <div id="body">
+              <h5>Guatemala Antigua Volcán</h5>
+              <p id="desc">
+                Shade-grown in soil enriched by surrounding volcanoes, producing
+                a heavy-bodied coffee with distinctive cocoa undertones and
+                subtle spice.
+              </p>
+              <div id="origin">
+                <img src="../assests/imgs/icons/ic_world.svg" alt="Origin icon" />
+                <p>Guatemala</p>
+              </div>
+              <div class="coffee-bean-item-footer">
+                <div class="coffee-bean-item-facts">
+                  <div id="coffee-bean-item-fact">
+                    <h6>Tasting Notes</h6>
+                    <span>Dark Chocolate</span>
+                    <span>Toasted Almond</span>
+                    <span>Orange Zest</span>
+                  </div>
+                  <div id="coffee-bean-item-fact">
+                    <h6>Brewing Methods</h6>
+                    <span>Espresso</span>
+                    <span>French Press</span>
+                    <span>Pour Over</span>
+                  </div>
+                </div>
+
+                <div class="coffee-bean-item-prprice-action">
+                  <div class="coffee-bean-item-price">
+                    <h4 id="price">$17.50</h4>
+                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">0</span>
+                    <button id="btn-add-to-cart" class="">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="body">
+        <div id="address">
+          <p id="title">Bean Boutique's Location</p>
+          <p id="detail">88 Friargate, Preston PR1 2ED, United Kingdom</p>
+          <iframe
+            id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147.40847274917917!2d-2.706184880422745!3d53.7621525226291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b7270eb2cb5db%3A0x6a32a0d74fb0f95c!2s88%20Friargate%2C%20Preston%20PR1%202ED%2C%20UK!5e0!3m2!1sen!2s!4v1789835519488!5m2!1sen!2s"
+            style="border: 0"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div id="references">
+          <h1>Bean Boutique</h1>
+          <div id="reference-body">
+            <div class="link-collection-form">
+              <h6>INFORMATION</h6>
+              <ul class="link-collection">
+                <li><a href="/pages/contact_us.html">Contact Us</a></li>
+                <li><a href="/pages/terms_and_condition.html">Terms & Conditions</a></li>
+                <li><a href="/pages/privacy_policies.html">Privacy & Policies</a></li>
+                <li><a href="/pages/return_policies.html">Return Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="link-collection-form">
+              <h6>SOCIAL MEDIA</h6>
+              <ul class="link-collection">
+                <li>
+                  <a href="https://www.facebook.com/linhtetko101"
+                    ><img src="../assests/imgs/icons/ic_facebook.svg" alt="" />
+                    Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/linhtetko101"
+                    ><img src="../assests/imgs/icons/ic_instagram.svg" alt="" />
+                    Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://x.com/linhtetko101"
+                    ><img src="../assests/imgs/icons/ic_twitter_x.svg" alt="" />
+                    X</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="link-collection-form">
+              <h6>QUICK LINKS</h6>
+              <ul class="link-collection">
+                <li><a href="/pages/coffee_selection.html">Coffee Beans</a></li>
+                <li><a href="/pages/equipment.html">Brewing Equipments</a></li>
+                <li><a href="/pages/offers_subscription.html">Special Deals & Subscription</a></li>
+                <li><a href="pages/events.html">Events & Workshops</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="copyright">&copy; 2026 Bean Boutique | All Rights Reserved</p>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+    <script src="../index.js"></script>
+    <script src="../js/equipment_detail.js"></script>
+  </body>
+</html>

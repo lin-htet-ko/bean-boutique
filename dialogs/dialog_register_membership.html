@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regirstration</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <button id="open-dialog">Event Registeration</button>
+    <dialog id="event_register_dialog">
+      <div class="regstration-form">
+        <button class="btn-close">
+          <img src="../assests/imgs/icons/ic_close.svg" alt="" />
+        </button>
+        <h1>Membership Registeration</h1>
+        <form action="" class="form">
+          <div class="form-item">
+            <label for="">Full Name*</label>
+            <input
+              type="text"
+              name="name"
+              id=""
+              class="text-field"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Email*</label>
+            <input
+              type="email"
+              name="name"
+              id=""
+              class="text-field"
+              placeholder="hi@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Phone Number*</label>
+            <input
+              type="text"
+              name="name"
+              id=""
+              class="text-field"
+              placeholder="XXXXXXXXX"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Phone Number*</label>
+            <input
+              type="text"
+              name="name"
+              id=""
+              class="text-field"
+              placeholder="XXXXXXXXX"
+              required
+            />
+          </div>
+
+          <div class="form-item">
+            <label for="">Payment Method</label>
+            <div class="payment-item">
+              <input type="radio" name="paypal" id="payment_method" />
+              <label for="">PayPal</label>
+            </div>
+
+            <div class="payment-item">
+              <input type="radio" name="paypal" id="payment_method" />
+              <label for="">Banking</label>
+            </div>
+          </div>
+
+          <input type="submit" value="Register" class="btn-primary" />
+        </form>
+      </div>
+    </dialog>
+
+    <script src="../index.js"></script>
+  </body>
+</html>
