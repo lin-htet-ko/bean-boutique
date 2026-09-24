@@ -23,11 +23,13 @@ btnCloseSuccessDialog.addEventListener("click", () => {
 
 btnRegisterEvent.addEventListener("click", (event) => {
   event.preventDefault();
-  const name = eventRegisterDialog.querySelector("#name");
-  const email = eventRegisterDialog.querySelector("#email");
-  const phone = eventRegisterDialog.querySelector("#phone");
+  const form = eventRegisterDialog.querySelector(".form");
+  const name = eventRegisterDialog.querySelector("#event-name");
+  const email = eventRegisterDialog.querySelector("#event-email");
+  const phone = eventRegisterDialog.querySelector("#event-phone");
 
-  if (!name.value || !email.value || !phone.value) {
+  if (!form.checkValidity()) {
+    form.reportValidity();
     return;
   }
 
@@ -46,7 +48,7 @@ btnRegisterEvent.addEventListener("click", (event) => {
 });
 
 document.querySelectorAll(".event-item").forEach((eventItem) => {
-  const registerButton = eventItem.querySelector("#btn-event-register");
+  const registerButton = eventItem.querySelector(".btn-secondary");
   registerButton.addEventListener("click", () => {
     const eventName = eventItem.querySelector(".event-item-name").textContent;
     const eventDescription =

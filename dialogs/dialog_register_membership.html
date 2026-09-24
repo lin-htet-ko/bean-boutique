@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="../index.css" />
   </head>
   <body>
-    <button id="open-dialog">Event Registeration</button>
-    <dialog id="event_register_dialog">
+    <button id="open-dialog" type="button">Event Registeration</button>
+    <dialog id="event_register_dialog" aria-labelledby="membership-title">
       <div class="regstration-form">
-        <button class="btn-close">
+        <button class="btn-close" type="button" aria-label="Close membership registration">
           <img src="../assests/imgs/icons/ic_close.svg" alt="" />
         </button>
-        <h1>Membership Registeration</h1>
+        <h1 id="membership-title">Membership Registeration</h1>
         <form action="" class="form">
           <div class="form-item">
-            <label for="">Full Name*</label>
+            <label for="membership-name">Full Name*</label>
             <input
               type="text"
               name="name"
-              id=""
+              id="membership-name"
               class="text-field"
               placeholder="Name"
               required
@@ -28,11 +28,11 @@
           </div>
 
           <div class="form-item">
-            <label for="">Email*</label>
+            <label for="membership-email">Email*</label>
             <input
               type="email"
               name="name"
-              id=""
+              id="membership-email"
               class="text-field"
               placeholder="hi@example.com"
               required
@@ -40,11 +40,11 @@
           </div>
 
           <div class="form-item">
-            <label for="">Phone Number*</label>
+            <label for="membership-phone">Phone Number*</label>
             <input
               type="text"
               name="name"
-              id=""
+              id="membership-phone"
               class="text-field"
               placeholder="XXXXXXXXX"
               required
@@ -52,11 +52,11 @@
           </div>
 
           <div class="form-item">
-            <label for="">Phone Number*</label>
+            <label for="membership-code">Membership Number</label>
             <input
               type="text"
               name="name"
-              id=""
+              id="membership-code"
               class="text-field"
               placeholder="XXXXXXXXX"
               required
@@ -64,15 +64,15 @@
           </div>
 
           <div class="form-item">
-            <label for="">Payment Method</label>
+            <span class="form-label">Payment Method</span>
             <div class="payment-item">
-              <input type="radio" name="paypal" id="payment_method" />
-              <label for="">PayPal</label>
+              <input type="radio" name="payment_method" id="membership-paypal" />
+              <label for="membership-paypal">PayPal</label>
             </div>
 
             <div class="payment-item">
-              <input type="radio" name="paypal" id="payment_method" />
-              <label for="">Banking</label>
+              <input type="radio" name="payment_method" id="membership-banking" />
+              <label for="membership-banking">Banking</label>
             </div>
           </div>
 

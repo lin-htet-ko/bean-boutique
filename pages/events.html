@@ -8,12 +8,14 @@
   </head>
   <body class="primary-background">
 
-    <dialog id="event_register_dialog">
+    <a class="skip-link" href="#event-page-content">Skip to main content</a>
+    <div id="site-status" class="visually-hidden" role="status" aria-live="polite"></div>
+    <dialog id="event_register_dialog" aria-labelledby="event-register-title" aria-describedby="event_desc">
       <div class="regstration-form">
-        <button class="btn-close">
+        <button class="btn-close" type="button" aria-label="Close event registration">
           <img src="../assests/imgs/icons/ic_close.svg" alt="" />
         </button>
-        <h1>Event Registeration</h1>
+        <h1 id="event-register-title">Event Registeration</h1>
         <h4 id="event_name">Acoustic Sunday Sessions: Live Folk & Specialty Brews</h4>
               <p id="event_desc">
                 Relaxing Sunday afternoon featuring local acoustic
@@ -23,11 +25,11 @@
               <br><br>
         <form action="" class="form">
           <div class="form-item">
-            <label for="">Full Name*</label>
+            <label for="event-name">Full Name*</label>
             <input
               type="text"
               name="name"
-              id="name"
+              id="event-name"
               class="text-field"
               placeholder="Name"
               required
@@ -35,11 +37,11 @@
           </div>
 
           <div class="form-item">
-            <label for="">Email*</label>
+            <label for="event-email">Email*</label>
             <input
               type="email"
               name="email"
-              id="email"
+              id="event-email"
               class="text-field"
               placeholder="hi@example.com"
               required
@@ -47,11 +49,11 @@
           </div>
 
           <div class="form-item">
-            <label for="">Phone Number*</label>
+            <label for="event-phone">Phone Number*</label>
             <input
               type="text"
               name="phone"
-              id="phone"
+              id="event-phone"
               class="text-field"
               placeholder="XXXXXXXXX"
               required
@@ -59,7 +61,7 @@
           </div>
 
           <div class="form-item">
-            <label for="">Membership Number (if member)</label>
+            <label for="membership_number">Membership Number (if member)</label>
             <input
               type="text"
               name="membership_number"
@@ -70,7 +72,7 @@
           </div>
 
           <div class="form-item">
-            <label for="">Any suggestion or message (optional)</label>
+            <label for="message">Any suggestion or message (optional)</label>
             <textarea
               name="message"
               id="message"
@@ -85,11 +87,11 @@
     </dialog>
 
     <!-- Event Registeration Success Dialog -->
-     <dialog id="event_register_success_dialog">
+    <dialog id="event_register_success_dialog" aria-labelledby="event-success-title" aria-describedby="event-success-description">
     <div class="alert-dialog">
-        <h2>Registered Successfully 🎉</h2>
-        <p>Your registration is now complete. We will send the event details to your email.</p>
-        <button class="btn-primary" id="btn-close-success-dialog">Close</button>
+        <h2 id="event-success-title">Registered Successfully</h2>
+        <p id="event-success-description">Your registration is now complete. We will send the event details to your email.</p>
+        <button class="btn-primary" id="btn-close-success-dialog" type="button">Close</button>
     </div>
     </dialog>
 
@@ -145,7 +147,7 @@
                 Street, Bristol, BS1 5AP, UK<br />
                 <strong>Fee:</strong> Free (Members Only)
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -167,7 +169,7 @@
                 Street, London, E1 6LP, UK<br />
                 <strong>Fee:</strong> $25
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -189,7 +191,7 @@
                 Edinburgh, EH3 6RJ, UK<br />
                 <strong>Fee:</strong> $20
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
         </div>
@@ -218,7 +220,7 @@
                 <span class="event-item-location">spa</span><br />
                 <strong>Fee:</strong> <span class="event-item-fee">$45</span>
               </p>
-              <button class="btn-secondary" id="btn-event-register">
+              <button class="btn-secondary" type="button">
                 Register
               </button>
             </div>
@@ -244,7 +246,7 @@
                 Manchester, M4 1HQ, UK<br />
                 <strong>Fee:</strong> Free
               </p>
-              <button class="btn-secondary" id="btn-event-register">
+              <button class="btn-secondary" type="button">
                 Register
               </button>
             </div>
@@ -269,7 +271,7 @@
                 London, E1 6LP, UK<br />
                 <strong>Fee:</strong> $5
               </p>
-              <button class="btn-secondary" id="btn-event-register">
+              <button class="btn-secondary" type="button">
                 Register
               </button>
             </div>
@@ -294,7 +296,7 @@
                 Quarter, Leeds, LS1 2ED, UK<br />
                 <strong>Fee:</strong> $12
               </p>
-              <button class="btn-secondary" id="btn-event-register">
+              <button class="btn-secondary" type="button">
                 Register
               </button>
             </div>
@@ -318,7 +320,7 @@
                 Newcastle upon Tyne, NE1 5DW, UK<br />
                 <strong>Fee:</strong> Free
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -339,7 +341,7 @@
                 Edinburgh, EH3 6RJ, UK<br />
                 <strong>Fee:</strong> $30
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -360,7 +362,7 @@
                 Liverpool, L1 4DN, UK<br />
                 <strong>Fee:</strong> Free
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -381,7 +383,7 @@
                 Street, Cardiff, CF10 1AT, UK<br />
                 <strong>Fee:</strong> $25
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -402,7 +404,7 @@
                 Street, Cambridge, CB2 3NH, UK<br />
                 <strong>Fee:</strong> $8
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -423,7 +425,7 @@
                 Oxford, OX1 3AS, UK<br />
                 <strong>Fee:</strong> $4
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -444,7 +446,7 @@
                 London, EC1M 44A, UK<br />
                 <strong>Fee:</strong> Free
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -465,7 +467,7 @@
                 Brighton, BN1 1US, UK<br />
                 <strong>Fee:</strong> $20
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -486,7 +488,7 @@
                 Norwich, NR2 1JR, UK<br />
                 <strong>Fee:</strong> Free
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -507,7 +509,7 @@
                 Nottingham, NG1 6EE, UK<br />
                 <strong>Fee:</strong> Free
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -528,7 +530,7 @@
                 Sheffield, S1 4DA, UK<br />
                 <strong>Fee:</strong> $15
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -549,7 +551,7 @@
                 1SA, UK<br />
                 <strong>Fee:</strong> $22
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -570,7 +572,7 @@
                 Quarter, Belfast, BT1 2JA, UK<br />
                 <strong>Fee:</strong> $10
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -591,7 +593,7 @@
                 Exeter, EX4 3LN, UK<br />
                 <strong>Fee:</strong> $18
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -612,7 +614,7 @@
                 Derby, DE1 3AE, UK<br />
                 <strong>Fee:</strong> $15
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -633,7 +635,7 @@
                 York, YO1 9RN, UK<br />
                 <strong>Fee:</strong> $10
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
         </div>
@@ -678,19 +680,19 @@
               <ul class="link-collection">
                 <li>
                   <a href="https://www.facebook.com/linhtetko101"
-                    ><img src="assests/imgs/icons/ic_facebook.svg" alt="" />
+                    ><img src="../assests/imgs/icons/ic_facebook.svg" alt="" />
                     Facebook</a
                   >
                 </li>
                 <li>
                   <a href="https://www.instagram.com/linhtetko101"
-                    ><img src="assests/imgs/icons/ic_instagram.svg" alt="" />
+                    ><img src="../assests/imgs/icons/ic_instagram.svg" alt="" />
                     Instagram</a
                   >
                 </li>
                 <li>
                   <a href="https://x.com/linhtetko101"
-                    ><img src="assests/imgs/icons/ic_twitter_x.svg" alt="" />
+                    ><img src="../assests/imgs/icons/ic_twitter_x.svg" alt="" />
                     X</a
                   >
                 </li>

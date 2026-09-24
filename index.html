@@ -7,26 +7,42 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body id="home-body">
-    <dialog id="event_register_dialog">
+    <a class="skip-link" href="#home-main">Skip to main content</a>
+    <div
+      id="site-status"
+      class="visually-hidden"
+      role="status"
+      aria-live="polite"
+    ></div>
+    <dialog
+      id="event_register_dialog"
+      aria-labelledby="event-register-title"
+      aria-describedby="event_desc"
+    >
       <div class="regstration-form">
-        <button class="btn-close">
+        <button
+          class="btn-close"
+          type="button"
+          aria-label="Close event registration"
+        >
           <img src="../assests/imgs/icons/ic_close.svg" alt="" />
         </button>
-        <h1>Event Registeration</h1>
-        <h4 id="event_name">Acoustic Sunday Sessions: Live Folk & Specialty Brews</h4>
-              <p id="event_desc">
-                Relaxing Sunday afternoon featuring local acoustic
-                singer-songwriters alongside single-origin batch brews and
-                pastries.<br /><br />
-              </p>
-              <br><br>
+        <h1 id="event-register-title">Event Registeration</h1>
+        <h4 id="event_name">
+          Acoustic Sunday Sessions: Live Folk & Specialty Brews
+        </h4>
+        <p id="event_desc">
+          Relaxing Sunday afternoon featuring local acoustic singer-songwriters
+          alongside single-origin batch brews and pastries.<br /><br />
+        </p>
+        <br /><br />
         <form action="" class="form">
           <div class="form-item">
-            <label for="">Full Name*</label>
+            <label for="event-name">Full Name*</label>
             <input
               type="text"
               name="name"
-              id="name"
+              id="event-name"
               class="text-field"
               placeholder="Name"
               required
@@ -34,11 +50,11 @@
           </div>
 
           <div class="form-item">
-            <label for="">Email*</label>
+            <label for="event-email">Email*</label>
             <input
               type="email"
               name="email"
-              id="email"
+              id="event-email"
               class="text-field"
               placeholder="hi@example.com"
               required
@@ -46,11 +62,11 @@
           </div>
 
           <div class="form-item">
-            <label for="">Phone Number*</label>
+            <label for="event-phone">Phone Number*</label>
             <input
               type="text"
               name="phone"
-              id="phone"
+              id="event-phone"
               class="text-field"
               placeholder="XXXXXXXXX"
               required
@@ -58,7 +74,7 @@
           </div>
 
           <div class="form-item">
-            <label for="">Membership Number (if member)</label>
+            <label for="membership_number">Membership Number (if member)</label>
             <input
               type="text"
               name="membership_number"
@@ -69,7 +85,7 @@
           </div>
 
           <div class="form-item">
-            <label for="">Any suggestion or message (optional)</label>
+            <label for="message">Any suggestion or message (optional)</label>
             <textarea
               name="message"
               id="message"
@@ -78,39 +94,76 @@
             ></textarea>
           </div>
 
-          <input id="btn-register-event" type="submit" value="Register" class="btn-primary" />
+          <input
+            id="btn-register-event"
+            type="submit"
+            value="Register"
+            class="btn-primary"
+          />
         </form>
       </div>
     </dialog>
 
     <!-- Event Registeration Success Dialog -->
-     <dialog id="event_register_success_dialog">
-    <div class="alert-dialog">
-        <h2>Registered Successfully 🎉</h2>
-        <p>Your registration is now complete. We will send the event details to your email.</p>
-        <button class="btn-primary" id="btn-close-success-dialog">Close</button>
-    </div>
+    <dialog
+      id="event_register_success_dialog"
+      aria-labelledby="event-success-title"
+      aria-describedby="event-success-description"
+    >
+      <div class="alert-dialog">
+        <h2 id="event-success-title">Registered Successfully</h2>
+        <p id="event-success-description">
+          Your registration is now complete. We will send the event details to
+          your email.
+        </p>
+        <button class="btn-primary" id="btn-close-success-dialog" type="button">
+          Close
+        </button>
+      </div>
     </dialog>
 
     <!-- First Time Eligibility Dialog -->
-     <dialog id="first_time_eligibility_dialog">
+    <dialog
+      id="first_time_eligibility_dialog"
+      aria-labelledby="first-visit-title"
+      aria-describedby="first-visit-description"
+    >
       <div class="alert-dialog">
-        <h2>First Visit Discount 🎉</h2>
-        <p>You are now eligible 30% OFF on your first order. Please subscribe with your email to get access it.</p>
-        <input type="email" name="" id="first-visit-email" placeholder="Enter you email">
-        <button class="btn-primary" id="btn-subscribe">Subscribe</button>
-    </div>
-     </dialog>
+        <h2 id="first-visit-title">First Visit Discount</h2>
+        <p id="first-visit-description">
+          You are now eligible 30% OFF on your first order. Please subscribe
+          with your email to get access it.
+        </p>
+        <!-- <label for="first-visit-email">Email address</label> -->
+        <input
+          type="email"
+          name="email"
+          id="first-visit-email"
+          placeholder="Enter your email"
+          required
+        />
+        <p id="first-visit-error" class="form-error" role="alert"></p>
+        <button class="btn-primary" id="btn-subscribe" type="button">
+          Subscribe
+        </button>
+      </div>
+    </dialog>
 
-     <dialog id="first_time_eligibility_success_dialog">
+    <dialog
+      id="first_time_eligibility_success_dialog"
+      aria-labelledby="first-visit-success-title"
+      aria-describedby="first-visit-success-description"
+    >
       <div class="alert-dialog">
-        <h2>Subscribe Successfully 🎉</h2>
-        <p>We will send you email for detail steps to apply your eligibility.</p>
-        <button class="btn-primary" id="btn-close">Close</button>
-    </div>
-     </dialog>
+        <h2 id="first-visit-success-title">Subscribe Successfully</h2>
+        <p id="first-visit-success-description">
+          We will send you email for detail steps to apply your eligibility.
+        </p>
+        <button class="btn-primary" id="btn-close" type="button">Close</button>
+      </div>
+    </dialog>
 
-    <header >
+    <header>
       <nav id="home-nav">
         <h3>Bean Boutique</h3>
         <ul>
@@ -136,6 +189,7 @@
           <div class="home-corousel-item">
             <img
               src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e"
+              alt="Coffee beans prepared for brewing"
             />
             <div class="home-carousel-item-content">
               <h3>Ethiopia Yirgacheffe Aricha</h3>
@@ -145,7 +199,10 @@
                 citrus characteristics.
               </p>
 
-              <a href="/pages/coffee_detail.html?item=coffee-bean-item-1" class="btn-carousel">
+              <a
+                href="/pages/coffee_detail.html?item=coffee-bean-item-1"
+                class="btn-carousel"
+              >
                 <img src="assests/imgs/icons/ic_forward.svg" alt="" />
                 <span>See Detail</span>
               </a>
@@ -155,6 +212,7 @@
           <div class="home-corousel-item">
             <img
               src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9"
+              alt="Freshly brewed coffee in a cup"
             />
             <div class="home-carousel-item-content">
               <h3>Colombia Huila</h3>
@@ -164,7 +222,10 @@
                 and rich sweetness.
               </p>
 
-              <a href="pages/coffee_detail.html?item=coffee-bean-item-2" class="btn-carousel">
+              <a
+                href="pages/coffee_detail.html?item=coffee-bean-item-2"
+                class="btn-carousel"
+              >
                 <img src="assests/imgs/icons/ic_forward.svg" alt="" />
                 <span>See Detail</span>
               </a>
@@ -174,6 +235,7 @@
           <div class="home-corousel-item">
             <img
               src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80"
+              alt="Classic drip coffee maker"
             />
             <div class="home-carousel-item-content">
               <h3>Classic Drip Coffee Maker 12-Cup</h3>
@@ -182,7 +244,10 @@
                 auto-pause feature and an easy-view water window.
               </p>
 
-              <a href="pages/equipment_detail.html?item=brewing-equipment-item-1" class="btn-carousel">
+              <a
+                href="pages/equipment_detail.html?item=brewing-equipment-item-1"
+                class="btn-carousel"
+              >
                 <img src="assests/imgs/icons/ic_forward.svg" alt="" />
                 <span>See Detail</span>
               </a>
@@ -192,6 +257,7 @@
           <div class="home-corousel-item">
             <img
               src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+              alt="Automatic espresso machine"
             />
             <div class="home-carousel-item-content">
               <h3>Magnifica Automatic Espresso Machine</h3>
@@ -200,7 +266,10 @@
                 system for custom froth creation.
               </p>
 
-              <a href="pages/equipment_detail.html?item=brewing-equipment-item-4" class="btn-carousel">
+              <a
+                href="pages/equipment_detail.html?item=brewing-equipment-item-4"
+                class="btn-carousel"
+              >
                 <img src="assests/imgs/icons/ic_forward.svg" alt="" />
                 <span>See Detail</span>
               </a>
@@ -1031,15 +1100,19 @@
               alt="Artisan Espresso Extraction & Dialling-In Masterclass"
             />
             <div class="event-item-content">
-              <h4 class="event-item-name">Artisan Espresso Extraction & Dialling-In Masterclass</h4>
+              <h4 class="event-item-name">
+                Artisan Espresso Extraction & Dialling-In Masterclass
+              </h4>
               <p class="event-item-desc">
                 Hands-on workshop covering grind adjustments, dose weights, and
                 yield ratios to dial in the perfect double espresso.<br /><br />
-                <strong>Time:</strong> <span class="event-item-date">2026-10-10 10:00 AM</span><br />
-                <strong>Location:</strong> <span class="event-item-location">spa</span><br />
+                <strong>Time:</strong>
+                <span class="event-item-date">2026-10-10 10:00 AM</span><br />
+                <strong>Location:</strong>
+                <span class="event-item-location">spa</span><br />
                 <strong>Fee:</strong> <span class="event-item-fee">$45</span>
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -1051,7 +1124,9 @@
               alt="Acoustic Sunday Sessions: Live Folk & Specialty Brews"
             />
             <div class="event-item-content">
-              <h4 class="event-item-name">Acoustic Sunday Sessions: Live Folk & Specialty Brews</h4>
+              <h4 class="event-item-name">
+                Acoustic Sunday Sessions: Live Folk & Specialty Brews
+              </h4>
               <p class="event-item-desc">
                 Relaxing Sunday afternoon featuring local acoustic
                 singer-songwriters alongside single-origin batch brews and
@@ -1061,7 +1136,7 @@
                 Manchester, M4 1HQ, UK<br />
                 <strong>Fee:</strong> Free
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -1073,7 +1148,9 @@
               alt="Latte Art Throwdown & Barista Competition"
             />
             <div class="event-item-content">
-              <h4 class="event-item-name">Latte Art Throwdown & Barista Competition</h4>
+              <h4 class="event-item-name">
+                Latte Art Throwdown & Barista Competition
+              </h4>
               <p class="event-item-desc">
                 Local baristas head-to-head in a fast-paced pour competition.
                 Spectators receive a free drink token with entry.<br /><br />
@@ -1082,7 +1159,7 @@
                 London, E1 6LP, UK<br />
                 <strong>Fee:</strong> $5
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
 
@@ -1094,7 +1171,9 @@
               alt="Specialty Coffee Cupping & Origins Tasting"
             />
             <div class="event-item-content">
-              <h4 class="event-item-name">Specialty Coffee Cupping & Origins Tasting</h4>
+              <h4 class="event-item-name">
+                Specialty Coffee Cupping & Origins Tasting
+              </h4>
               <p class="event-item-desc">
                 Guided blind tasting session exploring distinct flavor profiles
                 across Ethiopian, Colombian, and Kenyan coffee beans.<br /><br />
@@ -1103,7 +1182,7 @@
                 Quarter, Leeds, LS1 2ED, UK<br />
                 <strong>Fee:</strong> $12
               </p>
-              <button class="btn-secondary" id="btn-event-register">Register</button>
+              <button class="btn-secondary" type="button">Register</button>
             </div>
           </div>
         </div>
@@ -1191,9 +1270,9 @@
       </div>
       <p id="copyright">&copy; 2026 Bean Boutique | All Rights Reserved</p>
     </footer>
-    
-    <script src="js/user.js"></script>
+
     <script src="js/cart.js"></script>
+    <script src="js/user.js"></script>
     <script src="index.js"></script>
     <script src="js/home.js"></script>
   </body>

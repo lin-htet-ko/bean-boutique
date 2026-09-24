@@ -5,6 +5,7 @@ const dialogPlaceOrderSuccess = document.querySelector(
 );
 const btnCloseOnPlaceOrderSuccess =
   dialogPlaceOrderSuccess.querySelector("#btn-close");
+const totalPrice = document.querySelector("#total-value");
 
 const fullname = document.querySelector("#name");
 const email = document.querySelector("#email");
@@ -15,8 +16,12 @@ const paymentInfos = document.querySelectorAll("input[name='payment_method']");
 const saveInfo = document.querySelector("#save-info");
 const memberCode = document.querySelector("#member_code");
 const couponCode = document.querySelector("#coupon_code");
+const checkoutError = document.querySelector("#checkout-error");
+const checkoutErrorContainer = document.querySelector("#checkout-error-container");
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  checkoutErrorContainer.style.display = "none";
     let info = getUserInfo();
     
     if(info) {
@@ -93,15 +98,19 @@ fetch("../assests/json/coffee.json")
             });
           }
 
+          let total = 0
           let content = modifiedCartItems
+          .filter(item => item.quantity >= 1)
             .map((item) => {
+              total += item.total;
+
               return `
                 <div class="order-item">
               <img src="${item.image}" alt="" />
               <div class="info">
-                <p id="name">${item.title}</p>
-                <p id="brand">${item.brand}</p>
-                <p id="variant">${item.variant}</p>
+                <p class="name">${item.title}</p>
+                <p class="brand">${item.brand}</p>
+                <p class="variant">${item.variant}</p>
               </div>
               <div class="price">
                 <p><span id="qty">${item.quantity} </span> x <span id="value">${item.unitPrice}</span></p>
@@ -116,34 +125,38 @@ fetch("../assests/json/coffee.json")
             .join("");
 
           ordersSectionContent.innerHTML = content;
+          totalPrice.textContent = `$${total}`;
         }
       }),
   );
 
 btnPlaceOrder.addEventListener("click", () => {
+  checkoutError.textContent = "";
   if (
     !(
-      fullname.value.length > 0 ||
-      email.value.length > 0 ||
-      phone.value.length > 0 ||
-      address.value.length > 0
+      fullname.value.trim().length > 0 &&
+      email.checkValidity() &&
+      phone.value.trim().length > 0 &&
+      address.value.trim().length > 0
     )
   ) {
-    alert("You need to fill the required information to place order.");
+    checkoutErrorContainer.style.display = "flex";
+    checkoutError.textContent = "Enter your name, a valid email, phone number, and delivery address.";
+    fullname.focus();
     return;
   }
 
   const isReadTAC = document.querySelector("#check-read-tc").checked;
   if (!isReadTAC) {
-    alert(
-      "You need to commit that you have read Terms & Conditions, Privacy Policies & Return Policies.",
-    );
+    checkoutErrorContainer.style.display = "flex";
+    checkoutError.textContent = "Agree to the terms, privacy, and return policies before placing the order.";
+    document.querySelector("#check-read-tc").focus();
     return;
   }
 
 const paymentInfo = document.querySelector("input[name='payment_method']:checked");
 
-  if (saveInfo.checked) {
+  if (saveInfo.checked && paymentInfo) {
     saveUserinfo({
       name: fullname.value,
       email: email.value,

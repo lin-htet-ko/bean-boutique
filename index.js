@@ -162,7 +162,16 @@ document.querySelectorAll(".home-cart").forEach((element) => {
   element.addEventListener('click', (event) => {
     event.preventDefault();
     if (getCartItemSize() <= 0) {
-      alert("You need to add items to place order!");
+      let status = document.getElementById("site-status");
+      if (!status) {
+        status = document.createElement("div");
+        status.id = "site-status";
+        status.className = "visually-hidden";
+        status.setAttribute("role", "status");
+        status.setAttribute("aria-live", "polite");
+        document.body.append(status);
+      }
+      status.textContent = "Your cart is empty. Add an item before placing an order.";
     } else {
       window.location.replace("./pages/checkout.html")
     }

@@ -30,7 +30,16 @@ document.querySelectorAll(".deal-item-coupon-code-wrapper").forEach((couponWrapp
   couponWrapper.addEventListener("click", () => {
     const couponCode = couponCodeElement.textContent.trim();
     navigator.clipboard.writeText(couponCode).then(() => {
-      alert(`Coupon code "${couponCode}" copied to clipboard!`);
+      let status = document.getElementById("site-status");
+      if (!status) {
+        status = document.createElement("div");
+        status.id = "site-status";
+        status.className = "visually-hidden";
+        status.setAttribute("role", "status");
+        status.setAttribute("aria-live", "polite");
+        document.body.append(status);
+      }
+      status.textContent = `Coupon code ${couponCode} copied.`;
     }).catch((err) => {
       console.error('Failed to copy coupon code: ', err);
     });

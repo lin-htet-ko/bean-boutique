@@ -8,11 +8,11 @@
   </head>
   <body class="primary-background">
 
-    <dialog id="place_order_success_dialog">
+    <dialog id="place_order_success_dialog" aria-labelledby="order-success-title" aria-describedby="order-success-description">
     <div class="alert-dialog">
-        <h2>Placed Order Successfully 🎉</h2>
-        <p>Your order is now placed in our side. We will send the order detail to your email. We will also sent payment information if you select PayPal or Banking Transfer.</p>
-        <button class="btn-primary" id="btn-close">Close</button>
+      <h2 id="order-success-title">Placed Order Successfully</h2>
+      <p id="order-success-description">Your order is now placed in our side. We will send the order detail to your email. We will also sent payment information if you select PayPal or Banking Transfer.</p>
+      <button class="btn-primary" id="btn-close" type="button">Close</button>
     </div>
     </dialog>
 
@@ -69,7 +69,7 @@
             </div>
 
             <div class="form-item">
-              <label for="">Phone Number*</label>
+              <label for="phone">Phone Number*</label>
               <input
                 type="number"
                 name="phone"
@@ -105,7 +105,7 @@
             </div>
 
             <div class="form-item">
-              <label for="">Payment Method*</label>
+              <span class="form-label">Payment Method*</span>
               <div class="payment-item">
                 <input
                   type="radio"
@@ -157,26 +157,24 @@
           <h2>Discount & Offers (Member Only)</h2>
           <div class="card-body form">
             <div class="form-item">
-              <label for="">Membership Code</label>
+              <label for="member_code">Membership Code</label>
               <input
                 type="text"
                 name="member_code"
                 id="member_code"
                 class="text-field"
                 placeholder="0x89234jkop"
-                required
               />
             </div>
 
             <div class="form-item">
-              <label for="">Coupon Code</label>
+              <label for="coupon_code">Coupon Code</label>
               <input
                 type="text"
                 name="coupon_code"
                 id="coupon_code"
                 class="text-field"
                 placeholder="Enter your coupon code here"
-                required
               />
             </div>
 
@@ -202,9 +200,9 @@
             <div class="order-item">
               <img src="../assests/imgs/placeholder_coffee_bean_1.png" alt="" />
               <div class="info">
-                <p id="name">Coffee Title</p>
-                <p id="brand">Brand Name</p>
-                <p id="variant">Variant Name</p>
+                <p class="name">Coffee Title</p>
+                <p class="brand">Brand Name</p>
+                <p class="variant">Variant Name</p>
               </div>
               <div class="price">
                 <p><span id="qty">1 </span> x <span id="value">$40</span></p>
@@ -218,9 +216,9 @@
             <div class="order-item">
               <img src="../assests/imgs/placeholder_coffee_bean_1.png" alt="" />
               <div class="info">
-                <p id="name">Coffee Title</p>
-                <p id="brand">Brand Name</p>
-                <p id="variant">Variant Name</p>
+                <p class="name">Coffee Title</p>
+                <p class="brand">Brand Name</p>
+                <p class="variant">Variant Name</p>
               </div>
               <div class="price">
                 <p><span id="qty">1 </span> x <span id="value">$40</span></p>
@@ -233,7 +231,7 @@
           </div>
           <hr class="divider" />
           <div class="card-footer">
-            <p id="price"><span>Total: </span><span>$80</span></p>
+            <p id="price"><span>Total: </span><span id="total-value">$80</span></p>
           </div>
         </div>
 
@@ -245,7 +243,11 @@
           >
         </div>
 
-        <button class="btn-secondary" id="btn-place-order">PLACE ORDER</button>
+         <div class="warning-message message" role="alert" id="checkout-error-container">
+          <img src="../assests/imgs/icons/ic_info.svg" />
+          <p id="checkout-error"></p>
+        </div>
+        <button class="btn-secondary" id="btn-place-order" type="button">PLACE ORDER</button>
       </div>
     </main>
 
@@ -259,6 +261,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147.40847274917917!2d-2.706184880422745!3d53.7621525226291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b7270eb2cb5db%3A0x6a32a0d74fb0f95c!2s88%20Friargate%2C%20Preston%20PR1%202ED%2C%20UK!5e0!3m2!1sen!2s!4v1789835519488!5m2!1sen!2s"
             style="border: 0"
             loading="lazy"
+            title="Bean Boutique location map"
             referrerpolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>

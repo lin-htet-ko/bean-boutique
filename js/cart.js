@@ -1,10 +1,13 @@
-let cart = JSON.parse(localStorage.getItem("cartItems")) || (new Map());
+let _cart = localStorage.getItem("cartItems") || "{}";
+let cart = JSON.parse(_cart) || (new Map());
 
 function getCartItemSize() {
     let total = 0
-    for (const key in cart) {        
+    if(cart) {
+      for (const key in cart) {        
         const element = cart[key];
         total += element.quantity;
+    }
     }
     return total;
 }

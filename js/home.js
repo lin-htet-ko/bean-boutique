@@ -28,14 +28,18 @@ const firstTimeEligibilitySuccessDialog = document.querySelector("#first_time_el
 const btnSubscribefirstTimeEligibility = firstTimeEligibilityDialog.querySelector("#btn-subscribe");
 const btnClosefirstTimeEligibilitySuccess = firstTimeEligibilitySuccessDialog.querySelector("#btn-close");
 const firstTimeEmail = firstTimeEligibilityDialog.querySelector("#first-visit-email");
+const firstTimeError = firstTimeEligibilityDialog.querySelector("#first-visit-error");
 
 btnSubscribefirstTimeEligibility.addEventListener("click", () => {
-  if(firstTimeEmail.value.length > 0) {
+  if (firstTimeEmail.checkValidity()) {
+    firstTimeError.textContent = "";
     markAsVisited();
     firstTimeEligibilityDialog.close();
     firstTimeEligibilitySuccessDialog.showModal();
   } else {
-    alert("You need to fill email to subscribe.")
+    firstTimeError.textContent = "Enter a valid email address to subscribe.";
+    firstTimeError.style.display = "block"
+    firstTimeEmail.focus();
   }
 });
 
@@ -44,6 +48,7 @@ btnClosefirstTimeEligibilitySuccess.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  firstTimeError.style.display = "none"
   if(isFirstTimeVisit()) {
     firstTimeEligibilityDialog.showModal();
   }
@@ -56,7 +61,8 @@ document.querySelectorAll(".deal-item-coupon-code-wrapper").forEach((couponWrapp
   couponWrapper.addEventListener("click", () => {
     const couponCode = couponCodeElement.textContent.trim();
     navigator.clipboard.writeText(couponCode).then(() => {
-      alert(`Coupon code "${couponCode}" copied to clipboard!`);
+      const status = document.getElementById("site-status");
+      if (status) status.textContent = `Coupon code ${couponCode} copied.`;
     }).catch((err) => {
       console.error('Failed to copy coupon code: ', err);
     });
@@ -78,11 +84,12 @@ btnCloseSuccessDialog.addEventListener("click", () => {
 
 btnRegisterEvent.addEventListener("click", (event) => {
     event.preventDefault();
-    const name = eventRegisterDialog.querySelector("#name");
-    const email = eventRegisterDialog.querySelector("#email");
-    const phone = eventRegisterDialog.querySelector("#phone");
+    const name = eventRegisterDialog.querySelector("#event-name");
+    const email = eventRegisterDialog.querySelector("#event-email");
+    const phone = eventRegisterDialog.querySelector("#event-phone");
 
-    if (!name.value || !email.value || !phone.value) {
+    if (!name.checkValidity() || !email.checkValidity() || !phone.checkValidity()) {
+      eventRegisterDialog.querySelector(".form").reportValidity();
         return;
     }
 
@@ -108,7 +115,7 @@ document.querySelectorAll(".event-item").forEach((eventItem) => {
     eventRegisterDialog.querySelector("#event_name").textContent = eventName;
     eventRegisterDialog.querySelector("#event_desc").innerHTML = eventDescription;
 
-    const registerButton = eventItem.querySelector("#btn-event-register");
+    const registerButton = eventItem.querySelector(".btn-secondary");
     registerButton.addEventListener("click", () => {
       eventRegisterDialog.showModal();
     });

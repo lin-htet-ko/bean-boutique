@@ -14,15 +14,17 @@ onDomLoaded();
 filterSections.forEach((element) => {
   const dropdown = element.querySelector(".dropdown");
   if (dropdown) {
+    const icon = element.querySelector("#ic-brand-dropdown");
     icon.src = "../assests/imgs/icons/ic_arrow_down.svg";
     element.querySelectorAll(".filter-item").forEach((value, _) => {
       value.style.display = "none";
     });
 
     dropdown.addEventListener("click", () => {
-      let icon = element.querySelector("#ic-brand-dropdown");
+      const isExpanded = dropdown.getAttribute("aria-expanded") === "true";
+      dropdown.setAttribute("aria-expanded", String(!isExpanded));
 
-      if (icon.src.endsWith("ic_arrow_down.svg")) {
+      if (!isExpanded) {
         icon.src = "../assests/imgs/icons/ic_arrow_up.svg";
         element.querySelectorAll(".filter-item").forEach((value, _) => {
           value.style.display = "block";
@@ -135,7 +137,6 @@ function mapCoffeeItemToHTML(coffees) {
       .join("");
 
     let weightItem = coffee.weight.filter((weight) => weight.isSelected)[0];
-    const cart = new Map(Object.entries(cartItems));
     let qty = cart.get(`#${coffee.id}`);
     qty = qty ? qty.quantity : 0;
 
