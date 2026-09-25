@@ -9,10 +9,10 @@ const cartQuantityDisplay = document.querySelector(
   "#title-add-to-cart-section #cart-quantity",
 );
 
-fetch("../assests/json/equipment.json")
-  .then((response) => response.json())
-  .then((equipment) => {
-    equipment
+// fetch("../assests/json/equipment.json")
+//   .then((response) => response.json())
+//   .then((equipment) => {
+    equipments
       .filter((item) => item.id === queryItemId)
       .forEach((item) => {
         const image = document.getElementById("equipment_detail_image");
@@ -95,7 +95,7 @@ fetch("../assests/json/equipment.json")
             originalPrice.textContent = `${variant.originalPrice}`;
           });
       });
-  });
+  // });
 
 const addToCartButton = document.querySelector(
   "#title-add-to-cart-section #btn-add-to-cart",

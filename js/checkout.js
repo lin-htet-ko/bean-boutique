@@ -35,17 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-fetch("../assests/json/coffee.json")
-  .then((response) => response.json())
-  .then((coffeeBeans) =>
-    fetch("../assests/json/equipment.json")
-      .then((response) => response.json())
-      .then((equipments) => {
+// fetch("../assests/json/coffee.json")
+//   .then((response) => response.json())
+//   .then((coffeeBeans) =>
+//     fetch("../assests/json/equipment.json")
+//       .then((response) => response.json())
+//       .then((equipments) => {
         let modifiedCartItems = [];
         for (key in cart) {
           let [id, variant] = key.split("$");
           if (id.includes("coffee-bean-item")) {
-            let item = coffeeBeans.filter((bean) => `#${bean.id}` == id)[0];
+            let item = coffees.filter((bean) => `#${bean.id}` == id)[0];
             let selectedWeight = "";
             item.weight = item.weight.map((weight) => {
               if (weight.name == variant) {
@@ -127,8 +127,8 @@ fetch("../assests/json/coffee.json")
           ordersSectionContent.innerHTML = content;
           totalPrice.textContent = `$${total}`;
         }
-      }),
-  );
+  //     }),
+  // );
 
 btnPlaceOrder.addEventListener("click", () => {
   checkoutError.textContent = "";

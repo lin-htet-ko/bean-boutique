@@ -115,6 +115,8 @@ nav ul li a {
 
 #home-cart-icon {
   position: relative;
+  text-decoration: none;
+  color: white;
 }
 
 .home-cart span {

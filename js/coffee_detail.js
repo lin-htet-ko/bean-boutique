@@ -7,10 +7,10 @@ const queryWeight = urlParams.get("weight");
 
 const cartQuantityDisplay = document.querySelector("#title-add-to-cart-section #cart-quantity");
 
-fetch("../assests/json/coffee.json")
-  .then((response) => response.json())
-  .then((coffee) => {
-    coffee
+// fetch("../assests/json/coffee.json")
+//   .then((response) => response.json())
+//   .then((coffee) => {
+    coffees
       .filter((item) => item.id === queryItemId)
       .forEach((item) => {
         const image = document.getElementById("coffee_detail_image");
@@ -94,7 +94,7 @@ fetch("../assests/json/coffee.json")
       });
 
     
-  });
+  // });
 
 const addToCartButton = document.querySelector("#title-add-to-cart-section #btn-add-to-cart");
 const reduceFromCartButton = document.querySelector("#title-add-to-cart-section #btn-reduce-from-cart");

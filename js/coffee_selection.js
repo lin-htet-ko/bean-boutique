@@ -74,7 +74,6 @@ btnApplyFilter.addEventListener("click", () => {
   coffeeContent.innerHTML = content;
   bindCoffeeBeanItemClickListener();
   btnClearFilter.style.display = "block";
-  btnApplyFilter.style.display = "none";
 });
 
 btnClearFilter.addEventListener("click", () => {
@@ -99,7 +98,6 @@ btnClearFilter.addEventListener("click", () => {
   coffeeContent.innerHTML = content;
   bindCoffeeBeanItemClickListener();
   btnClearFilter.style.display = "none";
-  btnApplyFilter.style.display = "block";
 });
 
 const searchBar = document.querySelector("#coffee-search-bar");
@@ -137,7 +135,7 @@ function mapCoffeeItemToHTML(coffees) {
       .join("");
 
     let weightItem = coffee.weight.filter((weight) => weight.isSelected)[0];
-    let qty = cart.get(`#${coffee.id}`);
+    let qty = cart[`#${coffee.id}`];
     qty = qty ? qty.quantity : 0;
 
     let savePrice = weightItem.finalPrice != weightItem.originalPrice ?

@@ -125,7 +125,7 @@ searchBar.addEventListener("input", (event) => {
 function mapEquipmentItemToHTML(brewingEquipments) {
   return brewingEquipments.map((equipment) => {
     let variant = equipment.variant.filter((variant) => variant.isSelected)[0];
-    let qty = cart.get(`#${equipment.id}`);
+    let qty = cart[`#${equipment.id}`];
     qty = qty ? qty.quantity : 0;
 
     let savePrice =
