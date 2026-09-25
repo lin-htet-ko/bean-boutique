@@ -113,7 +113,7 @@ document.querySelectorAll(".event-item").forEach((eventItem) => {
     const eventDescription = eventItem.querySelector(".event-item-desc").innerHTML;
 
     eventRegisterDialog.querySelector("#event_name").textContent = eventName;
-    eventRegisterDialog.querySelector("#event_desc").innerHTML = eventDescription;
+    eventRegisterDialog.querySelector("#event_desc").innerHTML = sanitizeHTML(eventDescription);
 
     const registerButton = eventItem.querySelector(".btn-secondary");
     registerButton.addEventListener("click", () => {

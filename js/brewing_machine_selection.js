@@ -70,7 +70,7 @@ btnApplyFilter.addEventListener("click", () => {
 
     let content = mapEquipmentItemToHTML(modifiedEquipments);
 
-    equipmentContent.innerHTML = content;
+    equipmentContent.innerHTML = sanitizeHTML(content);
     bindBrewingMachineItemClickListener();
     btnClearFilter.style.display = "block";
   }
@@ -92,7 +92,7 @@ btnClearFilter.addEventListener("click", () => {
 
   let content = mapEquipmentItemToHTML(equipments);
 
-  equipmentContent.innerHTML = content;
+  equipmentContent.innerHTML = sanitizeHTML(content);
   bindBrewingMachineItemClickListener();
   btnClearFilter.style.display = "none";
 });
@@ -118,7 +118,7 @@ searchBar.addEventListener("input", (event) => {
 
   let content = mapEquipmentItemToHTML(modifiedEquipments);
 
-  equipmentContent.innerHTML = content;
+  equipmentContent.innerHTML = sanitizeHTML(content);
   bindBrewingMachineItemClickListener();
 });
 

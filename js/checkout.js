@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .join("");
 
-          ordersSectionContent.innerHTML = content;
+          ordersSectionContent.innerHTML = sanitizeHTML(content);
           totalPrice.textContent = `$${total}`;
         }
   //     }),

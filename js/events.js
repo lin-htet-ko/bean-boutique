@@ -56,7 +56,7 @@ document.querySelectorAll(".event-item").forEach((eventItem) => {
 
     eventRegisterDialog.querySelector("#event_name").textContent = eventName;
     eventRegisterDialog.querySelector("#event_desc").innerHTML =
-      eventDescription;
+      sanitizeHTML(eventDescription);
 
     eventRegisterDialog.showModal();
   });

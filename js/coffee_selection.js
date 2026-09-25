@@ -71,7 +71,7 @@ btnApplyFilter.addEventListener("click", () => {
 
   let content = mapCoffeeItemToHTML(modifiedCoffees);
 
-  coffeeContent.innerHTML = content;
+  coffeeContent.innerHTML = sanitizeHTML(content);
   bindCoffeeBeanItemClickListener();
   btnClearFilter.style.display = "block";
 });
@@ -95,7 +95,7 @@ btnClearFilter.addEventListener("click", () => {
 
   let content = mapCoffeeItemToHTML(coffees);
 
-  coffeeContent.innerHTML = content;
+  coffeeContent.innerHTML = sanitizeHTML(content);
   bindCoffeeBeanItemClickListener();
   btnClearFilter.style.display = "none";
 });
@@ -118,7 +118,7 @@ searchBar.addEventListener("input", (event) => {
 
   let content = mapCoffeeItemToHTML(modifiedCoffees);
 
-  coffeeContent.innerHTML = content;
+  coffeeContent.innerHTML = sanitizeHTML(content);
   bindCoffeeBeanItemClickListener();
 });
 

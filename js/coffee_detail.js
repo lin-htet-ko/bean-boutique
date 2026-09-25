@@ -48,35 +48,40 @@ const cartQuantityDisplay = document.querySelector("#title-add-to-cart-section #
         cartQuantityDisplay.textContent = getQuantity(`#${item.id}$${queryWeight || retrieveSelectedCoffeeWeight(item.id)}`)
 
         origins.textContent = item.coffeeOrigins;
-        tastingNotesChips.innerHTML = item.tastingNotes
-          .split(",")
-          .map(
-            (note) =>
-              `<span class="chip coffee-detail-fact">${note.trim()}</span>`,
-          )
-          .join("");
-        brewingMethodsChips.innerHTML = item.brewingMethods
-          .split(",")
-          .map(
-            (method) =>
-              `<span class="chip coffee-detail-fact">${method.trim()}</span>`,
-          )
-          .join("");
-        weight.innerHTML = item.weight
-          .map((weightItem) => {
-            weightItem.isSelected = queryWeight
-              ? weightItem.name === queryWeight
-              : weightItem.isSelected;
-            return weightItem;
-          })
-          .map(
-            (weightItem) =>
-              {
-                let isActive = weightItem.name == queryWeight || weightItem.isSelected;
+        tastingNotesChips.innerHTML = sanitizeHTML(
+          item.tastingNotes
+            .split(",")
+            .map(
+              (note) =>
+                `<span class="chip coffee-detail-fact">${note.trim()}</span>`,
+            )
+            .join(""),
+        );
+        brewingMethodsChips.innerHTML = sanitizeHTML(
+          item.brewingMethods
+            .split(",")
+            .map(
+              (method) =>
+                `<span class="chip coffee-detail-fact">${method.trim()}</span>`,
+            )
+            .join(""),
+        );
+        weight.innerHTML = sanitizeHTML(
+          item.weight
+            .map((weightItem) => {
+              weightItem.isSelected = queryWeight
+                ? weightItem.name === queryWeight
+                : weightItem.isSelected;
+              return weightItem;
+            })
+            .map((weightItem) => {
+              let isActive =
+                weightItem.name == queryWeight || weightItem.isSelected;
 
-                return `<a href="../pages/coffee_detail.html?item=${queryItemId}&weight=${weightItem.name}" class="${isActive ? "weight-active" : ""}">${weightItem.name}</a>`}
-          )
-          .join("");
+              return `<a href="../pages/coffee_detail.html?item=${queryItemId}&weight=${weightItem.name}" class="${isActive ? "weight-active" : ""}">${weightItem.name}</a>`;
+            })
+            .join(""),
+        );
 
           item.weight
       .filter((weightItem) => {

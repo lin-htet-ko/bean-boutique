@@ -57,29 +57,31 @@ const cartQuantityDisplay = document.querySelector(
         modelNo.textContent = item.modelNo;
         cartQuantityDisplay.textContent = getQuantity(`#${item.id}$${queryVariant || retrieveSelectedBrewingVariant(item.id)}`);
 
-        whtIncludes.innerHTML = item.whatWillIncludeInTheBox
-          .split(",")
-          .map(
-            (whtIncl) =>
-              `<span class="chip equipment-detail-fact">${whtIncl.trim()}</span>`,
-          )
-          .join("");
+        whtIncludes.innerHTML = sanitizeHTML(
+          item.whatWillIncludeInTheBox
+            .split(",")
+            .map(
+              (whtIncl) =>
+                `<span class="chip equipment-detail-fact">${whtIncl.trim()}</span>`,
+            )
+            .join(""),
+        );
 
-        variants.innerHTML = item.variant
-          .map((variant) => {
-            variant.isSelected = queryVariant
-              ? variant.name === queryVariant
-              : variant.isSelected;
-            return variant;
-          })
-          .map(
-            (variant) =>
-              {
-                let isActive = variant.name == queryVariant || variant.isSelected;
+        variants.innerHTML = sanitizeHTML(
+          item.variant
+            .map((variant) => {
+              variant.isSelected = queryVariant
+                ? variant.name === queryVariant
+                : variant.isSelected;
+              return variant;
+            })
+            .map((variant) => {
+              let isActive = variant.name == queryVariant || variant.isSelected;
 
-                return `<a href="../pages/equipment_detail.html?item=${queryItemId}&variant=${variant.name}" class="${isActive ? "variant-active" : ""}">${variant.name}</a>`}
-          )
-          .join("");
+              return `<a href="../pages/equipment_detail.html?item=${queryItemId}&variant=${variant.name}" class="${isActive ? "variant-active" : ""}">${variant.name}</a>`;
+            })
+            .join(""),
+        );
 
         item.variant
           .filter((variant) => {

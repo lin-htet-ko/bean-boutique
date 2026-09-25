@@ -1,3 +1,13 @@
+function sanitizeHTML(dirtyHTML) {
+  if (!window.DOMPurify) {
+    throw new Error("DOMPurify is required before rendering dynamic HTML.");
+  }
+
+  return window.DOMPurify.sanitize(dirtyHTML, {
+    USE_PROFILES: { html: true },
+  });
+}
+
 const COFFEE_JSON = `
 [
   {
