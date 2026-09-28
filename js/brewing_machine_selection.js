@@ -138,13 +138,22 @@ function mapEquipmentItemToHTML(brewingEquipments) {
       `
         : "";
 
+    let tag = "";
+    if (equipment.product_tag) {
+      tag = `<span><span class="product-tag">${equipment.product_tag}</span></span>`;
+    } else {
+      tag = "";
+    }
     return `
     <div class="equipment-item" id="${equipment.id}">
+          <div class="image-tag">
               <img
                 id="equipment-item-img"
                 src="${equipment.image}"
                 alt="${equipment.title}"
               />
+              ${tag}
+          </div>
               <div class="equipment-item-body">
                 <div class="equipment-item-content">
                   <p id="title">${equipment.title}</p>

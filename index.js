@@ -14,6 +14,7 @@ const COFFEE_JSON = `
     "id": "coffee-bean-item-1",
     "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e",
     "title": "Ethiopia Yirgacheffe Aricha",
+    "product_tag": "Best Seller",
     "brandName": "Stumptown Coffee Roasters",
     "description": "A delicate and complex heirloom coffee processed using the traditional washed method, highlighting bright floral and sweet citrus characteristics.",
     "coffeeOrigins": "Ethiopia",
@@ -104,6 +105,7 @@ const COFFEE_JSON = `
     "id": "coffee-bean-item-7",
     "image": "https://images.unsplash.com/photo-1524350876685-274059332603",
     "title": "Brazil Cerrado Mineiro",
+    "product_tag": "Customer Favorite",
     "brandName": "Verve Coffee Roasters",
     "description": "Naturally processed coffee with soft acidity and dense hazelnut notes, making it an exceptional base for espresso and daily drinking.",
     "coffeeOrigins": "Brazil",
@@ -194,6 +196,7 @@ const COFFEE_JSON = `
     "id": "coffee-bean-item-13",
     "image": "https://images.unsplash.com/photo-1512568400610-62da28bc8a13",
     "title": "Ethiopia Guji Anaerobic Natural",
+    "product_tag": "Trending",
     "brandName": "Sey Coffee",
     "description": "Experimental anaerobic fermented coffee beans packed with intense tropical fruit flavors and wine-like sweetness.",
     "coffeeOrigins": "Ethiopia",
@@ -282,6 +285,7 @@ const COFFEE_JSON = `
     "id": "coffee-bean-item-19",
     "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb",
     "title": "Velvet Night Decaf Swiss Water Process",
+    "product_tag": "Staff Pick",
     "brandName": "Gorilla Coffee",
     "description": "100% chemical-free decaffeinated blend that preserves full-bodied flavor without the caffeine buzz.",
     "coffeeOrigins": "Colombia, Peru",
@@ -334,6 +338,7 @@ const EQUIPMENT_JSON = `[
     "id": "brewing-equipment-item-2",
     "image": "https://images.pexels.com/photos/4050463/pexels-photo-4050463.jpeg",
     "title": "Barista Touch Espresso Machine",
+    "product_tag": "Best Seller",
     "brandName": "Breville",
     "description": "Automated touch screen espresso machine with integrated precision conical burr grinder and automatic milk texturing.",
     "warranty": "2 Year Limited Warranty",
@@ -449,6 +454,7 @@ const EQUIPMENT_JSON = `[
     "id": "brewing-equipment-item-8",
     "image": "https://images.pexels.com/photos/39296472/pexels-photo-39296472.jpeg",
     "title": "Classic Stovetop Espresso Maker 6-Cup",
+    "product_tag": "Staff Pick",
     "brandName": "Bialetti",
     "description": "Traditional octagonal aluminum Moka pot for brewing authentic, rich Italian espresso on the stovetop.",
     "warranty": "2 Year Limited Warranty",
@@ -562,6 +568,7 @@ const EQUIPMENT_JSON = `[
     "id": "brewing-equipment-item-14",
     "image": "https://images.pexels.com/photos/8447294/pexels-photo-8447294.jpeg",
     "title": "Specialty 10-Cup Coffee Maker",
+    "product_tag": "Customer Favorite",
     "brandName": "Ninja",
     "description": "SCA-certified coffee maker capable of brewing iced coffee, specialty concentrates, and custom cup sizes.",
     "warranty": "1 Year Limited Warranty",
@@ -675,6 +682,7 @@ const EQUIPMENT_JSON = `[
     "id": "brewing-equipment-item-20",
     "image": "https://images.pexels.com/photos/31986824/pexels-photo-31986824.jpeg",
     "title": "V60 Ceramic Coffee Dripper Size 02",
+    "product_tag": "Trending",
     "brandName": "Hario",
     "description": "Iconic Japanese pour-over cone dripper designed with spiral ribs for maximum coffee expansion.",
     "warranty": "1 Year Limited Warranty",
@@ -701,7 +709,6 @@ bindCoffeeBeanItemClickListener();
 let equipments = [];
 equipments = JSON.parse(EQUIPMENT_JSON);
 bindBrewingMachineItemClickListener();
-
 
 function retrieveSelectedCoffeeWeight(id) {
   return coffees

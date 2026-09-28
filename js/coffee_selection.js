@@ -59,7 +59,9 @@ btnApplyFilter.addEventListener("click", () => {
   ).map((item) => item.value.toLowerCase());
 
   modifiedCoffees = coffees.filter((item) => {
-    let weights = item.weight.filter(we => selectedWeights.includes(we.name.toLowerCase()))[0]?.name.toLowerCase();
+    let weights = item.weight
+      .filter((we) => selectedWeights.includes(we.name.toLowerCase()))[0]
+      ?.name.toLowerCase();
     return (
       selectedBrands.includes(item.brandName.toLowerCase()) ||
       selectedBrewingMethods.includes(item.brewingMethods.toLowerCase()) ||
@@ -111,7 +113,7 @@ searchBar.addEventListener("input", (event) => {
       coffee.description.toLowerCase().includes(keyword) ||
       coffee.coffeeOrigins.toLowerCase().includes(keyword) ||
       coffee.tastingNotes.toLowerCase().includes(keyword) ||
-      coffee.brewingMethods.toLowerCase().includes(keyword),
+      coffee.brewingMethods.toLowerCase().includes(keyword)
   );
 
   modifiedCoffees = filterCoffees;
@@ -128,20 +130,30 @@ function mapCoffeeItemToHTML(coffees) {
     let qty = cart[`#${coffee.id}`];
     qty = qty ? qty.quantity : 0;
 
-    let savePrice = weightItem.finalPrice != weightItem.originalPrice ?
-    `<div class="save-price">
+    let savePrice =
+      weightItem.finalPrice != weightItem.originalPrice
+        ? `<div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">${weightItem.originalPrice}</p>
-                      </div>` : ''
-
+                      </div>`
+        : "";
+    let tag = "";
+    if (coffee.product_tag) {
+      tag = `<span><span class="product-tag">${coffee.product_tag}</span></span>`;
+    } else {
+      tag = "";
+    }
     return `
-    <div id="${coffee.id}" class="coffee-bean-item">
+    <div class="coffee-bean-item" id="${coffee.id}">
+    <div class="image-tag">
               <img
                 id="coffee-bean-item-img"
                 src="${coffee.image}"
                 alt="${coffee.title}"
               />
-              <div id="body">
+              ${tag}
+              </div>
+              <div class='coffee-bean-body'>
                 <h5>${coffee.title}</h5>
                 <p id="desc">${coffee.description}</p>
                 <div id="origin">
@@ -165,5 +177,5 @@ function mapCoffeeItemToHTML(coffees) {
               </div>
             </div>
     `.trim();
-  });
+  }).join("");
 }

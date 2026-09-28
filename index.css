@@ -208,7 +208,7 @@ header {
   grid-area: 1/1;
 }
 
-.coffee-bean-item #body {
+.coffee-bean-item .coffee-bean-body {
   padding: 12px 10px;
 }
 
