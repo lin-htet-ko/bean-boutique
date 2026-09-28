@@ -79,21 +79,24 @@
 
     <header>
       <nav>
-        <h3>Bean Boutique</h3>
+        <div class="brand-cart">
+          <h3>Bean Boutique</h3>
+        <a class="home-cart" href="checkout.html" id="home-cart-txt">
+          <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
+          <span id="cart-item-count"></span>
+        </a>
+        </div>
         <ul>
-          <li><a href="../pages/coffee_selection.html">Coffee</a></li>
-          <li><a href="../pages/equipment.html">Equipment</a></li>
+          <li><a href="coffee_selection.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
           <li>
-            <a class="active-nav" href="../pages/offers_subscription.html"
+            <a href="offers_subscription.html" class="active-nav"
               >Special Deals & Subscription</a
             >
           </li>
-          <li><a href="../pages/events.html">Events & Workshops</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
         </ul>
-        <a class="home-cart" id="home-cart-txt" href=""
-          ><span id="cart-item-count-text"></span> Items In Your Cart</a
-        >
-        <a class="home-cart" href="" id="home-cart-icon">
+        <a class="home-cart" href="checkout.html" id="home-cart-icon">
           <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
           <span id="cart-item-count"></span>
         </a>

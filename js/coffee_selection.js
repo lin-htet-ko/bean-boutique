@@ -124,16 +124,6 @@ searchBar.addEventListener("input", (event) => {
 
 function mapCoffeeItemToHTML(coffees) {
   return coffees.map((coffee) => {
-    let notes = coffee.tastingNotes
-      .split(",")
-      .map((note) => `<span>${note}</span>`)
-      .join("");
-
-    let brewingMethods = coffee.brewingMethods
-      .split(",")
-      .map((note) => `<span>${note}</span>`)
-      .join("");
-
     let weightItem = coffee.weight.filter((weight) => weight.isSelected)[0];
     let qty = cart[`#${coffee.id}`];
     qty = qty ? qty.quantity : 0;
@@ -162,27 +152,14 @@ function mapCoffeeItemToHTML(coffees) {
                   <p>${coffee.coffeeOrigins}</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      ${notes}
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      ${brewingMethods}
-                    </div>
+                  <div class="coffee-bean-item-price">
+                    <h4 id="price">${weightItem.finalPrice}</h4>
+                    ${savePrice}
                   </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
-                      <h4 id="price">${weightItem.finalPrice}</h4>
-                      ${savePrice}
-                    </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
-                      <button id="btn-reduce-from-cart" class="">-</button>
-                      <span id="cart-quantity">${qty}</span>
-                      <button id="btn-add-to-cart" class="">+</button>
-                    </div>
+                  <div class="btn-secondary btn-add-to-cart-container">
+                    <button id="btn-reduce-from-cart" class="">-</button>
+                    <span id="cart-quantity">${qty}</span>
+                    <button id="btn-add-to-cart" class="">+</button>
                   </div>
                 </div>
               </div>

@@ -9,21 +9,24 @@
   <body class="primary-background" id="coffee-selection-body">
     <header>
       <nav>
-        <h3>Bean Boutique</h3>
+        <div class="brand-cart">
+          <h3>Bean Boutique</h3>
+        <a class="home-cart" href="checkout.html" id="home-cart-txt">
+          <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
+          <span id="cart-item-count"></span>
+        </a>
+        </div>
         <ul>
-          <li><a class="active-nav" href="../pages/coffee_selection.html">Coffee</a></li>
-          <li><a href="../pages/equipment.html">Equipment</a></li>
+          <li><a href="coffee_selection.html" class="active-nav">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
           <li>
-            <a href="../pages/offers_subscription.html"
+            <a href="offers_subscription.html"
               >Special Deals & Subscription</a
             >
           </li>
-          <li><a href="../pages/events.html">Events & Workshops</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
         </ul>
-        <a class="home-cart" id="home-cart-txt" href=""
-          ><span id="cart-item-count-text"></span> Items In Your Cart</a
-        >
-        <a class="home-cart" href="" id="home-cart-icon">
+        <a class="home-cart" href="checkout.html" id="home-cart-icon">
           <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
           <span id="cart-item-count"></span>
         </a>
@@ -1072,35 +1075,18 @@
                   <p>Ethiopia</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Jasmine</span>
-                      <span>Lemon Bergamot</span>
-                      <span>Peach Tea</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Pour Over</span>
-                      <span>Chemex</span>
-                      <span>Aeropress</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$18.50</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$22.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1127,31 +1113,14 @@
                   <p>Colombia</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Milk Chocolate</span>
-                      <span>Red Apple</span>
-                      <span>Caramel</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Drip Machine</span>
-                      <span>Pour Over</span>
-                      <span>French Press</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$16.00</h4>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1178,35 +1147,18 @@
                   <p>Kenya</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Blackcurrant</span>
-                      <span>Grapefruit</span>
-                      <span>Brown Sugar</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Pour Over</span>
-                      <span>V60</span>
-                      <span>Cold Brew</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$21.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$24.50</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1233,31 +1185,14 @@
                   <p>Guatemala</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Dark Chocolate</span>
-                      <span>Toasted Almond</span>
-                      <span>Orange Zest</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Espresso</span>
-                      <span>French Press</span>
-                      <span>Pour Over</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$17.50</h4>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1284,36 +1219,18 @@
                   <p>Indonesia</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Earthy</span>
-                      <span>Cedar</span>
-                      <span>Dark Chocolate</span>
-                      <span>Molasses</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>French Press</span>
-                      <span>Espresso</span>
-                      <span>Moka Pot</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$18.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$20.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1340,31 +1257,14 @@
                   <p>Costa Rica</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Honey</span>
-                      <span>Apricot</span>
-                      <span>Milk Chocolate</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Pour Over</span>
-                      <span>Aeropress</span>
-                      <span>Drip Machine</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$19.00</h4>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1391,35 +1291,18 @@
                   <p>Brazil</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Roasted Hazelnut</span>
-                      <span>Cocoa Powder</span>
-                      <span>Creamy Vanilla</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Espresso</span>
-                      <span>Cold Brew</span>
-                      <span>Moka Pot</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$14.50</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$16.50</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1446,35 +1329,18 @@
                   <p>Rwanda</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Black Tea</span>
-                      <span>Orange Blossom</span>
-                      <span>Red Plum</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Pour Over</span>
-                      <span>Chemex</span>
-                      <span>Aeropress</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$20.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$24.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1501,35 +1367,18 @@
                   <p>Jamaica</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Sweet Cream</span>
-                      <span>Mild Cocoa</span>
-                      <span>Floral Spice</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Pour Over</span>
-                      <span>French Press</span>
-                      <span>Drip Machine</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$45.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$52.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1556,35 +1405,18 @@
                   <p>Panama</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Jasmine</span>
-                      <span>Bergamot</span>
-                      <span>Passionfruit</span>
-                      <span>Lemongrass</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Pour Over</span>
-                      <span>V60</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$38.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$38.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1611,36 +1443,18 @@
                   <p>Yemen</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Dark Chocolate</span>
-                      <span>Cardamom</span>
-                      <span>Dried Cherry</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Turkish Coffee</span>
-                      <span>Ibrik</span>
-                      <span>French Press</span>
-                      <span>Espresso</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$28.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$32.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1666,35 +1480,18 @@
                   <p>Honduras</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Green Apple</span>
-                      <span>Brown Sugar</span>
-                      <span>Milk Chocolate</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Drip Machine</span>
-                      <span>Aeropress</span>
-                      <span>Pour Over</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$15.50</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$15.50</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1720,36 +1517,18 @@
                   <p>Ethiopia</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Blueberry Jam</span>
-                      <span>Mango</span>
-                      <span>Dark Rum</span>
-                      <span>Vanilla</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Pour Over</span>
-                      <span>V60</span>
-                      <span>Cold Brew</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$23.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$26.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1776,35 +1555,18 @@
                   <p>Tanzania</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Lemon</span>
-                      <span>Black Tea</span>
-                      <span>Black Pepper</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Pour Over</span>
-                      <span>Aeropress</span>
-                      <span>Chemex</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$18.50</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$18.50</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1830,35 +1592,18 @@
                   <p>Peru</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Toffee</span>
-                      <span>Red Apple</span>
-                      <span>Milk Chocolate</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Drip Machine</span>
-                      <span>French Press</span>
-                      <span>Pour Over</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$15.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$17.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1885,35 +1630,18 @@
                   <p>Papua New Guinea</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Mango</span>
-                      <span>Walnuts</span>
-                      <span>Dark Cocoa</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>French Press</span>
-                      <span>Aeropress</span>
-                      <span>Pour Over</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$17.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$17.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1940,35 +1668,18 @@
                   <p>Brazil, Colombia, Indonesia</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Dark Cocoa</span>
-                      <span>Smoked Cedar</span>
-                      <span>Caramel</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Espresso</span>
-                      <span>Moka Pot</span>
-                      <span>French Press</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$15.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$18.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1995,34 +1706,18 @@
                   <p>Ethiopia, Colombia</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Clementine</span>
-                      <span>Honey</span>
-                      <span>Toasted Almond</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Drip Machine</span>
-                      <span>Pour Over</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$16.00</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$16.00</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -2048,35 +1743,18 @@
                   <p>Colombia, Peru</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Graham Cracker</span>
-                      <span>Milk Chocolate</span>
-                      <span>Molasses</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Drip Machine</span>
-                      <span>French Press</span>
-                      <span>Espresso</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$17.50</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$19.50</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -2103,35 +1781,18 @@
                   <p>Vietnam</p>
                 </div>
                 <div class="coffee-bean-item-footer">
-                  <div class="coffee-bean-item-facts">
-                    <div id="coffee-bean-item-fact">
-                      <h6>Tasting Notes</h6>
-                      <span>Baker's Chocolate</span>
-                      <span>Vanilla Bean</span>
-                      <span>Lemongrass</span>
-                    </div>
-                    <div id="coffee-bean-item-fact">
-                      <h6>Brewing Methods</h6>
-                      <span>Phin Filter</span>
-                      <span>Pour Over</span>
-                      <span>Espresso</span>
-                    </div>
-                  </div>
-
-                  <div class="coffee-bean-item-prprice-action">
-                    <div class="coffee-bean-item-price">
+                <div class="coffee-bean-item-price">
                       <h4 id="price">$16.50</h4>
                       <div class="save-price">
                         <p id="title-save">Was</p>
                         <p id="value-save">$16.50</p>
                       </div>
                     </div>
-                    <div class="btn-secondary btn-add-to-cart-container">
+                  <div class="btn-secondary btn-add-to-cart-container">
                       <button id="btn-reduce-from-cart" class="">-</button>
                       <span id="cart-quantity">0</span>
                       <button id="btn-add-to-cart" class="">+</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>

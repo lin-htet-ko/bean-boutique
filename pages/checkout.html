@@ -18,21 +18,24 @@
 
     <header>
       <nav>
-        <h3>Bean Boutique</h3>
+        <div class="brand-cart">
+          <h3>Bean Boutique</h3>
+        <a class="home-cart" href="checkout.html" id="home-cart-txt">
+          <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
+          <span id="cart-item-count"></span>
+        </a>
+        </div>
         <ul>
-          <li><a href="../pages/coffee_selection.html">Coffee</a></li>
-          <li><a href="../pages/equipment.html">Equipment</a></li>
+          <li><a href="coffee_selection.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
           <li>
-            <a href="../pages/offers_subscription.html"
+            <a href="offers_subscription.html"
               >Special Deals & Subscription</a
             >
           </li>
-          <li><a href="../pages/events.html">Events & Workshops</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
         </ul>
-        <a class="home-cart" id="home-cart-txt" href="../pages/checkout.html"
-          ><span id="cart-item-count-text"></span> Items In Your Cart</a
-        >
-        <a class="home-cart" href="../pages/checkout.html" id="home-cart-icon">
+        <a class="home-cart" href="checkout.html" id="home-cart-icon">
           <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
           <span id="cart-item-count"></span>
         </a>
@@ -194,7 +197,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="order-items-card">
           <h2>Order Summary</h2>
           <div class="card-body" id="orders">
             <div class="order-item">
@@ -203,6 +206,11 @@
                 <p class="name">Coffee Title</p>
                 <p class="brand">Brand Name</p>
                 <p class="variant">Variant Name</p>
+                <div class="btn-secondary-outline btn-add-to-cart-container">
+                  <button id="btn-reduce-from-cart" class="">-</button>
+                  <span id="cart-quantity">0</span>
+                  <button id="btn-add-to-cart" class="">+</button>
+                </div>
               </div>
               <div class="price">
                 <p><span id="qty">1 </span> x <span id="value">$40</span></p>
@@ -211,6 +219,7 @@
                   ><span id="price-value">$40</span>
                 </p>
               </div>
+              
             </div>
 
             <div class="order-item">

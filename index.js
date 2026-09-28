@@ -313,7 +313,7 @@ const COFFEE_JSON = `
 const EQUIPMENT_JSON = `[
   {
     "id": "brewing-equipment-item-1",
-    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/13399219/pexels-photo-13399219.jpeg",
     "title": "Classic Drip Coffee Maker 12-Cup",
     "brandName": "Mr. Coffee",
     "description": "Simple and efficient 12-cup drip coffee maker featuring an auto-pause feature and an easy-view water window.",
@@ -332,7 +332,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-2",
-    "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/4050463/pexels-photo-4050463.jpeg",
     "title": "Barista Touch Espresso Machine",
     "brandName": "Breville",
     "description": "Automated touch screen espresso machine with integrated precision conical burr grinder and automatic milk texturing.",
@@ -352,7 +352,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-3",
-    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/33389378/pexels-photo-33389378.jpeg",
     "title": "K-Classic Single Serve Coffee Maker",
     "brandName": "Keurig",
     "description": "Popular single-serve pod coffee maker brewing multiple cup sizes with simple button controls.",
@@ -370,7 +370,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-4",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/13096241/pexels-photo-13096241.jpeg",
     "title": "Magnifica Automatic Espresso Machine",
     "brandName": "De'Longhi",
     "description": "Compact bean-to-cup espresso machine with a manual cappuccino system for custom froth creation.",
@@ -388,7 +388,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-5",
-    "image": "https://images.unsplash.com/photo-1520970014086-2208d157c9e2?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/19651262/pexels-photo-19651262.jpeg",
     "title": "KBGV Select Coffee Maker",
     "brandName": "Moccamaster",
     "description": "Handmade Dutch drip coffee brewer certified by the SCA for precise temperature extraction and taste.",
@@ -408,7 +408,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-6",
-    "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/2074106/pexels-photo-2074106.jpeg",
     "title": "AeroPress Original Coffee Press",
     "brandName": "AeroPress",
     "description": "Portable immersion coffee maker using gentle pressure to create smooth, non-bitter full-bodied coffee.",
@@ -427,7 +427,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-7",
-    "image": "https://images.unsplash.com/photo-1572119865084-43c285814d63?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/22703024/pexels-photo-22703024.jpeg",
     "title": "Chambord French Press Coffee Maker",
     "brandName": "Bodum",
     "description": "Iconic glass and stainless steel French press coffee maker designed to extract aromatic oils and flavor.",
@@ -447,7 +447,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-8",
-    "image": "https://images.unsplash.com/photo-1521302080334-4bebac2763a6?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/39296472/pexels-photo-39296472.jpeg",
     "title": "Classic Stovetop Espresso Maker 6-Cup",
     "brandName": "Bialetti",
     "description": "Traditional octagonal aluminum Moka pot for brewing authentic, rich Italian espresso on the stovetop.",
@@ -467,7 +467,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-9",
-    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/11439367/pexels-photo-11439367.jpeg",
     "title": "Virtuoso+ Conical Burr Coffee Grinder",
     "brandName": "Baratza",
     "description": "High-performance precision coffee grinder featuring a digital timer for consistent dosing.",
@@ -485,7 +485,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-10",
-    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/20007217/pexels-photo-20007217.jpeg",
     "title": "VertuoPlus Coffee and Espresso Machine",
     "brandName": "Nespresso",
     "description": "Single-serve brewing system using Centrifusion technology to brew both coffee and authentic espresso.",
@@ -504,7 +504,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-11",
-    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/5591850/pexels-photo-5591850.jpeg",
     "title": "Precision Brewer Thermal Coffee Maker",
     "brandName": "Breville",
     "description": "60-oz drip coffee maker with precise temperature control and customizable brew modes.",
@@ -522,7 +522,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-12",
-    "image": "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/4651070/pexels-photo-4651070.jpeg",
     "title": "Cold Brew Coffee Maker 1-Quart",
     "brandName": "Takeya",
     "description": "Airtight pitcher with a fine-mesh coffee filter designed to produce smooth, low-acid cold brew extract.",
@@ -541,7 +541,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-13",
-    "image": "https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/19319291/pexels-photo-19319291.jpeg",
     "title": "Pour-Over Glass Coffeemaker 8-Cup",
     "brandName": "Chemex",
     "description": "Non-porous Borosilicate glass brewer featuring an elegant hourglass shape and polished wood collar.",
@@ -560,7 +560,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-14",
-    "image": "https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/8447294/pexels-photo-8447294.jpeg",
     "title": "Specialty 10-Cup Coffee Maker",
     "brandName": "Ninja",
     "description": "SCA-certified coffee maker capable of brewing iced coffee, specialty concentrates, and custom cup sizes.",
@@ -578,7 +578,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-15",
-    "image": "https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/36921981/pexels-photo-36921981.jpeg",
     "title": "Gaggia Classic Pro Espresso Machine",
     "brandName": "Gaggia",
     "description": "Entry-level professional espresso machine featuring a commercial-style portafilter and three-way solenoid valve.",
@@ -598,7 +598,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-16",
-    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/7488705/pexels-photo-7488705.jpeg",
     "title": "8-Cup Cold Brew Maker",
     "brandName": "OXO",
     "description": "Cold brew system featuring a rainmaker cap for even water distribution and a fine stainless-steel mesh filter.",
@@ -616,7 +616,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-17",
-    "image": "https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/6000679/pexels-photo-6000679.jpeg",
     "title": "Stagg EKG Electric Gooseneck Kettle",
     "brandName": "Fellow",
     "description": "Precision pour-over electric kettle with variable temperature control and a minimalist aesthetic.",
@@ -636,7 +636,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-18",
-    "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/984860/pexels-photo-984860.jpeg",
     "title": "Programmable 14-Cup Coffeemaker",
     "brandName": "Cuisinart",
     "description": "Large capacity drip coffee machine equipped with fully automatic settings and brew strength control.",
@@ -655,7 +655,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-19",
-    "image": "https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/6032796/pexels-photo-6032796.jpeg",
     "title": "Silvia Espresso Machine",
     "brandName": "Rancilio",
     "description": "Semi-automatic commercial-grade espresso machine crafted with a heavy-duty brass boiler and steel housing.",
@@ -673,7 +673,7 @@ const EQUIPMENT_JSON = `[
   },
   {
     "id": "brewing-equipment-item-20",
-    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.pexels.com/photos/31986824/pexels-photo-31986824.jpeg",
     "title": "V60 Ceramic Coffee Dripper Size 02",
     "brandName": "Hario",
     "description": "Iconic Japanese pour-over cone dripper designed with spiral ribs for maximum coffee expansion.",
@@ -691,28 +691,17 @@ const EQUIPMENT_JSON = `[
     ]
   }
 ]`;
-const cartItemCount = document.getElementById("cart-item-count");
-const cartItemCountText = document.getElementById("cart-item-count-text");
+const cartItemCount = document.querySelector("#home-cart-icon #cart-item-count");
+const cartItemCountText = document.querySelector("#home-cart-txt #cart-item-count");
 
 let coffees = [];
 coffees = JSON.parse(COFFEE_JSON);
 bindCoffeeBeanItemClickListener();
-// fetch("./assests/json/equipment.json")
-//     .then((response) => response.json())
-//     .then((response) => {
-
-//     });
 
 let equipments = [];
 equipments = JSON.parse(EQUIPMENT_JSON);
 bindBrewingMachineItemClickListener();
 
-// fetch("./assests/json/equipment.json")
-//     .then((response) => response.json())
-//     .then((response) => {
-//         equipments = response;
-//         bindBrewingMachineItemClickListener()
-//     });
 
 function retrieveSelectedCoffeeWeight(id) {
   return coffees
@@ -731,11 +720,10 @@ function onDomLoaded() {
     let total = getCartItemSize();
     if (total > 0) {
       cartItemCount.textContent = total;
-      cartItemCount.style.display = "inline-block";
       cartItemCountText.textContent = total;
     } else {
       cartItemCount.style.display = "none";
-      cartItemCountText.textContent = 0;
+      cartItemCountText.style.display = "none";
     }
   });
 }
@@ -781,6 +769,7 @@ function bindCoffeeBeanItemClickListener() {
         const totalCount = getCartItemSize();
 
         cartItemCount.style.display = totalCount > 0 ? "inline-block" : "none";
+        cartItemCountText.style.display = totalCount > 0 ? "inline-block" : "none";
         cartItemCount.textContent = totalCount;
         cartItemCountText.textContent = totalCount;
 
@@ -850,6 +839,7 @@ function bindBrewingMachineItemClickListener() {
       const updateCartUI = (itemKey) => {
         const totalCount = getCartItemSize();
         cartItemCount.style.display = totalCount > 0 ? "inline-block" : "none";
+        cartItemCountText.style.display = totalCount > 0 ? "inline-block" : "none";
         cartItemCount.textContent = totalCount;
         cartItemCountText.textContent = totalCount;
 
