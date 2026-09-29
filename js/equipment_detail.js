@@ -55,7 +55,7 @@ const cartQuantityDisplay = document.querySelector(
         dimensions.textContent = item.dimensions;
         filterType.textContent = item.filterType;
         modelNo.textContent = item.modelNo;
-        cartQuantityDisplay.textContent = getQuantity(`#${item.id}$${queryVariant || retrieveSelectedBrewingVariant(item.id)}`);
+        // cartQuantityDisplay.textContent = getQuantity(`#${item.id}$${queryVariant || retrieveSelectedBrewingVariant(item.id)}`);
 
         whtIncludes.innerHTML = sanitizeHTML(
           item.whatWillIncludeInTheBox
@@ -111,24 +111,36 @@ const getItemKey = (itemId) => `#${itemId}`;
 const updateCartUI = (cart, itemKey) => {
   const totalCount = getCartItemSize();
 
-  const cartItemCount = document.getElementById("cart-item-count");
-  const cartItemCountText = document.getElementById("cart-item-count-text");
+  const cartItemCount = document.querySelector("#home-cart-icon #cart-item-count");
+  const cartItemCountText = document.querySelector("#home-cart-txt #cart-item-count");
 
   cartItemCount.style.display = totalCount > 0 ? "inline-block" : "none";
   cartItemCount.textContent = totalCount;
   cartItemCountText.textContent = totalCount;
 
-  cartQuantityDisplay.textContent = getQuantity(`${itemKey}$${queryVariant || retrieveSelectedBrewingVariant(queryItemId)}`);
+  // cartQuantityDisplay.textContent = getQuantity(`${itemKey}$${queryVariant || retrieveSelectedBrewingVariant(queryItemId)}`);
 };
 
 addToCartButton.addEventListener("click", () => {
   const itemKey = getItemKey(queryItemId);
   addBrewingItemToCart(itemKey, queryVariant || retrieveSelectedBrewingVariant(queryItemId));
   updateCartUI(cart, itemKey);
+
+  let addedIcon = ""
+        if (!window.location.href.includes("index.html")) {
+          addedIcon = "../assests/imgs/icons/ic_added_cart.svg";
+        } else {
+          addedIcon = "./assests/imgs/icons/ic_added_cart.svg";
+        }
+
+        addToCartButton.innerHTML = `<div class="added-to-cart"><img src="${addedIcon}"> <span> Added To Cart</span></div>`;
+        setInterval(() => {
+          addToCartButton.textContent = "Add To Cart";
+        }, 2000);
 });
 
-reduceFromCartButton.addEventListener("click", () => {
-  const itemKey = getItemKey(queryItemId);
-  reduceBrewingItemFromCart(itemKey, queryVariant || retrieveSelectedBrewingVariant(queryItemId));
-  updateCartUI(cart, itemKey);
-});
+// reduceFromCartButton.addEventListener("click", () => {
+//   const itemKey = getItemKey(queryItemId);
+//   reduceBrewingItemFromCart(itemKey, queryVariant || retrieveSelectedBrewingVariant(queryItemId));
+//   updateCartUI(cart, itemKey);
+// });

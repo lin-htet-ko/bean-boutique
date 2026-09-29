@@ -166,11 +166,7 @@ function mapEquipmentItemToHTML(brewingEquipments) {
                     <h4 id="price">${variant.finalPrice}</h4>
                     ${savePrice}
                   </div>
-                  <div class="btn-secondary btn-add-to-cart-container">
-                    <button id="btn-reduce-from-cart" class="">-</button>
-                    <span id="cart-quantity">${qty}</span>
-                    <button id="btn-add-to-cart" class="">+</button>
-                  </div>
+                  <div class="btn-secondary btn-add-to-cart-container" id="btn-add-to-cart">Add To Cart</div>
                 </div>
               </div>
             </div>

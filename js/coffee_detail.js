@@ -45,7 +45,7 @@ const cartQuantityDisplay = document.querySelector("#title-add-to-cart-section #
         name.textContent = item.title;
         brandName.textContent = item.brandName;
         description.textContent = item.description;
-        cartQuantityDisplay.textContent = getQuantity(`#${item.id}$${queryWeight || retrieveSelectedCoffeeWeight(item.id)}`)
+        // cartQuantityDisplay.textContent = getQuantity(`#${item.id}$${queryWeight || retrieveSelectedCoffeeWeight(item.id)}`)
 
         origins.textContent = item.coffeeOrigins;
         tastingNotesChips.innerHTML = sanitizeHTML(
@@ -102,31 +102,43 @@ const cartQuantityDisplay = document.querySelector("#title-add-to-cart-section #
   // });
 
 const addToCartButton = document.querySelector("#title-add-to-cart-section #btn-add-to-cart");
-const reduceFromCartButton = document.querySelector("#title-add-to-cart-section #btn-reduce-from-cart");
+// const reduceFromCartButton = document.querySelector("#title-add-to-cart-section #btn-reduce-from-cart");
 
 const getItemKey = (itemId) => `#${itemId}`;
 
 const updateCartUI = (cart, itemKey) => {
   const totalCount = getCartItemSize();
 
-  const cartItemCount = document.getElementById("cart-item-count");
-  const cartItemCountText = document.getElementById("cart-item-count-text");
+  const cartItemCount = document.querySelector("#home-cart-icon #cart-item-count");
+  const cartItemCountText = document.querySelector("#home-cart-txt #cart-item-count");
 
   cartItemCount.style.display = totalCount > 0 ? "inline-block" : "none";
   cartItemCount.textContent = totalCount;
     cartItemCountText.textContent = totalCount;
 
-  cartQuantityDisplay.textContent = getQuantity(`${itemKey}$${queryWeight || retrieveSelectedCoffeeWeight(queryItemId)}`);
+  // cartQuantityDisplay.textContent = getQuantity(`${itemKey}$${queryWeight || retrieveSelectedCoffeeWeight(queryItemId)}`);
 };
 
 addToCartButton.addEventListener("click", () => {
   const itemKey = getItemKey(queryItemId);
   addCoffeeItemToCart(itemKey, queryWeight || retrieveSelectedCoffeeWeight(queryItemId));
   updateCartUI(cart, itemKey);
+
+  let addedIcon = ""
+        if (!window.location.href.includes("index.html")) {
+          addedIcon = "../assests/imgs/icons/ic_added_cart.svg";
+        } else {
+          addedIcon = "./assests/imgs/icons/ic_added_cart.svg";
+        }
+
+        addToCartButton.innerHTML = `<div class="added-to-cart"><img src="${addedIcon}"> <span> Added To Cart</span></div>`;
+        setInterval(() => {
+          addToCartButton.textContent = "Add To Cart";
+        }, 2000);
 });
 
-reduceFromCartButton.addEventListener("click", () => {
-  const itemKey = getItemKey(queryItemId);
-  reduceFromCartButton(itemKey, queryWeight || retrieveSelectedCoffeeWeight(queryItemId));
-  updateCartUI(cart, itemKey);
-});
+// reduceFromCartButton.addEventListener("click", () => {
+//   const itemKey = getItemKey(queryItemId);
+//   reduceFromCartButton(itemKey, queryWeight || retrieveSelectedCoffeeWeight(queryItemId));
+//   updateCartUI(cart, itemKey);
+// });

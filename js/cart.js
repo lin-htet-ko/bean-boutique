@@ -13,7 +13,9 @@ function getCartItemSize() {
 }
 
 function clearCart() {
-  localStorage.setItem("cartItems", "")
+  localStorage.setItem("cartItems", "");
+  _cart = "{}";
+  cart = new Map();
 }
 
 function getQuantity(itemKey) {

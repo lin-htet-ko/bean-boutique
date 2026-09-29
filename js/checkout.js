@@ -20,6 +20,7 @@ const checkoutError = document.querySelector("#checkout-error");
 const checkoutErrorContainer = document.querySelector(
   "#checkout-error-container",
 );
+const btnClearCart = document.querySelector("#btn-clear-cart");
 
 document.addEventListener("DOMContentLoaded", () => {
   checkoutErrorContainer.style.display = "none";
@@ -216,4 +217,9 @@ btnCloseOnPlaceOrderSuccess.addEventListener("click", () => {
   dialogPlaceOrderSuccess.close();
   clearCart();
   window.location.replace("../index.html");
+});
+
+btnClearCart.addEventListener("click", () => {
+  clearCart();
+  populateCartForOrder();
 });

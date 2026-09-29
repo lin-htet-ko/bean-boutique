@@ -699,8 +699,12 @@ const EQUIPMENT_JSON = `[
     ]
   }
 ]`;
-const cartItemCount = document.querySelector("#home-cart-icon #cart-item-count");
-const cartItemCountText = document.querySelector("#home-cart-txt #cart-item-count");
+const cartItemCount = document.querySelector(
+  "#home-cart-icon #cart-item-count",
+);
+const cartItemCountText = document.querySelector(
+  "#home-cart-txt #cart-item-count",
+);
 
 let coffees = [];
 coffees = JSON.parse(COFFEE_JSON);
@@ -760,10 +764,9 @@ function bindCoffeeBeanItemClickListener() {
         if (!window.location.href.includes("index.html")) {
           location = `./coffee_detail.html?item=coffee-bean-item-${coffeeBeanItemIndex}`;
         } else {
-            location = `./pages/coffee_detail.html?item=coffee-bean-item-${coffeeBeanItemIndex}`;
+          location = `./pages/coffee_detail.html?item=coffee-bean-item-${coffeeBeanItemIndex}`;
         }
         window.location.href = location;
-        
       };
 
       const getItemKey = (index) => `#coffee-bean-item-${index}`;
@@ -776,13 +779,14 @@ function bindCoffeeBeanItemClickListener() {
         const totalCount = getCartItemSize();
 
         cartItemCount.style.display = totalCount > 0 ? "inline-block" : "none";
-        cartItemCountText.style.display = totalCount > 0 ? "inline-block" : "none";
+        cartItemCountText.style.display =
+          totalCount > 0 ? "inline-block" : "none";
         cartItemCount.textContent = totalCount;
         cartItemCountText.textContent = totalCount;
 
-        cartQuantityDisplay.textContent = getQuantity(
-          `${itemKey}$${retrieveSelectedCoffeeWeight(coffeeId)}`,
-        );
+        // cartQuantityDisplay.textContent = getQuantity(
+        //   `${itemKey}$${retrieveSelectedCoffeeWeight(coffeeId)}`,
+        // );
       };
 
       updateCartUI(itemKey);
@@ -794,22 +798,34 @@ function bindCoffeeBeanItemClickListener() {
       const addToCartButton = coffeeBeanItem.querySelector(
         `#coffee-bean-item-${coffeeBeanItemIndex} #btn-add-to-cart`,
       );
-      const reduceFromCartButton = coffeeBeanItem.querySelector(
-        `#coffee-bean-item-${coffeeBeanItemIndex} #btn-reduce-from-cart`,
-      );
+      // const reduceFromCartButton = coffeeBeanItem.querySelector(
+      //   `#coffee-bean-item-${coffeeBeanItemIndex} #btn-reduce-from-cart`,
+      // );
 
       addToCartButton.addEventListener("click", () => {
         addCoffeeItemToCart(itemKey, retrieveSelectedCoffeeWeight(coffeeId));
         updateCartUI(itemKey);
+        
+        let addedIcon = ""
+        if (!window.location.href.includes("index.html")) {
+          addedIcon = "../assests/imgs/icons/ic_added_cart.svg";
+        } else {
+          addedIcon = "./assests/imgs/icons/ic_added_cart.svg";
+        }
+
+        addToCartButton.innerHTML = `<div class="added-to-cart"><img src="${addedIcon}"> <span> Added To Cart</span></div>`;
+        setInterval(() => {
+          addToCartButton.textContent = "Add To Cart";
+        }, 2000);
       });
 
-      reduceFromCartButton.addEventListener("click", () => {
-        reduceCoffeeItemFromCart(
-          itemKey,
-          retrieveSelectedCoffeeWeight(coffeeId),
-        );
-        updateCartUI(itemKey);
-      });
+      // reduceFromCartButton.addEventListener("click", () => {
+      //   reduceCoffeeItemFromCart(
+      //     itemKey,
+      //     retrieveSelectedCoffeeWeight(coffeeId),
+      //   );
+      //   updateCartUI(itemKey);
+      // });
     }
   }
 }
@@ -831,7 +847,7 @@ function bindBrewingMachineItemClickListener() {
         if (!window.location.href.includes("index.html")) {
           location = `./equipment_detail.html?item=brewing-equipment-item-${brewingMethodIndex}`;
         } else {
-            location = `./pages/equipment_detail.html?item=brewing-equipment-item-${brewingMethodIndex}`;
+          location = `./pages/equipment_detail.html?item=brewing-equipment-item-${brewingMethodIndex}`;
         }
         window.location.href = location;
       };
@@ -846,13 +862,14 @@ function bindBrewingMachineItemClickListener() {
       const updateCartUI = (itemKey) => {
         const totalCount = getCartItemSize();
         cartItemCount.style.display = totalCount > 0 ? "inline-block" : "none";
-        cartItemCountText.style.display = totalCount > 0 ? "inline-block" : "none";
+        cartItemCountText.style.display =
+          totalCount > 0 ? "inline-block" : "none";
         cartItemCount.textContent = totalCount;
         cartItemCountText.textContent = totalCount;
 
-        cartQuantityDisplay.textContent = getQuantity(
-          `${itemKey}$${retrieveSelectedBrewingVariant(brewingId)}`,
-        );
+        // cartQuantityDisplay.textContent = getQuantity(
+        //   `${itemKey}$${retrieveSelectedBrewingVariant(brewingId)}`,
+        // );
       };
 
       updateCartUI(itemKey);
@@ -864,9 +881,9 @@ function bindBrewingMachineItemClickListener() {
       const addToCartButton = brewingMethodItem.querySelector(
         `#brewing-equipment-item-${brewingMethodIndex} #btn-add-to-cart`,
       );
-      const reduceFromCartButton = brewingMethodItem.querySelector(
-        `#brewing-equipment-item-${brewingMethodIndex} #btn-reduce-from-cart`,
-      );
+      // const reduceFromCartButton = brewingMethodItem.querySelector(
+      //   `#brewing-equipment-item-${brewingMethodIndex} #btn-reduce-from-cart`,
+      // );
 
       addToCartButton.addEventListener("click", () => {
         addBrewingItemToCart(
@@ -874,15 +891,27 @@ function bindBrewingMachineItemClickListener() {
           retrieveSelectedBrewingVariant(brewingId),
         );
         updateCartUI(itemKey);
+
+        let addedIcon = ""
+        if (!window.location.href.includes("index.html")) {
+          addedIcon = "../assests/imgs/icons/ic_added_cart.svg";
+        } else {
+          addedIcon = "./assests/imgs/icons/ic_added_cart.svg";
+        }
+
+        addToCartButton.innerHTML = `<div class="added-to-cart"><img src="${addedIcon}"> <span> Added To Cart</span></div>`;
+        setInterval(() => {
+          addToCartButton.textContent = "Add To Cart";
+        }, 2000);
       });
 
-      reduceFromCartButton.addEventListener("click", () => {
-        reduceBrewingItemFromCart(
-          itemKey,
-          retrieveSelectedBrewingVariant(brewingId),
-        );
-        updateCartUI(itemKey);
-      });
+      // reduceFromCartButton.addEventListener("click", () => {
+      //   reduceBrewingItemFromCart(
+      //     itemKey,
+      //     retrieveSelectedBrewingVariant(brewingId),
+      //   );
+      //   updateCartUI(itemKey);
+      // });
     }
   }
 }
@@ -903,7 +932,7 @@ document.querySelectorAll(".home-cart").forEach((element) => {
       status.textContent =
         "Your cart is empty. Add an item before placing an order.";
     } else {
-      if(window.location.href.includes("index.html")){
+      if (window.location.href.includes("index.html")) {
         window.location.replace("./pages/checkout.html");
       } else {
         window.location.replace("checkout.html");

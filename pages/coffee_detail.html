@@ -11,18 +11,16 @@
       <nav>
         <div class="brand-cart">
           <h3>Bean Boutique</h3>
-        <a class="home-cart" href="checkout.html" id="home-cart-txt">
-          <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
-          <span id="cart-item-count"></span>
-        </a>
+          <a class="home-cart" href="checkout.html" id="home-cart-txt">
+            <img src="../assests/imgs/icons/ic_cart.svg" alt="Cart" />
+            <span id="cart-item-count"></span>
+          </a>
         </div>
         <ul>
           <li><a href="coffee_selection.html">Coffee</a></li>
           <li><a href="equipment.html">Equipment</a></li>
           <li>
-            <a href="offers_subscription.html"
-              >Special Deals & Subscription</a
-            >
+            <a href="offers_subscription.html">Special Deals & Subscription</a>
           </li>
           <li><a href="events.html">Events & Workshops</a></li>
         </ul>
@@ -33,22 +31,32 @@
       </nav>
     </header>
 
-    <img
-      id="coffee_detail_image"
-      src="../assests/imgs/placeholder_coffee_bean_1.png"
-      alt=""
-      srcset=""
-    />
+    <section>
+      <img
+        id="coffee_detail_image"
+        src="../assests/imgs/placeholder_coffee_bean_1.png"
+        alt=""
+        srcset=""
+      />
+      <div class="breadcrum">
+        <div class="breadcrum-items">
+          <a class="breadcrum-item" href="./coffee_selection.html">Coffee Beans</a> /
+          <a class="breadcrum-item">Cofee Bean Detail</a>
+        </div>
+        <hr class="divder-secondary" />
+      </div>
+    </section>
     <main id="coffee-detail-content">
       <div id="title-add-to-cart-section">
         <div>
           <h4 id="coffee-name">Title Title Title</h4>
           <p id="coffee-detail-brand-name">Brand Name</p>
         </div>
-        <div class="btn-secondary btn-add-to-cart-container">
-          <button id="btn-reduce-from-cart" class="">-</button>
-          <span id="cart-quantity">0</span>
-          <button id="btn-add-to-cart" class="">+</button>
+        <div
+          class="btn-secondary btn-add-to-cart-container btn-add-to-cart-container-large"
+          id="btn-add-to-cart"
+        >
+          Add To Cart
         </div>
       </div>
 
@@ -109,7 +117,9 @@
       <div class="coffee-detail-check-more-section">
         <div class="check-more-header">
           <h4>Coffee You May Interested</h4>
-          <a class="btn-see-more" href="../pages/coffee_selection.html">SEE MORE</a>
+          <a class="btn-see-more" href="../pages/coffee_selection.html"
+            >SEE MORE</a
+          >
         </div>
 
         <div class="check-more-content">
@@ -119,7 +129,7 @@
               src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e"
               alt="Ethiopia Yirgacheffe Aricha"
             />
-            <div id="body">
+            <div class="coffee-bean-body">
               <h5>Ethiopia Yirgacheffe Aricha</h5>
               <p id="desc">
                 A delicate and complex heirloom coffee processed using the
@@ -127,22 +137,26 @@
                 citrus characteristics.
               </p>
               <div id="origin">
-                <img src="../assests/imgs/icons/ic_world.svg" alt="Origin icon" />
+                <img
+                  src="../assests/imgs/icons/ic_world.svg"
+                  alt="Origin icon"
+                />
                 <p>Ethiopia</p>
               </div>
               <div class="coffee-bean-item-footer">
                 <div class="coffee-bean-item-price">
-                    <h4 id="price">$18.50</h4>
-                    <div class="save-price">
-                      <p id="title-save">Was</p>
-                      <p id="value-save">$22.00</p>
-                    </div>
+                  <h4 id="price">$18.50</h4>
+                  <div class="save-price">
+                    <p id="title-save">Was</p>
+                    <p id="value-save">$22.00</p>
                   </div>
-                  <div class="btn-secondary btn-add-to-cart-container">
-                    <button id="btn-reduce-from-cart" class="">-</button>
-                    <span id="cart-quantity">0</span>
-                    <button id="btn-add-to-cart" class="">+</button>
-                  </div>
+                </div>
+                <div
+                  class="btn-secondary btn-add-to-cart-container"
+                  id="btn-add-to-cart"
+                >
+                  Add To Cart
+                </div>
               </div>
             </div>
           </div>
@@ -154,7 +168,7 @@
               src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9"
               alt="Colombia Huila Supremo"
             />
-            <div id="body">
+            <div class="coffee-bean-body">
               <h5>Colombia Huila Supremo</h5>
               <p id="desc">
                 Classic Colombian single-origin coffee grown high in the Andes
@@ -162,18 +176,22 @@
                 and rich sweetness.
               </p>
               <div id="origin">
-                <img src="../assests/imgs/icons/ic_world.svg" alt="Origin icon" />
+                <img
+                  src="../assests/imgs/icons/ic_world.svg"
+                  alt="Origin icon"
+                />
                 <p>Colombia</p>
               </div>
               <div class="coffee-bean-item-footer">
                 <div class="coffee-bean-item-price">
-                    <h4 id="price">$16.00</h4>
-                  </div>
-                  <div class="btn-secondary btn-add-to-cart-container">
-                    <button id="btn-reduce-from-cart" class="">-</button>
-                    <span id="cart-quantity">0</span>
-                    <button id="btn-add-to-cart" class="">+</button>
-                  </div>
+                  <h4 id="price">$16.00</h4>
+                </div>
+                <div
+                  class="btn-secondary btn-add-to-cart-container"
+                  id="btn-add-to-cart"
+                >
+                  Add To Cart
+                </div>
               </div>
             </div>
           </div>
@@ -185,7 +203,7 @@
               src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe"
               alt="Kenya AA Nyeri Hill"
             />
-            <div id="body">
+            <div class="coffee-bean-body">
               <h5>Kenya AA Nyeri Hill</h5>
               <p id="desc">
                 Famous for its vibrant acidity and intense berry-forward
@@ -193,22 +211,26 @@
                 Kenya.
               </p>
               <div id="origin">
-                <img src="../assests/imgs/icons/ic_world.svg" alt="Origin icon" />
+                <img
+                  src="../assests/imgs/icons/ic_world.svg"
+                  alt="Origin icon"
+                />
                 <p>Kenya</p>
               </div>
               <div class="coffee-bean-item-footer">
                 <div class="coffee-bean-item-price">
-                    <h4 id="price">$21.00</h4>
-                    <div class="save-price">
-                      <p id="title-save">Was</p>
-                      <p id="value-save">$24.50</p>
-                    </div>
+                  <h4 id="price">$21.00</h4>
+                  <div class="save-price">
+                    <p id="title-save">Was</p>
+                    <p id="value-save">$24.50</p>
                   </div>
-                  <div class="btn-secondary btn-add-to-cart-container">
-                    <button id="btn-reduce-from-cart" class="">-</button>
-                    <span id="cart-quantity">0</span>
-                    <button id="btn-add-to-cart" class="">+</button>
-                  </div>
+                </div>
+                <div
+                  class="btn-secondary btn-add-to-cart-container"
+                  id="btn-add-to-cart"
+                >
+                  Add To Cart
+                </div>
               </div>
             </div>
           </div>
@@ -220,7 +242,7 @@
               src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd"
               alt="Guatemala Antigua Volcán"
             />
-            <div id="body">
+            <div class="coffee-bean-body">
               <h5>Guatemala Antigua Volcán</h5>
               <p id="desc">
                 Shade-grown in soil enriched by surrounding volcanoes, producing
@@ -228,18 +250,22 @@
                 subtle spice.
               </p>
               <div id="origin">
-                <img src="../assests/imgs/icons/ic_world.svg" alt="Origin icon" />
+                <img
+                  src="../assests/imgs/icons/ic_world.svg"
+                  alt="Origin icon"
+                />
                 <p>Guatemala</p>
               </div>
               <div class="coffee-bean-item-footer">
                 <div class="coffee-bean-item-price">
-                    <h4 id="price">$17.50</h4>
-                  </div>
-                  <div class="btn-secondary btn-add-to-cart-container">
-                    <button id="btn-reduce-from-cart" class="">-</button>
-                    <span id="cart-quantity">0</span>
-                    <button id="btn-add-to-cart" class="">+</button>
-                  </div>
+                  <h4 id="price">$17.50</h4>
+                </div>
+                <div
+                  class="btn-secondary btn-add-to-cart-container"
+                  id="btn-add-to-cart"
+                >
+                  Add To Cart
+                </div>
               </div>
             </div>
           </div>
@@ -273,10 +299,11 @@
                 <div class="equipment-item-price">
                   <h4 id="price">$34.99</h4>
                 </div>
-                <div class="btn-secondary btn-add-to-cart-container">
-                  <button id="btn-reduce-from-cart" class="">-</button>
-                  <span id="cart-quantity">0</span>
-                  <button id="btn-add-to-cart" class="">+</button>
+                <div
+                  class="btn-secondary btn-add-to-cart-container"
+                  id="btn-add-to-cart"
+                >
+                  Add To Cart
                 </div>
               </div>
             </div>
@@ -307,10 +334,11 @@
                     <p id="value-save">$100.00</p>
                   </div>
                 </div>
-                <div class="btn-secondary btn-add-to-cart-container">
-                  <button id="btn-reduce-from-cart" class="">-</button>
-                  <span id="cart-quantity">0</span>
-                  <button id="btn-add-to-cart" class="">+</button>
+                <div
+                  class="btn-secondary btn-add-to-cart-container"
+                  id="btn-add-to-cart"
+                >
+                  Add To Cart
                 </div>
               </div>
             </div>
@@ -341,10 +369,11 @@
                     <p id="value-save">$30.00</p>
                   </div>
                 </div>
-                <div class="btn-secondary btn-add-to-cart-container">
-                  <button id="btn-reduce-from-cart" class="">-</button>
-                  <span id="cart-quantity">0</span>
-                  <button id="btn-add-to-cart" class="">+</button>
+                <div
+                  class="btn-secondary btn-add-to-cart-container"
+                  id="btn-add-to-cart"
+                >
+                  Add To Cart
                 </div>
               </div>
             </div>
@@ -375,10 +404,11 @@
                     <p id="value-save">$150.00</p>
                   </div>
                 </div>
-                <div class="btn-secondary btn-add-to-cart-container">
-                  <button id="btn-reduce-from-cart" class="">-</button>
-                  <span id="cart-quantity">0</span>
-                  <button id="btn-add-to-cart" class="">+</button>
+                <div
+                  class="btn-secondary btn-add-to-cart-container"
+                  id="btn-add-to-cart"
+                >
+                  Add To Cart
                 </div>
               </div>
             </div>
@@ -408,9 +438,7 @@
               <ul class="link-collection">
                 <li><a href="contact_us.html">Contact Us</a></li>
                 <li>
-                  <a href="terms_and_condition.html"
-                    >Terms & Conditions</a
-                  >
+                  <a href="terms_and_condition.html">Terms & Conditions</a>
                 </li>
                 <li>
                   <a href="privacy_policies.html">Privacy & Policies</a>
