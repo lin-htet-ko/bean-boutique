@@ -147,7 +147,7 @@ function mapCoffeeItemToHTML(coffees) {
     <div class="coffee-bean-item" id="${coffee.id}">
     <div class="image-tag">
               <img
-                id="coffee-bean-item-img"
+                class="coffee-bean-item-img"
                 src="${coffee.image}"
                 alt="${coffee.title}"
               />

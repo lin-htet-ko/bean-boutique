@@ -792,7 +792,7 @@ function bindCoffeeBeanItemClickListener() {
       updateCartUI(itemKey);
 
       coffeeBeanItem
-        .querySelector("#coffee-bean-item-img")
+        .querySelector(".coffee-bean-item-img")
         .addEventListener("click", navigateToCoffeeDetail);
 
       const addToCartButton = coffeeBeanItem.querySelector(
