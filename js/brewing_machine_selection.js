@@ -163,7 +163,7 @@ function mapEquipmentItemToHTML(brewingEquipments) {
                 <hr class="divider" />
                 <div class="equipment-item-footer">
                   <div class="equipment-item-price">
-                    <h4 class="price">${variant.finalPrice}</h4>
+                    <p class="price">${variant.finalPrice}</p>
                     ${savePrice}
                   </div>
                   <div class="btn-secondary btn-add-to-cart-container btn-add-to-cart">Add To Cart</div>

@@ -740,7 +740,7 @@ function onDomLoaded() {
 }
 onDomLoaded();
 
-document.querySelector("nav h3").addEventListener("click", () => {
+document.querySelector("nav .brand-name").addEventListener("click", () => {
   if (!window.location.href.includes("index.html")) {
     window.location.href = "../index.html";
   } else {

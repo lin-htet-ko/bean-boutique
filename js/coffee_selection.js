@@ -154,7 +154,7 @@ function mapCoffeeItemToHTML(coffees) {
               ${tag}
               </div>
               <div class='coffee-bean-body'>
-                <h5>${coffee.title}</h5>
+                <h3>${coffee.title}</h3>
                 <p class="desc">${coffee.description}</p>
                 <div class="origin">
                   <img
@@ -165,7 +165,7 @@ function mapCoffeeItemToHTML(coffees) {
                 </div>
                 <div class="coffee-bean-item-footer">
                   <div class="coffee-bean-item-price">
-                    <h4 class="price">${weightItem.finalPrice}</h4>
+                    <p class="price">${weightItem.finalPrice}</p>
                     ${savePrice}
                   </div>
                   <div class="btn-secondary btn-add-to-cart-container btn-add-to-cart">Add To Cart</div>

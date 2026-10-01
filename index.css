@@ -73,7 +73,7 @@ nav .brand-cart {
   right: 0;
 }
 
-nav h3 {
+nav .brand-name {
   font-size: 20px;
   cursor: pointer;
 }
@@ -224,7 +224,7 @@ header {
   object-fit: cover;
 }
 
-.coffee-bean-item h5 {
+.coffee-bean-item h3 {
   font-size: 14px;
   color: black;
 }
@@ -481,7 +481,7 @@ header {
   margin: 20px;
 }
 
-.deal-item .deal-item-content .deal-item-body h4 {
+.deal-item .deal-item-content .deal-item-body h3 {
   margin-bottom: 6px;
   font-size: 26px;
 }
@@ -567,7 +567,7 @@ header {
   justify-content: center;
 }
 
-.event-item .event-item-content h4 {
+.event-item .event-item-content h3 {
   font-size: 30px;
 }
 
@@ -632,7 +632,7 @@ footer #references {
   flex-grow: 1;
 }
 
-footer #references h1 {
+footer #references .brand-name {
   margin-bottom: 40px;
   font-size: 64px;
   text-align: center;
@@ -648,7 +648,7 @@ footer #reference-body {
   list-style: none;
 }
 
-.link-collection-form h6 {
+.link-collection-form h2 {
   font-size: 1em;
 }
 
@@ -681,7 +681,7 @@ footer #reference-body {
   background-color: var(--trinary-color);
 }
 
-.regstration-form h1 {
+.regstration-form h2 {
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 40px;
@@ -769,7 +769,7 @@ dialog::backdrop {
   .regstration-form {
     padding: 20px;
   }
-  .regstration-form h1 {
+  .regstration-form h2 {
     font-size: 20px;
   }
   dialog {
@@ -897,7 +897,7 @@ dialog::backdrop {
   font-size: 14px;
 }
 
-#home-banner h3 {
+#home-banner h1 {
   font-size: 24px;
   padding: 10px 0px;
 }
@@ -991,7 +991,7 @@ dialog::backdrop {
     padding-right: 30px;
   }
 
-  .event-item-full .event-item-content h4 {
+  .event-item-full .event-item-content h3 {
     font-size: 20px;
   }
 
@@ -1022,7 +1022,7 @@ dialog::backdrop {
   align-items: center;
 }
 
-#title-add-to-cart-section h4 {
+#title-add-to-cart-section h1 {
   font-size: 32px;
   margin-bottom: 8px;
   color: var(--trinary-color);
@@ -1079,8 +1079,8 @@ dialog::backdrop {
   background-color: var(--secondary-color);
 }
 
-.coffee-detail-item-section h5,
-.equipment-detail-item-section h5 {
+.coffee-detail-item-section h2,
+.equipment-detail-item-section h2 {
   font-size: 20px;
   margin-bottom: 10px;
   color: var(--trinary-color);
@@ -1120,8 +1120,8 @@ dialog::backdrop {
   margin-bottom: 20px;
 }
 
-.coffee-detail-check-more-section .check-more-header h4,
-.equipment-detail-check-more-section .check-more-header h4 {
+.coffee-detail-check-more-section .check-more-header h2,
+.equipment-detail-check-more-section .check-more-header h2 {
   font-size: 20px;
   color: var(--trinary-color);
 }
@@ -1210,8 +1210,8 @@ dialog::backdrop {
   margin: 0 10px 10px 10px;
 }
 
-#coffee-selction-filter h3,
-#equipment-selction-filter h3 {
+#coffee-selction-filter h2,
+#equipment-selction-filter h2 {
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -1313,7 +1313,7 @@ dialog::backdrop {
   width: 100%;
 }
 
-.list-content .card > h3 {
+.list-content .card > h2 {
   margin-bottom: 20px;
   font-size: 26px;
 }
@@ -1332,7 +1332,7 @@ dialog::backdrop {
   gap: 20px;
 }
 
-.benefit-item .text-section h5 {
+.benefit-item .text-section h3 {
   margin-bottom: 5px;
   color: var(--secondary-color);
   font-size: 15px;
@@ -1436,7 +1436,7 @@ dialog::backdrop {
   line-height: 1.2em;
 }
 
-.form .notes h6 {
+.form .notes h3 {
   font-size: 16px;
   color: var(--primary-color);
 }
