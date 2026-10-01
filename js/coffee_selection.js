@@ -14,7 +14,7 @@ onDomLoaded();
 filterSections.forEach((element) => {
   const dropdown = element.querySelector(".dropdown");
   if (dropdown) {
-    const icon = element.querySelector("#ic-brand-dropdown");
+    const icon = element.querySelector(".ic-brand-dropdown");
     icon.src = "../assests/imgs/icons/ic_arrow_down.svg";
     element.querySelectorAll(".filter-item").forEach((value, _) => {
       value.style.display = "none";

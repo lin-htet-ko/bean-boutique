@@ -133,10 +133,10 @@ function populateCartForOrder() {
                   <span id="cart-quantity">${item.quantity}</span>
                   <button class="btn-add-to-cart" type="button"">+</button>
                 </div>
-                <p><span id="qty">${item.quantity} </span> x <span id="value">${item.unitPrice}</span></p>
+                <p><span class="qty">${item.quantity} </span> x <span class="value">${item.unitPrice}</span></p>
                 <p>
-                  <span id="total-text">Total: </span
-                  ><span id="price-value"><strong>$${item.total}</strong></span>
+                  <span class="total-text">Total: </span
+                  ><span class="price-value"><strong>$${item.total}</strong></span>
                 </p>
               </div>
             </div>
