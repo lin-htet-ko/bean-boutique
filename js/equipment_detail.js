@@ -133,7 +133,7 @@ addToCartButton.addEventListener("click", () => {
           addedIcon = "./assests/imgs/icons/ic_added_cart.svg";
         }
 
-        addToCartButton.innerHTML = `<div class="added-to-cart"><img src="${addedIcon}"> <span> Added To Cart</span></div>`;
+        addToCartButton.innerHTML = `<div class="added-to-cart"><img src="${addedIcon}" alt="Added to cart"> <span> Added To Cart</span></div>`;
         setInterval(() => {
           addToCartButton.textContent = "Add To Cart";
         }, 2000);
