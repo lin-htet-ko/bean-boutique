@@ -20,10 +20,10 @@ const cartQuantityDisplay = document.querySelector("#title-add-to-cart-section #
           ".coffee-detail-item-section #description-value",
         );
         const finalPrice = document.querySelector(
-          ".coffee-detail-price #price",
+          ".coffee-detail-price .price",
         );
         const originalPrice = document.querySelector(
-          ".coffee-detail-price #value-save",
+          ".coffee-detail-price .value-save",
         );
         const savedPrice = document.querySelector(
           ".coffee-detail-price .save-price",
@@ -101,7 +101,7 @@ const cartQuantityDisplay = document.querySelector("#title-add-to-cart-section #
     
   // });
 
-const addToCartButton = document.querySelector("#title-add-to-cart-section #btn-add-to-cart");
+const addToCartButton = document.querySelector("#title-add-to-cart-section .btn-add-to-cart");
 // const reduceFromCartButton = document.querySelector("#title-add-to-cart-section #btn-reduce-from-cart");
 
 const getItemKey = (itemId) => `#${itemId}`;
@@ -109,8 +109,8 @@ const getItemKey = (itemId) => `#${itemId}`;
 const updateCartUI = (cart, itemKey) => {
   const totalCount = getCartItemSize();
 
-  const cartItemCount = document.querySelector("#home-cart-icon #cart-item-count");
-  const cartItemCountText = document.querySelector("#home-cart-txt #cart-item-count");
+  const cartItemCount = document.querySelector("#home-cart-icon .cart-item-count");
+  const cartItemCountText = document.querySelector("#home-cart-txt .cart-item-count");
 
   cartItemCount.style.display = totalCount > 0 ? "inline-block" : "none";
   cartItemCount.textContent = totalCount;

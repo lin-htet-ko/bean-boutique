@@ -132,8 +132,8 @@ function mapEquipmentItemToHTML(brewingEquipments) {
       variant.originalPrice != variant.finalPrice
         ? `
       <div class="save-price">
-        <p id="title-save">Save</p>
-        <p id="value-save">$100.00</p>
+        <p class="title-save">Save</p>
+        <p class="value-save">$100.00</p>
       </div>
       `
         : "";
@@ -148,7 +148,7 @@ function mapEquipmentItemToHTML(brewingEquipments) {
     <div class="equipment-item" id="${equipment.id}">
           <div class="image-tag">
               <img
-                id="equipment-item-img"
+                class="equipment-item-img"
                 src="${equipment.image}"
                 alt="${equipment.title}"
               />
@@ -156,17 +156,17 @@ function mapEquipmentItemToHTML(brewingEquipments) {
           </div>
               <div class="equipment-item-body">
                 <div class="equipment-item-content">
-                  <p id="title">${equipment.title}</p>
-                  <p id="brand">${equipment.brandName}</p>
-                  <p id="desc">${equipment.description}</p>
+                  <p class="title">${equipment.title}</p>
+                  <p class="brand">${equipment.brandName}</p>
+                  <p class="desc">${equipment.description}</p>
                 </div>
                 <hr class="divider" />
                 <div class="equipment-item-footer">
                   <div class="equipment-item-price">
-                    <h4 id="price">${variant.finalPrice}</h4>
+                    <h4 class="price">${variant.finalPrice}</h4>
                     ${savePrice}
                   </div>
-                  <div class="btn-secondary btn-add-to-cart-container" id="btn-add-to-cart">Add To Cart</div>
+                  <div class="btn-secondary btn-add-to-cart-container btn-add-to-cart">Add To Cart</div>
                 </div>
               </div>
             </div>

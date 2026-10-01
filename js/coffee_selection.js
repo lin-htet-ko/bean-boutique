@@ -133,8 +133,8 @@ function mapCoffeeItemToHTML(coffees) {
     let savePrice =
       weightItem.finalPrice != weightItem.originalPrice
         ? `<div class="save-price">
-                        <p id="title-save">Was</p>
-                        <p id="value-save">${weightItem.originalPrice}</p>
+                        <p class="title-save">Was</p>
+                        <p class="value-save">${weightItem.originalPrice}</p>
                       </div>`
         : "";
     let tag = "";
@@ -155,8 +155,8 @@ function mapCoffeeItemToHTML(coffees) {
               </div>
               <div class='coffee-bean-body'>
                 <h5>${coffee.title}</h5>
-                <p id="desc">${coffee.description}</p>
-                <div id="origin">
+                <p class="desc">${coffee.description}</p>
+                <div class="origin">
                   <img
                     src="../assests/imgs/icons/ic_world.svg"
                     alt="Origin icon"
@@ -165,10 +165,10 @@ function mapCoffeeItemToHTML(coffees) {
                 </div>
                 <div class="coffee-bean-item-footer">
                   <div class="coffee-bean-item-price">
-                    <h4 id="price">${weightItem.finalPrice}</h4>
+                    <h4 class="price">${weightItem.finalPrice}</h4>
                     ${savePrice}
                   </div>
-                  <div class="btn-secondary btn-add-to-cart-container" id="btn-add-to-cart">Add To Cart</div>
+                  <div class="btn-secondary btn-add-to-cart-container btn-add-to-cart">Add To Cart</div>
                 </div>
               </div>
             </div>

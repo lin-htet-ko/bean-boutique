@@ -700,10 +700,10 @@ const EQUIPMENT_JSON = `[
   }
 ]`;
 const cartItemCount = document.querySelector(
-  "#home-cart-icon #cart-item-count",
+  "#home-cart-icon .cart-item-count",
 );
 const cartItemCountText = document.querySelector(
-  "#home-cart-txt #cart-item-count",
+  "#home-cart-txt .cart-item-count",
 );
 
 let coffees = [];
@@ -795,9 +795,7 @@ function bindCoffeeBeanItemClickListener() {
         .querySelector(".coffee-bean-item-img")
         .addEventListener("click", navigateToCoffeeDetail);
 
-      const addToCartButton = coffeeBeanItem.querySelector(
-        `#coffee-bean-item-${coffeeBeanItemIndex} #btn-add-to-cart`,
-      );
+      const addToCartButton = coffeeBeanItem.querySelector(".btn-add-to-cart");
       // const reduceFromCartButton = coffeeBeanItem.querySelector(
       //   `#coffee-bean-item-${coffeeBeanItemIndex} #btn-reduce-from-cart`,
       // );
@@ -875,12 +873,10 @@ function bindBrewingMachineItemClickListener() {
       updateCartUI(itemKey);
 
       brewingMethodItem
-        .querySelector("#equipment-item-img")
+        .querySelector(".equipment-item-img")
         .addEventListener("click", navigateToBrewingDetail);
 
-      const addToCartButton = brewingMethodItem.querySelector(
-        `#brewing-equipment-item-${brewingMethodIndex} #btn-add-to-cart`,
-      );
+      const addToCartButton = brewingMethodItem.querySelector(".btn-add-to-cart");
       // const reduceFromCartButton = brewingMethodItem.querySelector(
       //   `#brewing-equipment-item-${brewingMethodIndex} #btn-reduce-from-cart`,
       // );

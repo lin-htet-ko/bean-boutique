@@ -24,10 +24,10 @@ const cartQuantityDisplay = document.querySelector(
           ".equipment-detail-item-section #description-value",
         );
         const finalPrice = document.querySelector(
-          ".equipment-detail-price #price",
+          ".equipment-detail-price .price",
         );
         const originalPrice = document.querySelector(
-          ".equipment-detail-price #value-save",
+          ".equipment-detail-price .value-save",
         );
         const savedPrice = document.querySelector(
           ".equipment-detail-price .save-price",
@@ -100,7 +100,7 @@ const cartQuantityDisplay = document.querySelector(
   // });
 
 const addToCartButton = document.querySelector(
-  "#title-add-to-cart-section #btn-add-to-cart",
+  "#title-add-to-cart-section .btn-add-to-cart",
 );
 const reduceFromCartButton = document.querySelector(
   "#title-add-to-cart-section #btn-reduce-from-cart",
@@ -111,8 +111,8 @@ const getItemKey = (itemId) => `#${itemId}`;
 const updateCartUI = (cart, itemKey) => {
   const totalCount = getCartItemSize();
 
-  const cartItemCount = document.querySelector("#home-cart-icon #cart-item-count");
-  const cartItemCountText = document.querySelector("#home-cart-txt #cart-item-count");
+  const cartItemCount = document.querySelector("#home-cart-icon .cart-item-count");
+  const cartItemCountText = document.querySelector("#home-cart-txt .cart-item-count");
 
   cartItemCount.style.display = totalCount > 0 ? "inline-block" : "none";
   cartItemCount.textContent = totalCount;

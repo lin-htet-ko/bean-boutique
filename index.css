@@ -229,23 +229,23 @@ header {
   color: black;
 }
 
-.coffee-bean-item #desc {
+.coffee-bean-item .desc {
   font-size: 13px;
   margin-top: 6px;
   color: black;
 }
 
-.coffee-bean-item #origin {
+.coffee-bean-item .origin {
   display: flex;
   align-items: center;
   margin-top: 8px;
 }
 
-.coffee-bean-item #origin img {
+.coffee-bean-item .origin img {
   margin-right: 4px;
 }
 
-.coffee-bean-item #origin p {
+.coffee-bean-item .origin p {
   font-size: 12px;
   display: inline;
   color: var(--primary-color);
@@ -262,7 +262,7 @@ header {
   margin-bottom: 2px;
 }
 
-.coffee-bean-item-price #price {
+.coffee-bean-item-price .price {
   font-size: 26px;
   margin-right: 10px;
   color: black;
@@ -274,7 +274,7 @@ header {
   color: black;
 }
 
-.coffee-bean-item-price .save-price #value-save {
+.coffee-bean-item-price .save-price .value-save {
   text-decoration: line-through;
 }
 
@@ -296,12 +296,12 @@ header {
   scale: 1.02;
 }
 
-#btn_home_check_more_coffee img {
+.btn_home_check_more_coffee img {
   margin-left: 6px;
 }
 
 @media screen and (max-width: 1024px) {
-  #btn_home_check_more_coffee {
+  .btn_home_check_more_coffee {
     width: 80%;
   }
 }
@@ -320,26 +320,26 @@ header {
   scale: 1.02;
 }
 
-.equipment-item #equipment-item-img {
+.equipment-item .equipment-item-img {
   width: 100%;
   height: 193px;
   object-fit: cover;
 }
 
-.equipment-item #title {
+.equipment-item .title {
   font-size: 16px;
   font-weight: 600;
   color: black;
 }
 
-.equipment-item #brand {
+.equipment-item .brand {
   font-size: 12px;
   color: var(--primary-color);
   margin-top: 2px;
   margin-bottom: 4px;
 }
 
-.equipment-item #desc {
+.equipment-item .desc {
   font-size: 13px;
   color: black;
 }
@@ -365,17 +365,17 @@ header {
   align-items: center;
 }
 
-.equipment-item-footer #price {
+.equipment-item-footer .price {
   font-size: 26px;
   margin-right: 6px;
 }
 
-.equipment-item-footer .save-price #title-save {
+.equipment-item-footer .save-price .title-save {
   font-size: 13px;
   font-weight: 600;
 }
 
-.equipment-item-footer .save-price #value-save {
+.equipment-item-footer .save-price .value-save {
   font-size: 13px;
   text-decoration: line-through;
   font-weight: 600;
@@ -490,7 +490,7 @@ header {
   font-size: 14px;
 }
 
-.deal-item #deal-img {
+.deal-item .deal-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -527,7 +527,7 @@ header {
     width: 100%;
     height: 300px;
   }
-  .deal-item #deal-img {
+  .deal-item .deal-img {
     height: 300px;
   }
 }
@@ -614,7 +614,7 @@ footer #address {
   flex-grow: 1;
 }
 
-footer #address #title {
+footer #address .title {
   font-size: 20px;
 }
 
@@ -1039,8 +1039,8 @@ dialog::backdrop {
   align-items: center;
 }
 
-.coffee-detail-price #price,
-.equipment-detail-price #price {
+.coffee-detail-price .price,
+.equipment-detail-price .price {
   font-size: 40px;
   font-weight: 600;
   margin-right: 10px;
@@ -1051,8 +1051,8 @@ dialog::backdrop {
   font-size: 15px;
 }
 
-.coffee-detail-price .save-price #value-save,
-.equipment-detail-price .save-price #value-save {
+.coffee-detail-price .save-price .value-save,
+.equipment-detail-price .save-price .value-save {
   text-decoration: line-through;
 }
 
@@ -1399,7 +1399,7 @@ dialog::backdrop {
   padding: 0 40px;
 }
 
-#checkout-content #title {
+#checkout-content .title {
   color: var(--secondary-color);
   margin-bottom: 20px;
 }
@@ -1500,7 +1500,7 @@ dialog::backdrop {
   gap: 6px;
 }
 
-.card .card-footer #price {
+.card .card-footer .price {
   text-align: end;
   font-weight: 600;
 }

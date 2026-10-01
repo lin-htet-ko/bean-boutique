@@ -131,7 +131,7 @@ function populateCartForOrder() {
                 <div class="btn-secondary-outline" id="order-item-quantity">
                   <button id="btn-reduce-from-cart" type="button">-</button>
                   <span id="cart-quantity">${item.quantity}</span>
-                  <button id="btn-add-to-cart" type="button"">+</button>
+                  <button class="btn-add-to-cart" type="button"">+</button>
                 </div>
                 <p><span id="qty">${item.quantity} </span> x <span id="value">${item.unitPrice}</span></p>
                 <p>
@@ -159,7 +159,7 @@ function populateCartForOrder() {
           populateCartForOrder();
         });
       qtyController
-        .querySelector("#btn-add-to-cart")
+        .querySelector(".btn-add-to-cart")
         .addEventListener("click", () => {
           addToCart(id);
           populateCartForOrder();
