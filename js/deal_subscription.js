@@ -9,11 +9,16 @@ document.querySelector("#member-register").addEventListener('click', () => {
 dialogMemberRegister.querySelector(".btn-close").addEventListener('click', () => {
     dialogMemberRegister.close();
 });
+
+dialogMemberRegisterSuccess.querySelector("button").addEventListener('click', () => {
+    dialogMemberRegisterSuccess.close();
+});
+
 dialogMemberRegister.querySelector("#btn-register-memeber").addEventListener('click', (event) => {
     event.preventDefault();
-    const name = dialogMemberRegister.querySelector("#name");
-    const email = dialogMemberRegister.querySelector("#email");
-    const phone = dialogMemberRegister.querySelector("#phone");
+    const name = dialogMemberRegister.querySelector("#member-name");
+    const email = dialogMemberRegister.querySelector("#member-email");
+    const phone = dialogMemberRegister.querySelector("#member-phone");
     const payment = dialogMemberRegister.querySelector("input[name='payment_method']:checked");
 
     if(name.value && email.value && phone.value && payment.value) {
