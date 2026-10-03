@@ -438,6 +438,7 @@ header {
   color: white;
   font-size: 18px;
   font-weight: 600;
+  text-align: center;
 }
 
 .added-to-cart {
@@ -447,6 +448,16 @@ header {
   align-items: center;
   justify-content: center;
   color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn-add-to-cart-container-large {
+    justify-content: center;
+    align-self: start;
+    margin-left: 10px;
+    text-align: center;
+  }
 }
 
 /* Shared Component: Deal Card */
@@ -1099,6 +1110,7 @@ dialog::backdrop {
 
 .chips {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .chip {
@@ -1106,6 +1118,9 @@ dialog::backdrop {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
   border-radius: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .coffee-detail-fact,
 .equipment-detail-fact {
@@ -1124,6 +1139,7 @@ dialog::backdrop {
 .equipment-detail-check-more-section .check-more-header h2 {
   font-size: 20px;
   color: var(--trinary-color);
+  flex-grow: 1;
 }
 
 .coffee-detail-check-more-section .check-more-header .btn-see-more,
@@ -1150,6 +1166,52 @@ dialog::backdrop {
 .coffee-detail-check-more-section .check-more-content .equipment-item,
 .equipment-detail-check-more-section .check-more-content .coffee-bean-item {
   background-color: var(--trinary-color);
+}
+
+@media screen and (max-width: 1024px) {
+  #coffee-detail-content,
+  #equipment-detail-content {
+    padding: 20px 20px;
+  }
+
+  #weight-items,
+  #variant-items {
+    width: 100%;
+  }
+
+  #weight-items > a,
+  #variant-items > a {
+    display: block;
+  }
+
+  #title-add-to-cart-section {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #title-add-to-cart-section > * {
+    display: block;
+    align-self: stretch;
+  }
+
+  #title-add-to-cart-section h1 {
+    font-size: 26px;
+  }
+  .chips {
+    gap: 2px;
+  }
+  .chip {
+    padding: 3px 5px;
+  }
+
+  .coffee-detail-check-more-section .check-more-header .btn-see-more,
+  .equipment-detail-check-more-section .check-more-header .btn-see-more {
+    font-size: 13px;
+    width: 40%;
+    text-align: center;
+    margin-left: 10px;
+  }
 }
 
 /* Product Selection Screens: Coffee and Equipment */
@@ -1301,6 +1363,11 @@ dialog::backdrop {
   #coffee-selection-main-content,
   #equipment-selection-main-content {
     grid-template-columns: 1fr;
+  }
+
+  #btn-coffee-filter-clear,
+  #btn-equipment-filter-clear {
+    margin-top: 4px;
   }
 }
 
@@ -1550,7 +1617,7 @@ dialog::backdrop {
   font-size: 13px;
   margin: 30px 30px 0 30px;
 }
-.breadcrum-item{
+.breadcrum-item {
   color: var(--secondary-color);
 }
 .breadcrum > hr {
